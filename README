@@ -1,5 +1,0 @@
-
-
-# apt-get install npm nodejs
-# npm install -g cordova ionic
-$ ionic platform add android
