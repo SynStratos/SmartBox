@@ -20,7 +20,13 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/android-permissions": "^4.17.0",
     "@ionic-native/core": "~4.15.0",
+    "@ionic-native/estimote-beacons": "^4.17.0",
+    "@ionic-native/file": "^4.17.0",
+    "@ionic-native/file-opener": "^4.17.0",
+    "@ionic-native/ftp": "^4.17.0",
+    "@ionic-native/qr-scanner": "^4.17.0",
     "@ionic-native/splash-screen": "~4.15.0",
     "@ionic-native/status-bar": "~4.15.0",
     "@ionic/pro": "2.0.3",
@@ -35,5 +41,16 @@
     "@ionic/app-scripts": "3.2.0",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-qrscanner": {},
+      "cordova-plugin-network-information": {},
+      "cordova-plugin-file-opener2": {},
+      "cordova-plugin-ftp": {},
+      "cordova-plugin-file": {},
+      "cordova-plugin-estimote": {}
+    }
+  }
 }
