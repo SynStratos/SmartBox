@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { AndroidPermissions } from '@ionic-native/android-permissions';
 
 @Component({
   selector: 'page-home',
@@ -7,7 +8,10 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(private androidPermissions: AndroidPermissions, public navCtrl: NavController) {
+
+
+    this.androidPermissions.checkPermissions()
 
   }
 
