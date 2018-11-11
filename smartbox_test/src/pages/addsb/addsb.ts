@@ -42,7 +42,7 @@ export class AddSbPage {
 
     sendData()
     {
-        //funzione di upload
+        //funzione di upload id + hotel + level + room
     }
 }
 
