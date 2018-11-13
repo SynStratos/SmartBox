@@ -76,7 +76,7 @@ var HomePage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(51);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -128,7 +128,8 @@ var ListPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_qr_scanner__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_http__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -177,11 +178,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
+
 var AddSbPage = /** @class */ (function () {
-    function AddSbPage(qrcode, navctrl, http) {
+    function AddSbPage(qrcode, navctrl, http, http_ciao) {
         this.qrcode = qrcode;
         this.navctrl = navctrl;
         this.http = http;
+        this.http_ciao = http_ciao;
         this.loadData();
     }
     AddSbPage.prototype.scanQrCode = function () {
@@ -201,36 +204,53 @@ var AddSbPage = /** @class */ (function () {
         });
     };
     AddSbPage.prototype.loadData = function () {
-        var _this = this;
-        var data;
-        data = this.http.get('http://www.google.it');
-        data.subscribe(function (result) {
-            _this.items = result;
+        this.http_ciao.get('http://progettoftp.altervista.org/hotel.json', {}, {})
+            .then(function (data) {
+            console.log(data.status);
+            console.log(data.data); // data received by server
+            console.log(data.headers);
         });
+        /*
+        console.log('Favorite clicked');
+        let data:Observable<any>;
+        data = this.http.get('progettoftp.altervista.org/hotel.json');
+        console.log("bambolinastupro");
+        data.subscribe(result => {
+            console.log("***");
+            console.log(result);
+            this.items = result;
+            //alessabdra grimaldi
+            //noemi maggi
+            //giorgia sparani
+        })*/
     };
     AddSbPage.prototype.sendData = function () {
+        console.log(this.items.hotel);
+        console.log(this.items.room);
+        console.log(this.items.level);
         //funzione di upload id + hotel + level + room
     };
     AddSbPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["m" /* Component */])({
             selector: 'page-addsb',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n            Add New SmartBox to DB\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n    \n    <button ion-button (click)= "scanQrCode()">Start Scan</button>\n    \n    <div *ngIf="id">\n        <p>{{id.text}}</p>\n    </div>\n\n    <ion-item>\n            <ion-label>Hotel</ion-label>\n            <ion-select [(ngModel)]="hotel" >\n            <ion-option *ngFor="let item of items" [value]="item.hotel">{{item.hotel}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n            <ion-label>Level</ion-label>\n            <ion-select [(ngModel)]="level" >\n            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n            <ion-label>Room</ion-label>\n            <ion-select [(ngModel)]="room" >\n            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <button ion-button (click)= "sendData()">Confirm</button>\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_qr_scanner__["a" /* QRScanner */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__ionic_native_qr_scanner__["a" /* QRScanner */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__ionic_native_qr_scanner__["a" /* QRScanner */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["e" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_http__["a" /* HTTP */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_http__["a" /* HTTP */]) === "function" && _d || Object])
     ], AddSbPage);
     return AddSbPage;
+    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=addsb.js.map
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(223);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -238,7 +258,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 222:
+/***/ 223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -247,19 +267,21 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_list__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__ = __webpack_require__(200);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_http__ = __webpack_require__(201);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -301,6 +323,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__["a" /* QRScanner */],
                 __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */],
+                __WEBPACK_IMPORTED_MODULE_11__ionic_native_http__["a" /* HTTP */],
                 __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_2__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* IonicErrorHandler */] }
             ]
@@ -313,7 +336,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 276:
+/***/ 277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -385,5 +408,5 @@ var MyApp = /** @class */ (function () {
 
 /***/ })
 
-},[201]);
+},[202]);
 //# sourceMappingURL=main.js.map

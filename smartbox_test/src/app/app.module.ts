@@ -14,6 +14,7 @@ import { AddSbPage } from '../pages/addsb/addsb';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule} from '@angular/common/http';
+import { HTTP } from '@ionic-native/http';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { HttpClientModule} from '@angular/common/http';
     StatusBar,
     QRScanner,
     HttpClient,
+    HTTP,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
