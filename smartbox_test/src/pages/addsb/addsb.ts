@@ -34,7 +34,7 @@ export class AddSbPage {
 
     loadData(){
         let data:Observable<any>;
-        data = this.http.get('');
+        data = this.http.get('http://www.google.it');
         data.subscribe(result => {
             this.items = result;
         })

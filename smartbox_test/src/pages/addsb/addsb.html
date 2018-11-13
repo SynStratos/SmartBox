@@ -15,37 +15,26 @@
         <p>{{id.text}}</p>
     </div>
 
-<!--
     <ion-item>
-        <ion-label>Username</ion-label>
-        <ion-input type="text"></ion-input>
+            <ion-label>Hotel</ion-label>
+            <ion-select [(ngModel)]="hotel" >
+            <ion-option *ngFor="let item of items" [value]="item.hotel">{{item.hotel}}</ion-option>
+        </ion-select>
     </ion-item>
--->
-    <ion-list>
-        <ion-item *ngFor="let item of items">
-        <ion-label>Hotel</ion-label>
-        <ion-select [(ngModel)]="hotel">
-            {{item.hotel}}
-        </ion-select>
-        </ion-item>
-    </ion-list>
-    <ion-list>
-        <ion-item *ngFor="let item of items">
-        <ion-label>Level</ion-label>
-        <ion-select [(ngModel)]="level">
-            {{item.level}}
-        </ion-select>
-        </ion-item>
-    </ion-list>
-    <ion-list>
-        <ion-item *ngFor="let item of items">
-        <ion-label>Room</ion-label>
-        <ion-select [(ngModel)]="room">
-            {{item.room}}
-        </ion-select>
-        </ion-item>
-    </ion-list> 
 
+    <ion-item>
+            <ion-label>Level</ion-label>
+            <ion-select [(ngModel)]="level" >
+            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+            <ion-label>Room</ion-label>
+            <ion-select [(ngModel)]="room" >
+            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>
+        </ion-select>
+    </ion-item>
 
     <button ion-button (click)= "sendData()">Confirm</button>
 
