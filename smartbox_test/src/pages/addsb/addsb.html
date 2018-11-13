@@ -16,9 +16,9 @@
     </div>
 
     <ion-item>
-            <ion-label>Hotel</ion-label>
+            <ion-label>{items.hotel}</ion-label>
             <ion-select [(ngModel)]="hotel" >
-            <ion-option *ngFor="let item of items" [value]="item.hotel">{{item.hotel}}</ion-option>
+            <ion-option *ngFor="let item of items" [value]="item.hotel">items.hotel</ion-option>
         </ion-select>
     </ion-item>
 

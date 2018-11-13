@@ -1,11 +1,13 @@
 import { NavController } from 'ionic-angular';
 import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Toast } from '@ionic-native/toast';
 import { HttpClient } from '@angular/common/http';
 import { HTTP } from '@ionic-native/http';
 import { Observable } from 'rxjs/Observable';
 import { dateDataSortValue } from 'ionic-angular/umd/util/datetime-util';
+import { AlertController } from 'ionic-angular';
 
 @Component({
     selector: 'page-addsb',
@@ -22,7 +24,7 @@ export class AddSbPage {
     items : any;
 
 
-    constructor(private qrcode: QRScanner, public navctrl: NavController, public http: HttpClient, private http_ciao: HTTP)
+    constructor(private qrcode: QRScanner, public navctrl: NavController, public http: HttpClient, private http_ciao: HTTP, public alertCtrl: AlertController)
     {
         this.loadData();
 
@@ -35,28 +37,47 @@ export class AddSbPage {
     }
 
     loadData(){
+
         this.http_ciao.get('http://progettoftp.altervista.org/hotel.json', {}, {})
         .then(data => {
+            this.items = JSON.parse(data.data);
+            /*
+            //In data.data ho tutto il file json
+            var prova = JSON.parse(data.data);
 
-            console.log(data.status);
-            console.log(data.data); // data received by server
-            console.log(data.headers);
-        
-          })
+                let alert = this.alertCtrl.create({
+                    title: 'Low battery',
+                    subTitle: prova.hotel,
+                    buttons: ['Dismiss']
+                });
+                alert.present();*/
+            //console.log(data.status);
+            //console.log(data.data); // data received by server
+            //console.log(data.headers);
+
+
+        })
+        /*
+        let data:Observable<any>
+        data = this.http.get('http://progettoftp.altervista.org/hotel.json');
+        data.subscribe(result => {
+            let alert = this.alertCtrl.create({
+                title: 'Low battery',
+                subTitle: result,
+                buttons: ['Dismiss']
+              });
+              alert.present();
+        })*/
+
 
         /*
-        console.log('Favorite clicked');
-        let data:Observable<any>;
-        data = this.http.get('progettoftp.altervista.org/hotel.json');
-        console.log("bambolinastupro");
-        data.subscribe(result => {
-            console.log("***");
-            console.log(result);
-            this.items = result;
-            //alessabdra grimaldi
-            //noemi maggi
-            //giorgia sparani
-        })*/
+        let alert = this.alertCtrl.create({
+            title: 'Low battery',
+            subTitle: 'ilaria',
+            buttons: ['Dismiss']
+          });
+          alert.present();
+*/
     }
 
 
