@@ -8,6 +8,8 @@ import { HTTP } from '@ionic-native/http';
 import { Observable } from 'rxjs/Observable';
 import { dateDataSortValue } from 'ionic-angular/umd/util/datetime-util';
 import { AlertController } from 'ionic-angular';
+import { Http, Headers} from '@angular/http';
+import { stringify } from '@angular/compiler/src/util';
 
 @Component({
     selector: 'page-addsb',
@@ -16,71 +18,73 @@ import { AlertController } from 'ionic-angular';
 
 export class AddSbPage {
 
-    id : any;
-    hotel : any;
-    level : any;
-    room : any;
+    public it : any;
+    public dog : {id:any, name:any, level:any, room:any}
+    public items : {id:any, name:any, level:any, room:any}[];
 
-    items : any;
-
-
-    constructor(private qrcode: QRScanner, public navctrl: NavController, public http: HttpClient, private http_ciao: HTTP, public alertCtrl: AlertController)
+    constructor(public alertCtrl: AlertController, public navctrl: NavController, public http: HttpClient, public http_2: HTTP)
     {
-        this.loadData();
-
+       
+       this.loadData();
+        //this.data = "{ hotel: 2, level: 1, room: 4}";
+       // this.items = JSON.parse(this.data);
     }
-
+/*
     async scanQrCode()
     {
         this.id = await this.qrcode.scan();
         console.log(this.id);
     }
 
-    loadData(){
-
-        this.http_ciao.get('http://progettoftp.altervista.org/hotel.json', {}, {})
-        .then(data => {
-            this.items = JSON.parse(data.data);
-            /*
-            //In data.data ho tutto il file json
-            var prova = JSON.parse(data.data);
-
-                let alert = this.alertCtrl.create({
-                    title: 'Low battery',
-                    subTitle: prova.hotel,
-                    buttons: ['Dismiss']
-                });
-                alert.present();*/
-            //console.log(data.status);
-            //console.log(data.data); // data received by server
-            //console.log(data.headers);
-
-
-        })
-        /*
-        let data:Observable<any>
-        data = this.http.get('http://progettoftp.altervista.org/hotel.json');
-        data.subscribe(result => {
-            let alert = this.alertCtrl.create({
-                title: 'Low battery',
-                subTitle: result,
-                buttons: ['Dismiss']
-              });
-              alert.present();
-        })*/
-
-
-        /*
-        let alert = this.alertCtrl.create({
-            title: 'Low battery',
-            subTitle: 'ilaria',
-            buttons: ['Dismiss']
-          });
-          alert.present();
+    setHotel(h){
+        this.hotel = h;
+    }
 */
+    loadData() {
+        let url = 'progettoftp.altervista.org/hotel_3.json';
+
+        this.http_2.get(url, {}, {})
+        .then(data => {
+            let temp = JSON.parse(data.data);
+            
+
+    /*  temp.forEach(element => {
+                this.dog.id = temp.id;
+                this.dog.name = temp.id;
+                this.dog.level = temp.id;
+                this.dog.room = temp[0].id;
+
+                this.items.push(this.dog);
+
+            });
+        */
+       })        
     }
 
+}
+/*
+        let alert3 = this.alertCtrl.create({
+            title: stringify(this.items),
+            subTitle: this.items,
+            buttons: ['Dismiss']
+        });
+        alert3.present();
+    }
+*/
+    /*
+        data.subscribe(result)
 
+            let alert = this.alertCtrl.create({
+                title: 'Low battery',
+                subTitle: this.items.hotels[0],
+                buttons: ['Dismiss']
+            });
+            alert.present();
+        }
+        */
+    
+/*
+    
     sendData()
     {
         console.log(this.items.hotel);
@@ -88,5 +92,6 @@ export class AddSbPage {
         console.log(this.items.level);
         //funzione di upload id + hotel + level + room
     }
-}
+    */
+
 

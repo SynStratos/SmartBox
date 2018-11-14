@@ -1,44 +1,29 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Add New SmartBox to DB
+                <h1>ciao</h1>
         </ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
-    
+  <!--  
     <button ion-button (click)= "scanQrCode()">Start Scan</button>
     
     <div *ngIf="id">
         <p>{{id.text}}</p>
     </div>
+-->
 
-    <ion-item>
-            <ion-label>{items.hotel}</ion-label>
-            <ion-select [(ngModel)]="hotel" >
-            <ion-option *ngFor="let item of items" [value]="item.hotel">items.hotel</ion-option>
-        </ion-select>
-    </ion-item>
-
-    <ion-item>
-            <ion-label>Level</ion-label>
-            <ion-select [(ngModel)]="level" >
-            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>
-        </ion-select>
-    </ion-item>
-
-    <ion-item>
-            <ion-label>Room</ion-label>
-            <ion-select [(ngModel)]="room" >
-            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>
-        </ion-select>
-    </ion-item>
-
-    <button ion-button (click)= "sendData()">Confirm</button>
-
-
-
-
+  <!--  <ion-card *ngFor="let item of items">
+    
+        <ion-card-content>
+            <ion-card-title>
+                {{item.name}}
+            </ion-card-title>
+            <h1>ciaociaociao</h1>
+        </ion-card-content>
+    </ion-card>-->
 </ion-content>
+
