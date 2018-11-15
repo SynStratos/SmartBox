@@ -31,9 +31,9 @@ export class AddSbPage {
 
 
     constructor(public navctrl: NavController, public http: HTTP) {
-        //this.loadData();
+        this.loadData();
         console.log("ciao");
-        this.qr_scanner();
+       // this.qr_scanner();
         console.log("ciao1");
     }
 

@@ -10,33 +10,39 @@
 <ion-content padding style="background: none transparent;">
 
     <ion-item>
+        
         <ion-label>Hotel</ion-label>
         <ion-select [(ngModel)]="hotel" >
         <ion-option *ngFor="let item of hotels" [value]="item" (ionSelect)="fillLevels(item); show_levels()">{{item}}</ion-option>
         </ion-select>
+        
     </ion-item>
 
-    <ion-item>
-        <div  *ngIf="show_level">
+    
+       <div *ngIf="show_level">
             <div *ngIf="levels_ | async; else loading; let livelli">
+                <ion-item >
                 <ion-label>Level</ion-label>
                 <ion-select [(ngModel)]="level" >
                 <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level); show_rooms()">{{item.name_level}}</ion-option>
                 </ion-select>
+            </ion-item>
             </div>
         </div>
-    </ion-item>
+   
 
-    <ion-item>
-        <div *ngIf="show_room">
-            <div *ngIf="rooms_ | async; else loading; let camere">
+    
+        <div fixed *ngIf="show_room">
+            <div fixed *ngIf="rooms_ | async; else loading; let camere">
+                <ion-item>
                 <ion-label>Room</ion-label>
                 <ion-select [(ngModel)]="room">
                 <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>
                 </ion-select>
+            </ion-item>
             </div>
         </div>
-    </ion-item>
+
 
     <ng-template #loading>
     Loading your things...

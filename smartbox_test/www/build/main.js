@@ -58,7 +58,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], HomePage);
@@ -109,7 +109,7 @@ var ListPage = /** @class */ (function () {
     };
     ListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n    \n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/list/list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n    \n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]])
     ], ListPage);
@@ -155,9 +155,9 @@ var AddSbPage = /** @class */ (function () {
         this.hotels = [];
         this.levels = [];
         this.rooms = [];
-        //this.loadData();
+        this.loadData();
         console.log("ciao");
-        this.qr_scanner();
+        // this.qr_scanner();
         console.log("ciao1");
     }
     AddSbPage.prototype.qr_scanner = function () {
@@ -234,7 +234,7 @@ var AddSbPage = /** @class */ (function () {
     };
     AddSbPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-addsb',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n                <h1>APP MARINA</h1>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content padding style="background: none transparent;">\n\n    <ion-item>\n        <ion-label>Hotel</ion-label>\n        <ion-select [(ngModel)]="hotel" >\n        <ion-option *ngFor="let item of hotels" [value]="item" (ionSelect)="fillLevels(item); show_levels()">{{item}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n        <div  *ngIf="show_level">\n            <div *ngIf="levels_ | async; else loading; let livelli">\n                <ion-label>Level</ion-label>\n                <ion-select [(ngModel)]="level" >\n                <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level); show_rooms()">{{item.name_level}}</ion-option>\n                </ion-select>\n            </div>\n        </div>\n    </ion-item>\n\n    <ion-item>\n        <div *ngIf="show_room">\n            <div *ngIf="rooms_ | async; else loading; let camere">\n                <ion-label>Room</ion-label>\n                <ion-select [(ngModel)]="room">\n                <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>\n                </ion-select>\n            </div>\n        </div>\n    </ion-item>\n\n    <ng-template #loading>\n    Loading your things...\n    </ng-template>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
+            selector: 'page-addsb',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n                <h1>APP MARINA</h1>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content padding style="background: none transparent;">\n\n    <ion-item>\n        \n        <ion-label>Hotel</ion-label>\n        <ion-select [(ngModel)]="hotel" >\n        <ion-option *ngFor="let item of hotels" [value]="item" (ionSelect)="fillLevels(item); show_levels()">{{item}}</ion-option>\n        </ion-select>\n        \n    </ion-item>\n\n    \n       <div *ngIf="show_level">\n            <div *ngIf="levels_ | async; else loading; let livelli">\n                <ion-item >\n                <ion-label>Level</ion-label>\n                <ion-select [(ngModel)]="level" >\n                <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level); show_rooms()">{{item.name_level}}</ion-option>\n                </ion-select>\n            </ion-item>\n            </div>\n        </div>\n   \n\n    \n        <div fixed *ngIf="show_room">\n            <div fixed *ngIf="rooms_ | async; else loading; let camere">\n                <ion-item>\n                <ion-label>Room</ion-label>\n                <ion-select [(ngModel)]="room">\n                <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>\n                </ion-select>\n            </ion-item>\n            </div>\n        </div>\n\n\n    <ng-template #loading>\n    Loading your things...\n    </ng-template>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_http__["a" /* HTTP */]])
     ], AddSbPage);
@@ -395,7 +395,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

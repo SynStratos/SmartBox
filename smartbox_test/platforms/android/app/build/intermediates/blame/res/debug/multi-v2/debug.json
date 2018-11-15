@@ -558,21 +558,6 @@
             ]
         },
         {
-            "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1b3690b15062a67f4a062d5096191909/res/values-mr/values-mr.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ldrtl-v23_values-ldrtl-v23.arsc.flat",
             "map": [
                 {
@@ -590,6 +575,21 @@
                         "startOffsets": "55",
                         "endColumns": "112",
                         "endOffsets": "163"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mr_values-mr.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1b3690b15062a67f4a062d5096191909/res/values-mr/values-mr.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     }
                 }
             ]
@@ -634,6 +634,21 @@
             ]
         },
         {
+            "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1b3690b15062a67f4a062d5096191909/res/values-ka/values-ka.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w360dp-v13_values-w360dp-v13.arsc.flat",
             "map": [
                 {
@@ -651,21 +666,6 @@
                         "startOffsets": "55",
                         "endColumns": "54",
                         "endOffsets": "105"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ka_values-ka.arsc.flat",
-            "map": [
-                {
-                    "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1b3690b15062a67f4a062d5096191909/res/values-ka/values-ka.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
                     }
                 }
             ]
@@ -1616,6 +1616,28 @@
                         "startOffsets": "10945,11002,11053,11219",
                         "endColumns": "56,50,165,102",
                         "endOffsets": "10997,11048,11214,11317"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/home/luca/SmartBox/smartbox_test/platforms/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,55,98",
+                        "endColumns": "63,42,58",
+                        "endOffsets": "216,93,152"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,162",
+                        "endColumns": "63,42,58",
+                        "endOffsets": "114,157,216"
                     }
                 }
             ]
