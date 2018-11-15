@@ -1,15 +1,15 @@
 [
     {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_layout.xml.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/layout/abc_list_menu_item_layout.xml"
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-ldrtl-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_select_dialog_singlechoice_material.xml.flat",
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-ldrtl-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_layout.xml.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -32,12 +32,12 @@
         "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat",
-        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/layout/abc_list_menu_item_radio.xml"
-    },
-    {
         "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/anim_abc_popup_enter.xml.flat",
         "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_radio.xml.flat",
+        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -60,16 +60,16 @@
         "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/drawable-hdpi/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-ldrtl-xhdpi/abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
+        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/anim/abc_fade_out.xml"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_btn_rating_star_on_mtrl_alpha.png.flat",
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xxhdpi/abc_btn_rating_star_on_mtrl_alpha.png"
     },
     {
-        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/anim_abc_fade_out.xml.flat",
-        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/anim/abc_fade_out.xml"
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-ldrtl-xhdpi/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_rating_star_on_mtrl_alpha.png.flat",
@@ -136,36 +136,36 @@
         "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/drawable-xxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xxxhdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
+        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/color-v23/abc_color_highlight_material.xml"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_abc_screen_simple.xml.flat",
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/color-v23_abc_color_highlight_material.xml.flat",
-        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/color-v23/abc_color_highlight_material.xml"
-    },
-    {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/layout/support_simple_spinner_dropdown_item.xml"
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xxxhdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat",
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/color/switch_thumb_material_dark.xml"
     },
     {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_support_simple_spinner_dropdown_item.xml.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/home/luca/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/99b37c7a14c99a4685688d64ec7847bf/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_abc_action_menu_layout.xml.flat",
@@ -180,28 +180,28 @@
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xxhdpi/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable/abc_btn_radio_material.xml"
+        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxxhdpi_screen.png.flat",
+        "source": "/home/luca/SmartBox/smartbox_test/platforms/android/app/src/main/res/drawable-port-xxxhdpi/screen.png"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/layout_abc_action_bar_up_container.xml.flat",
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/layout/abc_action_bar_up_container.xml"
     },
     {
-        "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxxhdpi_screen.png.flat",
-        "source": "/home/luca/SmartBox/smartbox_test/platforms/android/app/src/main/res/drawable-port-xxxhdpi/screen.png"
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable/abc_btn_radio_material.xml"
     },
     {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-hdpi_abc_list_pressed_holo_light.9.png.flat",
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-hdpi/abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xxhdpi/abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
         "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-mdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/drawable-xxhdpi/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "/home/luca/SmartBox/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-mdpi_abc_switch_track_mtrl_alpha.9.png.flat",
