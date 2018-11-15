@@ -10,9 +10,6 @@
     "cordova-plugin-advanced-http": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-qrscanner": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
     "cordova-plugin-x-toast": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
@@ -39,9 +36,6 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-android-permissions": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },

@@ -1,12 +1,4 @@
 {
-  "cordova-plugin-qrscanner": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-qrscanner@~2.6.0"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-ionic": {
     "source": {
       "type": "registry",
@@ -19,14 +11,6 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-x-toast@~2.7.0"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-android-permissions": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-android-permissions"
     },
     "is_top_level": true,
     "variables": {}

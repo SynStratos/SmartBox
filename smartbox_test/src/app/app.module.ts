@@ -15,9 +15,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule} from '@angular/common/http';
 import { HTTP } from '@ionic-native/http';
 
-import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
-import { Camera } from '@ionic-native/camera';
-
 
 @NgModule({
   declarations: [
@@ -39,9 +36,7 @@ import { Camera } from '@ionic-native/camera';
     AddSbPage,
   ],
   providers: [
-    Camera,
     StatusBar,
-    QRScanner,
     HttpClient,
     HTTP,
     SplashScreen,

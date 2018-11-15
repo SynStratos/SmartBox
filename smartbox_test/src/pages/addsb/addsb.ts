@@ -3,9 +3,6 @@ import {Component} from '@angular/core';
 import {HTTP} from '@ionic-native/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/delay';
-import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
-import { Camera } from '@ionic-native/camera';
 
 @Component({
 selector: 'page-addsb',
@@ -33,7 +30,7 @@ export class AddSbPage {
     public rooms_: Observable < any[] >
 
 
-    constructor(public navctrl: NavController, public http: HTTP, private qrScanner: QRScanner) {
+    constructor(public navctrl: NavController, public http: HTTP) {
         //this.loadData();
         console.log("ciao");
         this.qr_scanner();
@@ -41,6 +38,7 @@ export class AddSbPage {
     }
 
     qr_scanner(){
+        /*
         this.qrScanner.prepare()
         .then((status: QRScannerStatus) => {
             if (status.authorized) {
@@ -67,7 +65,7 @@ export class AddSbPage {
             // permission was denied, but not permanently. You can ask for permission again at a later time.
             }
         })
-        .catch((e: any) => console.log('Error is', e));
+        .catch((e: any) => console.log('Error is', e));*/
     }
 
     //Funzioni utili per la visualizzazione
