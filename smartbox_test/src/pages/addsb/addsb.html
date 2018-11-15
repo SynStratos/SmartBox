@@ -6,46 +6,41 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+
+<ion-content padding style="background: none transparent;">
 
     <ion-item>
         <ion-label>Hotel</ion-label>
         <ion-select [(ngModel)]="hotel" >
-        <ion-option *ngFor="let item of hotels" [value]="item" (ionSelect)="fillLevels(item)"> {{item}}</ion-option>
+        <ion-option *ngFor="let item of hotels" [value]="item" (ionSelect)="fillLevels(item); show_levels()">{{item}}</ion-option>
         </ion-select>
     </ion-item>
 
     <ion-item>
+        <div  *ngIf="show_level">
             <div *ngIf="levels_ | async; else loading; let livelli">
                 <ion-label>Level</ion-label>
                 <ion-select [(ngModel)]="level" >
-                <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level)">{{item.name_level}}</ion-option>
+                <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level); show_rooms()">{{item.name_level}}</ion-option>
                 </ion-select>
             </div>
+        </div>
     </ion-item>
 
     <ion-item>
-        <div *ngIf="rooms_ | async; else loading; let camere">
-            <ion-label>Room</ion-label>
-            <ion-select [(ngModel)]="room">
-            <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>
-            </ion-select>
+        <div *ngIf="show_room">
+            <div *ngIf="rooms_ | async; else loading; let camere">
+                <ion-label>Room</ion-label>
+                <ion-select [(ngModel)]="room">
+                <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>
+                </ion-select>
+            </div>
         </div>
     </ion-item>
-<!-- 
-    <div *ngIf="things$ | async; else loading; let things">
-    {{ things.watch }}
-    </div> -->
+
     <ng-template #loading>
     Loading your things...
     </ng-template>
 
- <!--   <ion-item>
-            <ion-label>Room</ion-label>
-            <ion-select [(ngModel)]="room" >
-            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>
-        </ion-select>
-    </ion-item>
--->
 </ion-content>
 
