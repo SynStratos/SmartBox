@@ -1,7 +1,7 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-                <h1>ciao</h1>
+                <h1>BASTARDODIO</h1>
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -16,14 +16,26 @@
     </div>
 -->
 
-  <!--  <ion-card *ngFor="let item of items">
-    
-        <ion-card-content>
-            <ion-card-title>
-                {{item.name}}
-            </ion-card-title>
-            <h1>ciaociaociao</h1>
-        </ion-card-content>
-    </ion-card>-->
+    <ion-item>
+        <ion-label>Hotel</ion-label>
+        <ion-select [(ngModel)]="hotel" >
+        <ion-option *ngFor="let item of items" [value]="item.name"> {{item.name}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+            <ion-label>Level</ion-label>
+            <ion-select [(ngModel)]="level" >
+            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+            <ion-label>Room</ion-label>
+            <ion-select [(ngModel)]="room" >
+            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>
+        </ion-select>
+    </ion-item>
+
 </ion-content>
 

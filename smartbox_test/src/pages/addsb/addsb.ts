@@ -10,6 +10,7 @@ import { dateDataSortValue } from 'ionic-angular/umd/util/datetime-util';
 import { AlertController } from 'ionic-angular';
 import { Http, Headers} from '@angular/http';
 import { stringify } from '@angular/compiler/src/util';
+import { THROW_IF_NOT_FOUND } from '@angular/core/src/di/injector';
 
 @Component({
     selector: 'page-addsb',
@@ -19,15 +20,16 @@ import { stringify } from '@angular/compiler/src/util';
 export class AddSbPage {
 
     public it : any;
-    public dog : {id:any, name:any, level:any, room:any}
-    public items : {id:any, name:any, level:any, room:any}[];
+    public room
+    public level
+    public hotel
+    public dog : {name: any, level: any, room: any}
+    public items : {name: any, level: any, room: any} [] = []
 
     constructor(public alertCtrl: AlertController, public navctrl: NavController, public http: HttpClient, public http_2: HTTP)
     {
        
        this.loadData();
-        //this.data = "{ hotel: 2, level: 1, room: 4}";
-       // this.items = JSON.parse(this.data);
     }
 /*
     async scanQrCode()
@@ -41,57 +43,22 @@ export class AddSbPage {
     }
 */
     loadData() {
-        let url = 'progettoftp.altervista.org/hotel_3.json';
+        let url = 'http://progettoftp.altervista.org/pepe.json';
 
         this.http_2.get(url, {}, {})
         .then(data => {
             let temp = JSON.parse(data.data);
-            
 
-    /*  temp.forEach(element => {
-                this.dog.id = temp.id;
-                this.dog.name = temp.id;
-                this.dog.level = temp.id;
-                this.dog.room = temp[0].id;
+           for(let i=0;i<temp.hotels.length;i++){
+               // this.dog = {name: temp[i].hotel, level: temp[i].level, room: temp[i].room}
+              //  this.items.push(this.dog);
+            //    this.items[i] = {name: temp[i].hotels.name_hotel, level: temp[i].level, room: temp[i].room}
+            console.log(temp.hotels[i].name_hotel)
+                    }
 
-                this.items.push(this.dog);
-
-            });
-        */
        })        
     }
 
 }
-/*
-        let alert3 = this.alertCtrl.create({
-            title: stringify(this.items),
-            subTitle: this.items,
-            buttons: ['Dismiss']
-        });
-        alert3.present();
-    }
-*/
-    /*
-        data.subscribe(result)
-
-            let alert = this.alertCtrl.create({
-                title: 'Low battery',
-                subTitle: this.items.hotels[0],
-                buttons: ['Dismiss']
-            });
-            alert.present();
-        }
-        */
-    
-/*
-    
-    sendData()
-    {
-        console.log(this.items.hotel);
-        console.log(this.items.room);
-        console.log(this.items.level);
-        //funzione di upload id + hotel + level + room
-    }
-    */
 
 

@@ -109,7 +109,7 @@ var ListPage = /** @class */ (function () {
     };
     ListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      {{item.id}}\n      {{item.hotel}}\n      {{item.level}}\n      {{item.room}}\n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n    \n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]])
     ], ListPage);
@@ -149,9 +149,8 @@ var AddSbPage = /** @class */ (function () {
         this.navctrl = navctrl;
         this.http = http;
         this.http_2 = http_2;
+        this.items = [];
         this.loadData();
-        //this.data = "{ hotel: 2, level: 1, room: 4}";
-        // this.items = JSON.parse(this.data);
     }
     /*
         async scanQrCode()
@@ -165,61 +164,27 @@ var AddSbPage = /** @class */ (function () {
         }
     */
     AddSbPage.prototype.loadData = function () {
-        var url = 'progettoftp.altervista.org/hotel_3.json';
+        var url = 'http://progettoftp.altervista.org/pepe.json';
         this.http_2.get(url, {}, {})
             .then(function (data) {
             var temp = JSON.parse(data.data);
-            /*  temp.forEach(element => {
-                        this.dog.id = temp.id;
-                        this.dog.name = temp.id;
-                        this.dog.level = temp.id;
-                        this.dog.room = temp[0].id;
-        
-                        this.items.push(this.dog);
-        
-                    });
-                */
+            for (var i = 0; i < temp.hotels.length; i++) {
+                // this.dog = {name: temp[i].hotel, level: temp[i].level, room: temp[i].room}
+                //  this.items.push(this.dog);
+                //    this.items[i] = {name: temp[i].hotels.name_hotel, level: temp[i].level, room: temp[i].room}
+                console.log(temp.hotels[i].name_hotel);
+            }
         });
     };
     AddSbPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-addsb',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n                <h1>ciao</h1>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <!--  \n    <button ion-button (click)= "scanQrCode()">Start Scan</button>\n    \n    <div *ngIf="id">\n        <p>{{id.text}}</p>\n    </div>\n-->\n\n  <!--  <ion-card *ngFor="let item of items">\n    \n        <ion-card-content>\n            <ion-card-title>\n                {{item.name}}\n            </ion-card-title>\n            <h1>ciaociaociao</h1>\n        </ion-card-content>\n    </ion-card>-->\n</ion-content>\n\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
+            selector: 'page-addsb',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n                <h1>BASTARDODIO</h1>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <!--  \n    <button ion-button (click)= "scanQrCode()">Start Scan</button>\n    \n    <div *ngIf="id">\n        <p>{{id.text}}</p>\n    </div>\n-->\n\n    <ion-item>\n        <ion-label>Hotel</ion-label>\n        <ion-select [(ngModel)]="hotel" >\n        <ion-option *ngFor="let item of items" [value]="item.name"> {{item.name}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n            <ion-label>Level</ion-label>\n            <ion-select [(ngModel)]="level" >\n            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n            <ion-label>Room</ion-label>\n            <ion-select [(ngModel)]="room" >\n            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__["a" /* HTTP */]])
     ], AddSbPage);
     return AddSbPage;
 }());
 
-/*
-        let alert3 = this.alertCtrl.create({
-            title: stringify(this.items),
-            subTitle: this.items,
-            buttons: ['Dismiss']
-        });
-        alert3.present();
-    }
-*/
-/*
-    data.subscribe(result)
-
-        let alert = this.alertCtrl.create({
-            title: 'Low battery',
-            subTitle: this.items.hotels[0],
-            buttons: ['Dismiss']
-        });
-        alert.present();
-    }
-    */
-/*
-    
-    sendData()
-    {
-        console.log(this.items.hotel);
-        console.log(this.items.room);
-        console.log(this.items.level);
-        //funzione di upload id + hotel + level + room
-    }
-    */
 //# sourceMappingURL=addsb.js.map
 
 /***/ }),
@@ -283,7 +248,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_7__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__["a" /* AddSbPage */]
+                __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__["a" /* AddSbPage */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
@@ -297,7 +262,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
                 __WEBPACK_IMPORTED_MODULE_7__pages_list_list__["a" /* ListPage */],
-                __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__["a" /* AddSbPage */]
+                __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__["a" /* AddSbPage */],
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__["a" /* StatusBar */],

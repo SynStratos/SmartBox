@@ -21,7 +21,7 @@ import { HTTP } from '@ionic-native/http';
     MyApp,
     HomePage,
     ListPage,
-    AddSbPage
+    AddSbPage,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +33,7 @@ import { HTTP } from '@ionic-native/http';
     MyApp,
     HomePage,
     ListPage,
-    AddSbPage
+    AddSbPage,
   ],
   providers: [
     StatusBar,
