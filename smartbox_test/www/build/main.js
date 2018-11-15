@@ -149,7 +149,9 @@ var AddSbPage = /** @class */ (function () {
         this.navctrl = navctrl;
         this.http = http;
         this.http_2 = http_2;
-        this.items = [];
+        this.hotels = [];
+        this.levels = [];
+        this.rooms = [];
         this.loadData();
     }
     /*
@@ -164,21 +166,43 @@ var AddSbPage = /** @class */ (function () {
         }
     */
     AddSbPage.prototype.loadData = function () {
+        var _this = this;
         var url = 'http://progettoftp.altervista.org/pepe.json';
         this.http_2.get(url, {}, {})
             .then(function (data) {
-            var temp = JSON.parse(data.data);
-            for (var i = 0; i < temp.hotels.length; i++) {
-                // this.dog = {name: temp[i].hotel, level: temp[i].level, room: temp[i].room}
-                //  this.items.push(this.dog);
-                //    this.items[i] = {name: temp[i].hotels.name_hotel, level: temp[i].level, room: temp[i].room}
-                console.log(temp.hotels[i].name_hotel);
+            _this.temp = JSON.parse(data.data);
+            for (var i = 0; i < _this.temp.hotels.length; i++) {
+                _this.hotels[i] = _this.temp.hotels[i].name_hotel;
+                //  console.log(temp.hotels[i].levels[0].name_level)
+                //console.log(temp.hotels[i].levels[1].name_level)
+                /*
+                                console.log(temp.hotels[i].levels[0].rooms[0].name_room)
+                
+                                console.log(temp.hotels[i].levels[0].rooms[1].name_room)
+                                console.log(temp.hotels[i].levels[1].rooms[0].name_room)
+                                console.log(temp.hotels[i].levels[1].rooms[1].name_room) */
             }
+            _this.hotel = _this.hotels[0];
+            console.log(_this.hotel);
+            _this.fillLevels();
         });
+    };
+    AddSbPage.prototype.fillLevels = function () {
+        for (var i = 0; i < this.temp.hotels.length; i++) {
+            if (this.temp.hotels[i].name_hotel == this.hotel) {
+                for (var j = 0; j < this.temp.hotels[i].levels.length; j++) {
+                    this.levels[j] = this.temp.hotels[i].levels[j].name_level;
+                }
+                break;
+            }
+        }
+        for (var i = 0; i < this.levels.length; i++) {
+            console.log(this.levels[i]);
+        }
     };
     AddSbPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-addsb',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n                <h1>BASTARDODIO</h1>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <!--  \n    <button ion-button (click)= "scanQrCode()">Start Scan</button>\n    \n    <div *ngIf="id">\n        <p>{{id.text}}</p>\n    </div>\n-->\n\n    <ion-item>\n        <ion-label>Hotel</ion-label>\n        <ion-select [(ngModel)]="hotel" >\n        <ion-option *ngFor="let item of items" [value]="item.name"> {{item.name}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n            <ion-label>Level</ion-label>\n            <ion-select [(ngModel)]="level" >\n            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n            <ion-label>Room</ion-label>\n            <ion-select [(ngModel)]="room" >\n            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
+            selector: 'page-addsb',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n                <h1>BASTARDODIO</h1>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <!--  \n    <button ion-button (click)= "scanQrCode()">Start Scan</button>\n    \n    <div *ngIf="id">\n        <p>{{id.text}}</p>\n    </div>\n-->\n\n    <ion-item>\n        <ion-label>Hotel</ion-label>\n        <ion-select [(ngModel)]="hotel" >\n        <ion-option *ngFor="let item of hotels" [value]="item"> {{item}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n<!--    <ion-item>\n            <ion-label>Level</ion-label>\n            <ion-select [(ngModel)]="level" >\n            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>\n        </ion-select>\n    </ion-item>\n\n    <ion-item>\n            <ion-label>Room</ion-label>\n            <ion-select [(ngModel)]="room" >\n            <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>\n        </ion-select>\n    </ion-item>\n-->\n</ion-content>\n\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_http__["a" /* HTTP */]])
     ], AddSbPage);

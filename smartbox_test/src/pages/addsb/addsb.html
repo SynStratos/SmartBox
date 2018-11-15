@@ -19,23 +19,23 @@
     <ion-item>
         <ion-label>Hotel</ion-label>
         <ion-select [(ngModel)]="hotel" >
-        <ion-option *ngFor="let item of items" [value]="item.name"> {{item.name}}</ion-option>
+        <ion-option *ngFor="let item of hotels" [value]="item"> {{item}}</ion-option>
         </ion-select>
     </ion-item>
 
     <ion-item>
             <ion-label>Level</ion-label>
             <ion-select [(ngModel)]="level" >
-            <ion-option *ngFor="let item of items" [value]="item.level">{{item.level}}</ion-option>
+            <ion-option *ngFor="let item of levels" [value]="item">{{item}}</ion-option>
         </ion-select>
     </ion-item>
 
-    <ion-item>
+ <!--   <ion-item>
             <ion-label>Room</ion-label>
             <ion-select [(ngModel)]="room" >
             <ion-option *ngFor="let item of items" [value]="item.room">{{item.room}}</ion-option>
         </ion-select>
     </ion-item>
-
+-->
 </ion-content>
 

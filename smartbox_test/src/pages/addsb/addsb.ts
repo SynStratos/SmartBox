@@ -19,12 +19,16 @@ import { THROW_IF_NOT_FOUND } from '@angular/core/src/di/injector';
 
 export class AddSbPage {
 
-    public it : any;
+    public it
     public room
     public level
     public hotel
-    public dog : {name: any, level: any, room: any}
-    public items : {name: any, level: any, room: any} [] = []
+  
+    public hotels : any[] = []
+    public levels : any[] = []
+    public rooms : any[] = []
+
+    public temp : any
 
     constructor(public alertCtrl: AlertController, public navctrl: NavController, public http: HttpClient, public http_2: HTTP)
     {
@@ -47,18 +51,47 @@ export class AddSbPage {
 
         this.http_2.get(url, {}, {})
         .then(data => {
-            let temp = JSON.parse(data.data);
+        this.temp = JSON.parse(data.data);
 
-           for(let i=0;i<temp.hotels.length;i++){
-               // this.dog = {name: temp[i].hotel, level: temp[i].level, room: temp[i].room}
-              //  this.items.push(this.dog);
-            //    this.items[i] = {name: temp[i].hotels.name_hotel, level: temp[i].level, room: temp[i].room}
-            console.log(temp.hotels[i].name_hotel)
-                    }
+           for(let i=0;i<this.temp.hotels.length;i++){
+                this.hotels[i] = this.temp.hotels[i].name_hotel
+              //  console.log(temp.hotels[i].levels[0].name_level)
+                //console.log(temp.hotels[i].levels[1].name_level)
 
-       })        
+/*
+                console.log(temp.hotels[i].levels[0].rooms[0].name_room)
+
+                console.log(temp.hotels[i].levels[0].rooms[1].name_room)
+                console.log(temp.hotels[i].levels[1].rooms[0].name_room)
+                console.log(temp.hotels[i].levels[1].rooms[1].name_room) */
+            }
+            this.hotel=this.hotels[0];
+            console.log(this.hotel)
+            this.fillLevels();
+       })
+
+ 
+       
     }
 
+    fillLevels() {
+        for(let i=0; i<this.temp.hotels.length; i++){
+            if(this.temp.hotels[i].name_hotel == this.hotel){
+                for(let j=0; j<this.temp.hotels[i].levels.length; j++){
+
+                    this.levels[j] = this.temp.hotels[i].levels[j].name_level
+                }
+                break
+            }
+        }
+    }
+/*
+    fillRooms() {
+
+        for(let i=0; i< ; i++){
+            
+        }
+    } */
 }
 
 
