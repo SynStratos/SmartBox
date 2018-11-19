@@ -9,6 +9,14 @@
 
 <ion-content padding style="background: none transparent;">
 
+    <button ion-button (click)= "qr_scanner()">Start Scan</button>
+    
+    <div *ngIf="id">
+        <ion-item>
+            <p>{{id.text}}</p>
+        </ion-item>
+            
+    </div>
     <ion-item>
         
         <ion-label>Hotel</ion-label>
@@ -19,29 +27,29 @@
     </ion-item>
 
     
-       <div *ngIf="show_level">
-            <div *ngIf="levels_ | async; else loading; let livelli">
-                <ion-item >
-                <ion-label>Level</ion-label>
-                <ion-select [(ngModel)]="level" >
-                <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level); show_rooms()">{{item.name_level}}</ion-option>
-                </ion-select>
-            </ion-item>
-            </div>
+    <div *ngIf="show_level">
+        <div *ngIf="levels_ | async; else loading; let livelli">
+            <ion-item >
+            <ion-label>Level</ion-label>
+            <ion-select [(ngModel)]="level" >
+            <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level); show_rooms()">{{item.name_level}}</ion-option>
+            </ion-select>
+        </ion-item>
         </div>
+    </div>
    
 
     
-        <div fixed *ngIf="show_room">
-            <div fixed *ngIf="rooms_ | async; else loading; let camere">
-                <ion-item>
-                <ion-label>Room</ion-label>
-                <ion-select [(ngModel)]="room">
-                <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>
-                </ion-select>
-            </ion-item>
-            </div>
+    <div *ngIf="show_room">
+        <div *ngIf="rooms_ | async; else loading; let camere">
+            <ion-item>
+            <ion-label>Room</ion-label>
+            <ion-select [(ngModel)]="room">
+            <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>
+            </ion-select>
+        </ion-item>
         </div>
+    </div>
 
 
     <ng-template #loading>

@@ -3,6 +3,8 @@ import {Component} from '@angular/core';
 import {HTTP} from '@ionic-native/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
+import { QRScanner, QRScannerStatus} from '@ionic-native/qr-scanner';
+
 
 @Component({
 selector: 'page-addsb',
@@ -15,6 +17,7 @@ export class AddSbPage {
     public show_room = false;
 
     public it
+    public id
     public room
     public level
     public hotel
@@ -30,28 +33,34 @@ export class AddSbPage {
     public rooms_: Observable < any[] >
 
 
-    constructor(public navctrl: NavController, public http: HTTP) {
+    constructor(public qrScanner: QRScanner, public navctrl: NavController, public http: HTTP) {
         this.loadData();
         console.log("ciao");
-       // this.qr_scanner();
+      //  this.qr_scanner();
+       
         console.log("ciao1");
+
+        
     }
 
     qr_scanner(){
-        /*
+        
         this.qrScanner.prepare()
         .then((status: QRScannerStatus) => {
             if (status.authorized) {
             // camera permission was granted
             console.log("permessi ok");
-
-
+            window.document.querySelector('ion-app').classList.add('transparentBody');
+            
+            this.qrScanner.useFrontCamera();
+            this.qrScanner.show();
             // start scanning
             let scanSub = this.qrScanner.scan().subscribe((text: string) => {
                 console.log('Scanned something', text);
-
-                //this.qrScanner.hide(); // hide camera preview
+                this.id = text;
+                this.qrScanner.hide(); // hide camera preview
                 scanSub.unsubscribe(); // stop scanning
+
             });
 
             } else if (status.denied) {
@@ -65,7 +74,7 @@ export class AddSbPage {
             // permission was denied, but not permanently. You can ask for permission again at a later time.
             }
         })
-        .catch((e: any) => console.log('Error is', e));*/
+        .catch((e: any) => console.log('Error is', e));
     }
 
     //Funzioni utili per la visualizzazione

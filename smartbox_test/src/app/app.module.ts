@@ -1,3 +1,4 @@
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -40,6 +41,7 @@ import { HTTP } from '@ionic-native/http';
     HttpClient,
     HTTP,
     SplashScreen,
+    QRScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
