@@ -212,14 +212,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-qrscanner.QRScanner",
-    "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
-    "pluginId": "cordova-plugin-qrscanner",
-    "clobbers": [
-      "QRScanner"
-    ]
-  },
-  {
     "id": "cordova-plugin-x-toast.Toast",
     "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
     "pluginId": "cordova-plugin-x-toast",
@@ -300,19 +292,11 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-android-permissions.Permissions",
-    "file": "plugins/cordova-plugin-android-permissions/www/permissions.js",
-    "pluginId": "cordova-plugin-android-permissions",
+    "id": "cordova-plugin-qrscanner.QRScanner",
+    "file": "plugins/cordova-plugin-qrscanner/www/www.min.js",
+    "pluginId": "cordova-plugin-qrscanner",
     "clobbers": [
-      "cordova.plugins.permissions"
-    ]
-  },
-  {
-    "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-    "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-    "pluginId": "phonegap-plugin-barcodescanner",
-    "clobbers": [
-      "cordova.plugins.barcodeScanner"
+      "QRScanner"
     ]
   }
 ];
@@ -321,7 +305,6 @@ module.exports.metadata =
 {
   "cordova-plugin-file": "6.0.1",
   "cordova-plugin-advanced-http": "2.0.1",
-  "cordova-plugin-qrscanner": "2.6.0",
   "cordova-plugin-x-toast": "2.7.2",
   "cordova-plugin-whitelist": "1.3.3",
   "cordova-plugin-statusbar": "2.4.2",
@@ -331,8 +314,7 @@ module.exports.metadata =
   "cordova-plugin-ionic-keyboard": "2.1.3",
   "cordova-plugin-ios-camera-permissions": "1.2.0",
   "cordova-plugin-camera": "4.0.3",
-  "cordova-plugin-android-permissions": "1.0.0",
-  "phonegap-plugin-barcodescanner": "8.0.0"
+  "cordova-plugin-qrscanner": "2.6.0"
 };
 // BOTTOM OF METADATA
 });

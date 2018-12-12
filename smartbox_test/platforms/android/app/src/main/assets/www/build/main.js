@@ -40,7 +40,7 @@ webpackEmptyAsyncContext.id = 156;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,7 +58,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding style="background: none transparent;">\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    Nocera ti amo \n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    Nocera ti amo \n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], HomePage);
@@ -75,7 +75,7 @@ var HomePage = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common_http__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -109,7 +109,7 @@ var ListPage = /** @class */ (function () {
     };
     ListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n    \n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/list/list.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/pages/list/list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n    \n    </button>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/pages/list/list.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__angular_common_http__["a" /* HttpClient */]])
     ], ListPage);
@@ -125,14 +125,13 @@ var ListPage = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddSbPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_http__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_qr_scanner__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__ = __webpack_require__(113);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -147,38 +146,89 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var AddSbPage = /** @class */ (function () {
-    function AddSbPage(qrScanner, navctrl, http) {
+    function AddSbPage(qrScanner, http) {
         this.qrScanner = qrScanner;
-        this.navctrl = navctrl;
         this.http = http;
-        this.show_level = false;
-        this.show_room = false;
         this.hotels = [];
         this.levels = [];
         this.rooms = [];
+        /*
+        Flusso del programma:
+          -Prelievo file JSON
+          -se (disponibile && validato):
+            -vero:
+              -> Viene mostrato il bottone per scansionare QRcode + tasti indietro (TODO)
+                -> QRcode non trovato -> Telecamera sempre in run
+                -> QRcode trovato:
+                  -> Viene mostrato:
+                    -> Label con ID scansionato
+                    -> Menu a tendina per scegliere hotel, piano, etc
+            -falso:
+              -> A video viene mostrato un file di errore "bla bla ... contattare amministratore"
+         */
         this.loadData();
-        console.log("ciao");
-        //  this.qr_scanner();
-        console.log("ciao1");
     }
+    //Funzione prelievo dati dal server (caricamento file JSON)
+    //+ validazione
+    AddSbPage.prototype.loadData = function () {
+        var _this = this;
+        //URL del file JSON
+        var url = 'http://progettoftp.altervista.org/pepe.json';
+        //richiesta http
+        this.http.get(url, {}, {})
+            .then(function (data) {
+            //validazione del file -> validazione JSON
+            try {
+                _this.temp = JSON.parse(data.data); //test error -> passare "b"
+            }
+            catch (e) {
+                _this.error = "Errore nel recupero dei dati dal server.Possibili cause:\r\n\t-Mancata connessione ad internet\n\t-Formato del file scaricato dal server non corretto.\n\nCONTATTARE L'AMMINISTRATORE DI RETE.\n\n\nErrore specifico: " + e.message;
+                console.log(_this.error);
+                //display image error
+                _this.toggle_div("display_error", "enable");
+            }
+            //Validation del file JSON ha avuto successo!
+            console.log("Loading dei dati avvenuto con successo.");
+            //mostro il pulsante per scansionare
+            _this.toggle_div("show_button_qrscan", "enable");
+            //validazione OK -> TODO: spostare in qr_scanner()?
+            for (var i = 0; i < _this.temp.hotels.length; i++) {
+                _this.hotels[i] = _this.temp.hotels[i].name_hotel;
+            }
+        });
+    };
+    //Funzione scansione QRCode
     AddSbPage.prototype.qr_scanner = function () {
         var _this = this;
         this.qrScanner.prepare()
             .then(function (status) {
             if (status.authorized) {
-                // camera permission was granted
-                console.log("permessi ok");
-                window.document.querySelector('ion-app').classList.add('transparentBody');
-                _this.qrScanner.useFrontCamera();
-                _this.qrScanner.show();
-                // start scanning
+                //camera permission was granted
+                console.log("Autorizzazione  QRCode OK!");
+                /*
+                Nascondo tutti i pulsanti -> fotocamera full screen
+                In realtà:
+                  -Al primo avvio è sufficiente solo nascondere il pulsante per il QRScan
+                  -Però nascondo tutti gli altri per inglobare la casistica in cui il tasto QRScan è ripremuto dopo avere selezionato qualche hotel/piano/stanza
+                  */
+                _this.toggle_div("show_button_qrscan", "disable");
+                _this.toggle_div("show_hotel", "disable");
+                _this.toggle_div("show_level", "disable");
+                _this.toggle_div("show_room", "disable");
+                _this.toggle_div("show_button_send_data", "disable");
+                //mostro fotocamera
+                _this.qrScanner.show(); //workaround
+                _this.showCamera();
                 var scanSub_1 = _this.qrScanner.scan().subscribe(function (text) {
-                    console.log('Scanned something', text);
-                    _this.id = text;
-                    _this.qrScanner.hide(); // hide camera preview
+                    //nascondo fotocamera
                     scanSub_1.unsubscribe(); // stop scanning
+                    _this.hideCamera(); //workaround
+                    _this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
+                    //in "text" ho i dati prelevati dal qrcode -> devo gestirli
+                    _this.text = text;
+                    console.log('Scanned something', text);
+                    _this.toggle_div("show_hotel", "enable");
                 });
             }
             else if (status.denied) {
@@ -194,53 +244,82 @@ var AddSbPage = /** @class */ (function () {
         })
             .catch(function (e) { return console.log('Error is', e); });
     };
-    //Funzioni utili per la visualizzazione
-    AddSbPage.prototype.show_levels = function () {
-        this.show_level = true;
+    AddSbPage.prototype.send_data = function () {
+        console.log("Invio dati al server");
     };
-    AddSbPage.prototype.show_rooms = function () {
-        this.show_room = true;
-    };
-    AddSbPage.prototype.loadData = function () {
-        var _this = this;
-        var url = 'http://progettoftp.altervista.org/pepe.json';
-        this.http.get(url, {}, {})
-            .then(function (data) {
-            _this.temp = JSON.parse(data.data);
-            for (var i = 0; i < _this.temp.hotels.length; i++) {
-                _this.hotels[i] = _this.temp.hotels[i].name_hotel;
+    /*------------------FUNZIONI UTILI HTML------------------*/
+    /*
+    Funzione che accetta 2 parametri:
+      -name: nome del div da mostrare/nascondere/switchare
+      -option:
+        -"enable" -> mostra il div nella pagina html
+        -"disable" -> nasconde il div nella pagine html
+        -"toggle" -> mostra/nasconde a seconda che il div sia nascosto/mostrato
+     */
+    AddSbPage.prototype.toggle_div = function (name, option) {
+        var html_error = document.getElementById(name);
+        if (option == "toggle") {
+            if (html_error.style.display === "none") {
+                html_error.style.display = "block";
             }
-        });
-    };
-    AddSbPage.prototype.fillLevels = function (luca) {
-        this.levels = [];
-        for (var i = 0; i < this.temp.hotels.length; i++) {
-            if (this.temp.hotels[i].name_hotel == luca) {
-                for (var j = 0; j < this.temp.hotels[i].levels.length; j++) {
-                    this.levels[j] = this.temp.hotels[i].levels[j]; //.name_level
-                }
-                break;
+            else {
+                html_error.style.display = "none";
             }
         }
-        this.levels_ = __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].of(this.levels);
+        else if (option == "enable") {
+            html_error.style.display = "block";
+        }
+        else if (option == "disable") {
+            html_error.style.display = "none";
+        }
     };
-    AddSbPage.prototype.fillRooms = function (dio) {
+    //output: in this.levels_ ho solo i "piani" relativi all'hotel specificato "name_hotel"
+    AddSbPage.prototype.fillLevels = function (name_hotel) {
+        this.levels = [];
+        for (var i = 0; i < this.temp.hotels.length; i++) {
+            if (this.temp.hotels[i].name_hotel == name_hotel) {
+                for (var j = 0; j < this.temp.hotels[i].levels.length; j++) {
+                    this.levels[j] = this.temp.hotels[i].levels[j]; //.name_level //ogni livello di questi (hotel con nome name_hotel) li inserisco nel vettore this.levels
+                }
+                break; //non ci sono due hotel con lo stesso nome
+            }
+        }
+        this.levels_ = __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(this.levels);
+    };
+    //output: in this.rooms_ ho solo le "stanze" relative al piano specificato "name_floor"
+    AddSbPage.prototype.fillRooms = function (name_floor) {
+        //stessa cosa della funzione fillLevels
         this.rooms = [];
         for (var i = 0; i < this.levels.length; i++) {
-            if (this.levels[i].name_level == dio) {
+            if (this.levels[i].name_level == name_floor) {
                 for (var j = 0; j < this.levels[i].rooms.length; j++) {
                     this.rooms[j] = this.levels[i].rooms[j].name_room;
                 }
                 break;
             }
         }
-        this.rooms_ = __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].of(this.rooms);
+        this.rooms_ = __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(this.rooms); //rooms_ diventa "osservatore" di this.rooms -> Quindi ogni volta che cambia "rooms" cambia "room_s"
+    };
+    /*------------------FUNZIONI WORKAROUND------------------*/
+    /*
+  -https://forum.ionicframework.com/t/qr-scanner-seems-to-be-working-in-the-background-but-doesnt-display-a-preview-when-calling-show/99822/6
+  -(altro possibile workaround: https://github.com/ionic-team/ionic-native/issues/1812)
+  -workaround -> Metodo show() ufficiale non funziona
+  -qrScanner.show() non elimina lo sfondo dell'app e quindi tutto viene avviato senza errori ma il qrscanner è in run "sotto" l'applicazione
+  -questo workaround non fa altro che settare lo sfondo dell'app trasparente (showCamera()) e lo ripristina (hideCamera())
+  -Tecnicamente aggiungono e rimuovo una classe CSS che setta/rimuove lo sfondo a trasparente
+  */
+    AddSbPage.prototype.showCamera = function () {
+        window.document.querySelector('ion-app').classList.add('cameraView');
+    };
+    AddSbPage.prototype.hideCamera = function () {
+        window.document.querySelector('ion-app').classList.remove('cameraView');
     };
     AddSbPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-addsb',template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n    <ion-navbar>\n        <ion-title>\n                <h1>APP MARINA</h1>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content padding style="background: none transparent;">\n\n    <button ion-button (click)= "qr_scanner()">Start Scan</button>\n    \n    <div *ngIf="id">\n        <ion-item>\n            <p>{{id.text}}</p>\n        </ion-item>\n            \n    </div>\n    <ion-item>\n        \n        <ion-label>Hotel</ion-label>\n        <ion-select [(ngModel)]="hotel" >\n        <ion-option *ngFor="let item of hotels" [value]="item" (ionSelect)="fillLevels(item); show_levels()">{{item}}</ion-option>\n        </ion-select>\n        \n    </ion-item>\n\n    \n    <div *ngIf="show_level">\n        <div *ngIf="levels_ | async; else loading; let livelli">\n            <ion-item >\n            <ion-label>Level</ion-label>\n            <ion-select [(ngModel)]="level" >\n            <ion-option *ngFor="let item of livelli" [value]="item.name_level" (ionSelect)="fillRooms(item.name_level); show_rooms()">{{item.name_level}}</ion-option>\n            </ion-select>\n        </ion-item>\n        </div>\n    </div>\n   \n\n    \n    <div *ngIf="show_room">\n        <div *ngIf="rooms_ | async; else loading; let camere">\n            <ion-item>\n            <ion-label>Room</ion-label>\n            <ion-select [(ngModel)]="room">\n            <ion-option *ngFor="let item of camere" [value]="item">{{item}}</ion-option>\n            </ion-select>\n        </ion-item>\n        </div>\n    </div>\n\n\n    <ng-template #loading>\n    Loading your things...\n    </ng-template>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-addsb',template:/*ion-inline-start:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      <h1>CENSIMENTO SMARTBOX</h1>\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding style="background: none transparent;">\n\n  <!-- Div contenente il possibile errore in fase di parsing -->\n  <div id="display_error" style="display: none;">\n    <img src="../../assets/imgs/error.png" width="100" height="100">\n    <br>\n    {{error}}\n  </div>\n\n\n  <!--\n    Pagina principale che consta di:\n      -Pulsante per avviare la scansione QRCode\n      -Menu tendina per gli hotel\n      -Menu tendina per i piani del relativo hotel\n      -Menu tendina per le stanze del relativo piano\n      -Pulsante per inviare i dati al server = dato prelevato dal QRCode + dati su hotel, piano, stanza\n  -->\n  <div id="show_button_qrscan" style="display: none;" text-center="">\n    <button ion-button (click)="qr_scanner()">Scan for QRCode</button>\n  </div>\n\n  <div id="show_hotel" style="display: none;">\n    <ion-item>\n      <ion-label>Hotel</ion-label>\n      <ion-select [(ngModel)]="hotel">\n        <ion-option *ngFor="let item of hotels" [value]="item"\n                    (ionSelect)="fillLevels(item); toggle_div(\'show_level\',\'enable\')">{{item}}</ion-option>\n      </ion-select>\n    </ion-item>\n  </div>\n\n\n  <div id="show_level" style="display: none;">\n    <div *ngIf="levels_ | async; else loading; let livelli">\n      <ion-item>\n        <ion-label>Level</ion-label>\n        <ion-select [(ngModel)]="level">\n          <ion-option *ngFor="let item of livelli" [value]="item.name_level"\n                      (ionSelect)="fillRooms(item.name_level); toggle_div(\'show_room\',\'enable\')">{{item.name_level}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_room" style="display: none;">\n    <div *ngIf="rooms_ | async; else loading; let camere">\n      <ion-item>\n        <ion-label>Room</ion-label>\n        <ion-select [(ngModel)]="room">\n          <ion-option *ngFor="let item of camere" [value]="item"\n                      (ionSelect)="toggle_div(\'show_button_send_data\',\'enable\')">{{item}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_button_send_data" style="display: none;" text-center="">\n    <button ion-button (click)="send_data()">Send data to server</button>\n  </div>\n\n\n  <ng-template #loading>\n    Loading...\n  </ng-template>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__ionic_native_qr_scanner__["a" /* QRScanner */], __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_http__["a" /* HTTP */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__["a" /* QRScanner */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__["a" /* HTTP */]])
     ], AddSbPage);
     return AddSbPage;
 }());
@@ -271,7 +350,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(199);
@@ -347,7 +426,7 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(199);
@@ -402,7 +481,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/luca/SmartBox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding style="background: none transparent;">\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/home/luca/SmartBox/smartbox_test/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"/home/sivlab/IdeaProjects/SmartBox/smartbox_test/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
