@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>SET OPERATOR</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+  <div id="show_id_operatore" style="display: none;">
+
+    <ion-item>
+      <ion-label color="primary">Set ID Operator</ion-label>
+      <!--Con l'attributo type="number" si forza l'utente ad inserire solo numeri-->
+      <ion-input [(ngModel)]="check_id_idoperator" type="number" placeholder="New ID Operator"></ion-input>
+    </ion-item>
+
+    <ion-item text-center="">
+      <button ion-button (click)="set_id_operator()">Set new ID</button><br><br><br>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>ID Operatore corrente: {{id_operator}}</ion-label>
+    </ion-item>
+  </div>
+
+
+
+
+</ion-content>

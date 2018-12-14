@@ -8,20 +8,21 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { id_operator_page } from '../pages/id_operator/id_operator';
 import { AddSbPage } from '../pages/addsb/addsb';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule} from '@angular/common/http';
 import { HTTP } from '@ionic-native/http';
+import { NativeStorage } from '@ionic-native/native-storage';
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
+    id_operator_page,
     AddSbPage,
   ],
   imports: [
@@ -33,7 +34,7 @@ import { HTTP } from '@ionic-native/http';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
+    id_operator_page,
     AddSbPage,
   ],
   providers: [
@@ -42,6 +43,7 @@ import { HTTP } from '@ionic-native/http';
     HTTP,
     SplashScreen,
     QRScanner,
+    NativeStorage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

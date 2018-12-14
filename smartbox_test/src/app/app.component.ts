@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { id_operator_page } from '../pages/id_operator/id_operator';
 import { AddSbPage } from '../pages/addsb/addsb'
 
 
@@ -25,7 +25,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Add SB', component: AddSbPage },
-      { title: 'List', component: ListPage },
+      { title: 'Set Operator', component: id_operator_page },
     ];
 
   }

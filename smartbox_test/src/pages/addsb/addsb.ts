@@ -1,9 +1,9 @@
-import {NavController} from 'ionic-angular';
 import {Component} from '@angular/core';
 import {HTTP} from '@ionic-native/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
-import {QRScanner, QRScannerStatus} from '@ionic-native/qr-scanner';
+import {QRScanner, QRScannerStatus} from '@ionic-native/qr-scanner'; //scansione qrcode
+
 
 
 @Component({
@@ -62,28 +62,35 @@ export class AddSbPage {
 
         //validazione del file -> validazione JSON
         try {
-          this.temp = JSON.parse(data.data); //test error -> passare "b"
+          this.temp = JSON.parse(data.data); //test error -> passare "b" data.data
+
+
+          //Validation del file JSON ha avuto successo!
+          console.log("Loading dei dati avvenuto con successo.");
+
+          //validazione OK -> Carico i dati in hotel
+          for (let i = 0; i < this.temp.hotels.length; i++) {
+            this.hotels[i] = this.temp.hotels[i].name_hotel
+          }
+
+          //mostro il pulsante per scansionare
+          this.toggle_div("show_button_qrscan", "enable");
+
         } catch (e) {
-          this.error = "Errore nel recupero dei dati dal server.Possibili cause:\r\n\t-Mancata connessione ad internet\n\t-Formato del file scaricato dal server non corretto.\n\nCONTATTARE L'AMMINISTRATORE DI RETE.\n\n\nErrore specifico: " + e.message;
+          this.error = "Errore nel recupero dei dati dal server.Possibili cause:\n\t-Formato del file scaricato dal server non corretto\t\t\n\nErrore specifico: " + e.message;
           console.log(this.error);
           //display image error
           this.toggle_div("display_error", "enable");
         }
-
-        //Validation del file JSON ha avuto successo!
-        console.log("Loading dei dati avvenuto con successo.");
-
-        //mostro il pulsante per scansionare
-        this.toggle_div("show_button_qrscan", "enable");
-
-
-        //validazione OK -> TODO: spostare in qr_scanner()?
-        for (let i = 0; i < this.temp.hotels.length; i++) {
-          this.hotels[i] = this.temp.hotels[i].name_hotel
-        }
-
       })
+      .catch(errore =>{
+        this.error = "Errore nel recupero dei dati dal server.Possibili cause:\t\n-Manca connessione\t\n-File mancante sul server\t\t\n\nErrore specifico: " + errore.toString();
+        console.log(this.error);
+        this.toggle_div("display_error", "enable");
+      } )
+
   }
+
 
   //Funzione scansione QRCode
   qr_scanner() {
@@ -182,7 +189,7 @@ export class AddSbPage {
         break //non ci sono due hotel con lo stesso nome
       }
     }
-    this.levels_ = Observable.of(this.levels)
+    this.levels_ = Observable.of(this.levels);
   }
 
   //output: in this.rooms_ ho solo le "stanze" relative al piano specificato "name_floor"
