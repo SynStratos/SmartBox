@@ -11,6 +11,7 @@ import { AddSbPage } from '../pages/addsb/addsb'
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
@@ -39,9 +40,21 @@ export class MyApp {
     });
   }
 
+/*  openPage(page) {
+    // Reset the content nav to have just this page
+    // we wouldn't want the back button to show in this scenario
+    //this.nav.setRoot(page.component);
+  }*/
+
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
-    this.nav.setRoot(page.component);
+    if(page.component == HomePage){
+
+      //se non ci fosse if-else e solo questo comando, non si potrebbe usare il pulsante "back"
+      this.nav.setRoot(HomePage);
+    } else {
+      this.nav.push(page.component);
+    }
   }
 }

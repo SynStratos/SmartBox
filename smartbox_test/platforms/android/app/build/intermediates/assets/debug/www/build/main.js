@@ -40,7 +40,7 @@ webpackEmptyAsyncContext.id = 155;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -58,7 +58,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    Nocera ti amo \n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
@@ -76,7 +76,7 @@ var HomePage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return id_operator_page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_native_storage__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -93,20 +93,22 @@ var id_operator_page = /** @class */ (function () {
     function id_operator_page(nativeStorage, alertCtrl) {
         this.nativeStorage = nativeStorage;
         this.alertCtrl = alertCtrl;
-        //this.id_operator_ = Observable.of(this.id_operator);
         this.show_id_operator();
     }
     id_operator_page.prototype.show_id_operator = function () {
         var _this = this;
         this.nativeStorage.getItem('id_operator')
             .then(function (data) {
-            console.log("Prelevato l'id_operatore precedentemente memorizzato: " + data);
-            //in "data" ho l'id_operatore
-            _this.id_operator = data;
-            //mostro a video
-            _this.toggle_div("show_id_operatore", "enable");
+            //Dato prelevato con successo
+            console.log("Prelevato l'id_operatore precedentemente memorizzato: " + data); //debug
+            _this.id_operator = data; //in "data" ho l'id_operatore
+            _this.toggle_div("show_id_operatore", "enable"); //mostro a video
         }, function (error) {
-            console.error("Errore nel prelevare il dato: " + error.toString());
+            //Dato non prelevato con successo
+            console.error("Errore nel prelevare il dato: " + error.toString()); //debug
+            // infatti la prima volta (in assoluto) che avvio l'app non preleverò il dato con successo (visto che non esiste)
+            // quindi devo dare la possibilità di inserirlo
+            _this.toggle_div("show_id_operatore", "enable"); //mostro a video
         });
     };
     /*------------------FUNZIONI UTILI HTML------------------*/
@@ -136,35 +138,41 @@ var id_operator_page = /** @class */ (function () {
           -Compreso tra 1 e 999 -> <999
         */
         if (!isNaN(this.check_id_idoperator)
-            && Number.isInteger(parseInt(this.check_id_idoperator))
+            && Number.isInteger(Number(this.check_id_idoperator)) //uso Number() altrimenti il controllo fallisce, essendo "this.check_id_idoperator" una stringa
             && parseInt(this.check_id_idoperator) >= 1
             && parseInt(this.check_id_idoperator) <= 999) {
             //Controlli superati
             //Setto l'id in memoria
             this.nativeStorage.setItem('id_operator', this.check_id_idoperator)
-                .then(function () { return console.log('Stored item!'); }, function (error) { return console.error('Error storing item', error); });
+                .then(function () { return console.log('Stored item!'); }, function (error) {
+                console.error('Error storing item', error);
+                _this.alert("Error storing item", error);
+            });
             //Aggiorno this.is_operator così nella pagina HTML si aggiorna il valore
             this.nativeStorage.getItem('id_operator')
                 .then(function (data) {
                 _this.id_operator = data;
             }, function (error) {
                 console.error("Errore nel prelevare il dato: " + error.toString());
+                _this.alert("Errore nel prelevare il dato", error.toString());
             });
         }
         else {
-            //L'id inserito dall'utente non soddisfa tutti i controlli
-            var alert_1 = this.alertCtrl.create({
-                title: 'Error in ID',
-                subTitle: 'The ID must be a NUMBER. (min:1, max: 999)',
-                buttons: ['Dismiss']
-            });
-            alert_1.present();
+            this.alert("Error in ID", "The ID must be a NUMBER. (min:1, max: 999)");
             console.log('Error in ID. The ID must be a number. (min:1, max: 999). Valore immesso:' + this.check_id_idoperator);
         }
     };
+    id_operator_page.prototype.alert = function (titolo, sottotitolo) {
+        var alert = this.alertCtrl.create({
+            title: titolo,
+            subTitle: sottotitolo,
+            buttons: ['Dismiss']
+        });
+        alert.present();
+    };
     id_operator_page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/id_operator/id_operator.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SET OPERATOR</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n\n  <div id="show_id_operatore" style="display: none;">\n\n    <ion-item>\n      <ion-label color="primary">Set ID Operator</ion-label>\n      <!--Con l\'attributo type="number" si forza l\'utente ad inserire solo numeri-->\n      <ion-input [(ngModel)]="check_id_idoperator" type="number" placeholder="New ID Operator"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <button ion-button (click)="set_id_operator()">Set new ID</button><br><br><br>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>ID Operatore corrente: {{id_operator}}</ion-label>\n    </ion-item>\n  </div>\n\n\n\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/id_operator/id_operator.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/id_operator/id_operator.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SET OPERATOR</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n\n  <div id="show_id_operatore" style="display: none;">\n\n    <ion-item>\n      <ion-label color="primary">Set ID Operator</ion-label>\n      <!--Con l\'attributo type="number" si forza l\'utente ad inserire solo numeri-->\n      <ion-input [(ngModel)]="check_id_idoperator" type="number" placeholder="New ID Operator"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <button ion-button (click)="set_id_operator()">Set new ID</button><br><br><br>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>ID Operatore corrente: {{id_operator}}</ion-label>\n    </ion-item>\n  </div>\n\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/id_operator/id_operator.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
     ], id_operator_page);
@@ -187,6 +195,7 @@ var id_operator_page = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(279);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(35);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -201,8 +210,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
  //scansione qrcode
+
 var AddSbPage = /** @class */ (function () {
-    function AddSbPage(qrScanner, http) {
+    function AddSbPage(navCtrl, qrScanner, http) {
+        this.navCtrl = navCtrl;
         this.qrScanner = qrScanner;
         this.http = http;
         this.hotels = [];
@@ -278,6 +289,7 @@ var AddSbPage = /** @class */ (function () {
                 _this.toggle_div("show_room", "disable");
                 _this.toggle_div("show_button_send_data", "disable");
                 //mostro fotocamera
+                _this.qrScanner.useBackCamera();
                 _this.qrScanner.show(); //workaround
                 _this.showCamera();
                 var scanSub_1 = _this.qrScanner.scan().subscribe(function (text) {
@@ -375,11 +387,19 @@ var AddSbPage = /** @class */ (function () {
     AddSbPage.prototype.hideCamera = function () {
         window.document.querySelector('ion-app').classList.remove('cameraView');
     };
+    /*-----------------FUNZIONI USCITA-----------------------*/
+    AddSbPage.prototype.ionViewWillLeave = function () {
+        //Dal momento che la trasparenza è stata impostata manualmente e che l'utente può non portare a termine la scansione
+        //ad esempio uscendo dal qrcode o cliccando il tasto "back" allora lo sfondo (trasparenza) va ripristinato
+        //altrimenti nelle altre pagine continua a vedersi come sfondo le immagini riprese dalla fotocamera
+        console.log("Uscendo dalla pagina \"addsb\" -> Ripristino trasparenza sfondo");
+        this.hideCamera();
+    };
     AddSbPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-addsb',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      CENSIMENTO SMARTBOX\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding style="background: none transparent;">\n\n  <!-- Div contenente il possibile errore in fase di parsing -->\n  <div id="display_error" style="display: none;" text-center="">\n    <img src="../../assets/imgs/error.png" width="100" height="100">\n    <br>\n    {{error}}\n  </div>\n\n\n  <!--\n    Pagina principale che consta di:\n      -Pulsante per avviare la scansione QRCode\n      -Menu tendina per gli hotel\n      -Menu tendina per i piani del relativo hotel\n      -Menu tendina per le stanze del relativo piano\n      -Pulsante per inviare i dati al server = dato prelevato dal QRCode + dati su hotel, piano, stanza\n  -->\n  <div id="show_button_qrscan" style="display: none;" text-center="">\n    <button ion-button (click)="qr_scanner()">Scan for QRCode</button>\n  </div>\n\n  <div id="show_hotel" style="display: none;">\n    <ion-item>\n      <ion-label>Hotel</ion-label>\n      <ion-select [(ngModel)]="hotel">\n        <ion-option *ngFor="let item of hotels" [value]="item"\n                    (ionSelect)="fillLevels(item); toggle_div(\'show_level\',\'enable\')">{{item}}</ion-option>\n      </ion-select>\n    </ion-item>\n  </div>\n\n\n  <div id="show_level" style="display: none;">\n    <div *ngIf="levels_ | async; else loading; let livelli">\n      <ion-item>\n        <ion-label>Level</ion-label>\n        <ion-select [(ngModel)]="level">\n          <ion-option *ngFor="let item of livelli" [value]="item.name_level"\n                      (ionSelect)="fillRooms(item.name_level); toggle_div(\'show_room\',\'enable\')">{{item.name_level}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_room" style="display: none;">\n    <div *ngIf="rooms_ | async; else loading; let camere">\n      <ion-item>\n        <ion-label>Room</ion-label>\n        <ion-select [(ngModel)]="room">\n          <ion-option *ngFor="let item of camere" [value]="item"\n                      (ionSelect)="toggle_div(\'show_button_send_data\',\'enable\')">{{item}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_button_send_data" style="display: none;" text-center="">\n    <button ion-button (click)="send_data()">Send data to server</button>\n  </div>\n\n\n  <ng-template #loading>\n    Loading...\n  </ng-template>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__["a" /* QRScanner */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__["a" /* HTTP */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__["a" /* QRScanner */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__["a" /* HTTP */]])
     ], AddSbPage);
     return AddSbPage;
 }());
@@ -410,7 +430,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(112);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(195);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(199);
@@ -489,7 +509,7 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(199);
@@ -534,17 +554,27 @@ var MyApp = /** @class */ (function () {
             _this.splashScreen.hide();
         });
     };
+    /*  openPage(page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        //this.nav.setRoot(page.component);
+      }*/
     MyApp.prototype.openPage = function (page) {
         // Reset the content nav to have just this page
         // we wouldn't want the back button to show in this scenario
-        this.nav.setRoot(page.component);
+        if (page.component == __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */]) {
+            this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */]);
+        }
+        else {
+            this.nav.push(page.component);
+        }
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>\n\n<!--<ion-nav [root]="rootPage"></ion-nav>-->\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

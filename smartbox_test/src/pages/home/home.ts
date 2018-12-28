@@ -9,9 +9,6 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
-
-   
-
   }
 
 }

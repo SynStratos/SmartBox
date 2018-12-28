@@ -3,6 +3,7 @@ import {HTTP} from '@ionic-native/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import {QRScanner, QRScannerStatus} from '@ionic-native/qr-scanner'; //scansione qrcode
+import { AlertController } from 'ionic-angular';
 
 
 
@@ -31,7 +32,7 @@ export class AddSbPage {
   public rooms_: Observable<any[]>;
 
 
-  constructor(public qrScanner: QRScanner, public http: HTTP) {
+  constructor(private alertCtrl: AlertController, public qrScanner: QRScanner, public http: HTTP) {
     /*
     Flusso del programma:
       -Prelievo file JSON
@@ -116,6 +117,7 @@ export class AddSbPage {
 
 
           //mostro fotocamera
+          this.qrScanner.useBackCamera();
           this.qrScanner.show(); //workaround
           this.showCamera();
 
@@ -123,13 +125,23 @@ export class AddSbPage {
             //nascondo fotocamera
             scanSub.unsubscribe(); // stop scanning
             this.hideCamera(); //workaround
-            this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
 
+            //in "text" ho i dati scansionati
+            //validazione! -> Numero compreso tra 1 e 999
+            if(this.check_qr_code(text)){
 
-            //in "text" ho i dati prelevati dal qrcode -> devo gestirli
-            this.text = text;
-            console.log('Scanned something', text);
-            this.toggle_div("show_hotel", "enable");
+              //validazione dati scansioni: OK
+              this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
+              console.log('Scanned something', text);
+              this.text = text;
+              this.toggle_div("show_hotel", "enable");
+            }
+            else{
+              //validazione dati scansioni: NO
+              this.alert("Errore dati scansionati","Il QRCode associato alla Smartbox deve essere un numero compreso tra 1 e 999.");
+              this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
+            }
+
           });
 
         } else if (status.denied) {
@@ -147,6 +159,20 @@ export class AddSbPage {
 
   send_data() {
     console.log("Invio dati al server");
+  }
+
+  //Il qrcode sulla smartbox deve essere un numero(!) compreso tra 1 e 999(!)
+  check_qr_code(scanned_text){
+    if(!isNaN(scanned_text)
+      && Number.isInteger(Number(scanned_text))
+      && parseInt(scanned_text) >= 1
+      && parseInt(scanned_text) <= 999
+    ){
+      return true;
+    }
+    else{
+      return false;
+    }
   }
 
 
@@ -208,6 +234,14 @@ export class AddSbPage {
     this.rooms_ = Observable.of(this.rooms) //rooms_ diventa "osservatore" di this.rooms -> Quindi ogni volta che cambia "rooms" cambia "room_s"
   }
 
+  alert(titolo, sottotitolo){
+    let alert = this.alertCtrl.create({
+      title: titolo,
+      subTitle: sottotitolo,
+      buttons: ['Dismiss']
+    });
+    alert.present();
+  }
 
 
 
@@ -227,5 +261,16 @@ export class AddSbPage {
 
   hideCamera() {
     (window.document.querySelector('ion-app') as HTMLElement).classList.remove('cameraView');
+  }
+
+
+  /*-----------------FUNZIONI USCITA-----------------------*/
+
+  ionViewWillLeave() {
+    //Dal momento che la trasparenza è stata impostata manualmente e che l'utente può non portare a termine la scansione
+    //ad esempio uscendo dal qrcode o cliccando il tasto "back" allora lo sfondo (trasparenza) va ripristinato
+    //altrimenti nelle altre pagine continua a vedersi come sfondo le immagini riprese dalla fotocamera
+    console.log("Uscendo dalla pagina \"addsb\" -> Ripristino trasparenza sfondo");
+    this.hideCamera();
   }
 }

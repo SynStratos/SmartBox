@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NativeStorage } from '@ionic-native/native-storage'; //memorizzazione dati storage permanente (es. id operatore)
 import { AlertController } from 'ionic-angular';
-import {Observable} from "rxjs"; //alert controlli su id operatore (solo numero)
 
 @Component({
   selector: 'page-list',
@@ -15,8 +14,6 @@ export class id_operator_page {
   public check_id_idoperator;
 
   constructor(private nativeStorage: NativeStorage, private alertCtrl: AlertController) {
-
-    //this.id_operator_ = Observable.of(this.id_operator);
     this.show_id_operator();
   }
 
@@ -36,10 +33,16 @@ export class id_operator_page {
         error => {
           //Dato non prelevato con successo
           console.error("Errore nel prelevare il dato: "+ error.toString()); //debug
+          // infatti la prima volta (in assoluto) che avvio l'app non preleverò il dato con successo (visto che non esiste)
+          // quindi devo dare la possibilità di inserirlo
+          this.toggle_div("show_id_operatore", "enable"); //mostro a video
 
         }
       )
   }
+
+
+
 
   /*------------------FUNZIONI UTILI HTML------------------*/
 
@@ -77,7 +80,10 @@ export class id_operator_page {
       this.nativeStorage.setItem('id_operator', this.check_id_idoperator)
         .then(
           () => console.log('Stored item!'),
-          error => console.error('Error storing item', error)
+          error => {
+            console.error('Error storing item', error);
+            this.alert("Error storing item", error);
+          }
         );
 
       //Aggiorno this.is_operator così nella pagina HTML si aggiorna il valore
@@ -88,21 +94,24 @@ export class id_operator_page {
           },
           error => {
             console.error("Errore nel prelevare il dato: "+ error.toString());
+            this.alert("Errore nel prelevare il dato", error.toString());
           }
         )
     }
     else{
-
-      //L'id inserito dall'utente non soddisfa tutti i controlli
-      let alert = this.alertCtrl.create({
-        title: 'Error in ID',
-        subTitle: 'The ID must be a NUMBER. (min:1, max: 999)',
-        buttons: ['Dismiss']
-      });
-      alert.present();
-
+      this.alert("Error in ID", "The ID must be a NUMBER. (min:1, max: 999)");
       console.log('Error in ID. The ID must be a number. (min:1, max: 999). Valore immesso:' + this.check_id_idoperator);
     }
   }
+
+  alert(titolo, sottotitolo){
+    let alert = this.alertCtrl.create({
+      title: titolo,
+      subTitle: sottotitolo,
+      buttons: ['Dismiss']
+    });
+    alert.present();
+  }
+
 
 }
