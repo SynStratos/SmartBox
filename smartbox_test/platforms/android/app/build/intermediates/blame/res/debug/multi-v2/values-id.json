@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
+            "outputFile": "/home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
                     "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/res/values-id/values-id.xml",

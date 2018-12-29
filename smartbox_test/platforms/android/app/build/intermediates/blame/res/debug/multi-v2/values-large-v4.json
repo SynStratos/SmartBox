@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sivlab/github/SmartBox/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "/home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/values-large/values-large.xml",

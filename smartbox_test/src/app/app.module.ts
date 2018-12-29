@@ -17,6 +17,11 @@ import { HttpClientModule} from '@angular/common/http';
 import { HTTP } from '@ionic-native/http';
 import { NativeStorage } from '@ionic-native/native-storage';
 
+//Firebase
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +34,8 @@ import { NativeStorage } from '@ionic-native/native-storage';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

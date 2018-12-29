@@ -89,5 +89,5 @@
     <plugin name="cordova-plugin-x-toast" spec="~2.7.0" />
     <plugin name="cordova-plugin-qrscanner" spec="~2.6.0" />
     <plugin name="cordova-plugin-nativestorage" spec="~2.3.2" />
-    <engine name="android" spec="^7.1.4" />
+    <engine name="android" spec="~7.1.4" />
 </widget>

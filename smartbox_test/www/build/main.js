@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 111:
+/***/ 161:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,11 +13,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 111;
+webpackEmptyAsyncContext.id = 161;
 
 /***/ }),
 
-/***/ 155:
+/***/ 209:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -30,17 +30,18 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 155;
+webpackEmptyAsyncContext.id = 209;
 
 /***/ }),
 
-/***/ 199:
+/***/ 254:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__ = __webpack_require__(255);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -52,15 +53,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl) {
+    function HomePage(navCtrl, afAuth) {
         this.navCtrl = navCtrl;
+        this.afAuth = afAuth;
+        this.login();
     }
+    HomePage.prototype.login = function () {
+        this.afAuth.auth.signInWithEmailAndPassword("operatore123@smartbox.it", "126")
+            .then(function () { return console.log("OKVAFFANCULO"); }, function (error) { return console.error('Error storing item', error); });
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_auth__["a" /* AngularFireAuth */]])
     ], HomePage);
     return HomePage;
 }());
@@ -69,14 +77,14 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 351:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return id_operator_page; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_native_storage__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_native_storage__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -172,7 +180,7 @@ var id_operator_page = /** @class */ (function () {
     };
     id_operator_page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/id_operator/id_operator.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SET OPERATOR</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n\n  <div id="show_id_operatore" style="display: none;">\n\n    <ion-item>\n      <ion-label color="primary">Set ID Operator</ion-label>\n      <!--Con l\'attributo type="number" si forza l\'utente ad inserire solo numeri-->\n      <ion-input [(ngModel)]="check_id_idoperator" type="number" placeholder="New ID Operator"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <button ion-button (click)="set_id_operator()">Set new ID</button><br><br><br>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>ID Operatore corrente: {{id_operator}}</ion-label>\n    </ion-item>\n  </div>\n\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/id_operator/id_operator.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/id_operator/id_operator.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SET OPERATOR</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n\n  <div id="show_id_operatore" style="display: none;">\n\n    <ion-item>\n      <ion-label color="primary">Set ID Operator</ion-label>\n      <!--Con l\'attributo type="number" si forza l\'utente ad inserire solo numeri-->\n      <ion-input [(ngModel)]="check_id_idoperator" type="number" placeholder="New ID Operator"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <button ion-button (click)="set_id_operator()">Set new ID</button><br><br><br>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>ID Operatore corrente: {{id_operator}}</ion-label>\n    </ion-item>\n  </div>\n\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/id_operator/id_operator.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
     ], id_operator_page);
@@ -183,19 +191,19 @@ var id_operator_page = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 202:
+/***/ 353:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddSbPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(49);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -212,8 +220,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  //scansione qrcode
 
 var AddSbPage = /** @class */ (function () {
-    function AddSbPage(navCtrl, qrScanner, http) {
-        this.navCtrl = navCtrl;
+    function AddSbPage(alertCtrl, qrScanner, http) {
+        this.alertCtrl = alertCtrl;
         this.qrScanner = qrScanner;
         this.http = http;
         this.hotels = [];
@@ -296,11 +304,20 @@ var AddSbPage = /** @class */ (function () {
                     //nascondo fotocamera
                     scanSub_1.unsubscribe(); // stop scanning
                     _this.hideCamera(); //workaround
-                    _this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
-                    //in "text" ho i dati prelevati dal qrcode -> devo gestirli
-                    _this.text = text;
-                    console.log('Scanned something', text);
-                    _this.toggle_div("show_hotel", "enable");
+                    //in "text" ho i dati scansionati
+                    //validazione! -> Numero compreso tra 1 e 999
+                    if (_this.check_qr_code(text)) {
+                        //validazione dati scansioni: OK
+                        _this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
+                        console.log('Scanned something', text);
+                        _this.text = text;
+                        _this.toggle_div("show_hotel", "enable");
+                    }
+                    else {
+                        //validazione dati scansioni: NO
+                        _this.alert("Errore dati scansionati", "Il QRCode associato alla Smartbox deve essere un numero compreso tra 1 e 999.");
+                        _this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
+                    }
                 });
             }
             else if (status.denied) {
@@ -318,6 +335,18 @@ var AddSbPage = /** @class */ (function () {
     };
     AddSbPage.prototype.send_data = function () {
         console.log("Invio dati al server");
+    };
+    //Il qrcode sulla smartbox deve essere un numero(!) compreso tra 1 e 999(!)
+    AddSbPage.prototype.check_qr_code = function (scanned_text) {
+        if (!isNaN(scanned_text)
+            && Number.isInteger(Number(scanned_text))
+            && parseInt(scanned_text) >= 1
+            && parseInt(scanned_text) <= 999) {
+            return true;
+        }
+        else {
+            return false;
+        }
     };
     /*------------------FUNZIONI UTILI HTML------------------*/
     /*
@@ -372,6 +401,14 @@ var AddSbPage = /** @class */ (function () {
         }
         this.rooms_ = __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].of(this.rooms); //rooms_ diventa "osservatore" di this.rooms -> Quindi ogni volta che cambia "rooms" cambia "room_s"
     };
+    AddSbPage.prototype.alert = function (titolo, sottotitolo) {
+        var alert = this.alertCtrl.create({
+            title: titolo,
+            subTitle: sottotitolo,
+            buttons: ['Dismiss']
+        });
+        alert.present();
+    };
     /*------------------FUNZIONI WORKAROUND------------------*/
     /*
   -https://forum.ionicframework.com/t/qr-scanner-seems-to-be-working-in-the-background-but-doesnt-display-a-preview-when-calling-show/99822/6
@@ -397,9 +434,9 @@ var AddSbPage = /** @class */ (function () {
     };
     AddSbPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-addsb',template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      CENSIMENTO SMARTBOX\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding style="background: none transparent;">\n\n  <!-- Div contenente il possibile errore in fase di parsing -->\n  <div id="display_error" style="display: none;" text-center="">\n    <img src="../../assets/imgs/error.png" width="100" height="100">\n    <br>\n    {{error}}\n  </div>\n\n\n  <!--\n    Pagina principale che consta di:\n      -Pulsante per avviare la scansione QRCode\n      -Menu tendina per gli hotel\n      -Menu tendina per i piani del relativo hotel\n      -Menu tendina per le stanze del relativo piano\n      -Pulsante per inviare i dati al server = dato prelevato dal QRCode + dati su hotel, piano, stanza\n  -->\n  <div id="show_button_qrscan" style="display: none;" text-center="">\n    <button ion-button (click)="qr_scanner()">Scan for QRCode</button>\n  </div>\n\n  <div id="show_hotel" style="display: none;">\n    <ion-item>\n      <ion-label>Hotel</ion-label>\n      <ion-select [(ngModel)]="hotel">\n        <ion-option *ngFor="let item of hotels" [value]="item"\n                    (ionSelect)="fillLevels(item); toggle_div(\'show_level\',\'enable\')">{{item}}</ion-option>\n      </ion-select>\n    </ion-item>\n  </div>\n\n\n  <div id="show_level" style="display: none;">\n    <div *ngIf="levels_ | async; else loading; let livelli">\n      <ion-item>\n        <ion-label>Level</ion-label>\n        <ion-select [(ngModel)]="level">\n          <ion-option *ngFor="let item of livelli" [value]="item.name_level"\n                      (ionSelect)="fillRooms(item.name_level); toggle_div(\'show_room\',\'enable\')">{{item.name_level}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_room" style="display: none;">\n    <div *ngIf="rooms_ | async; else loading; let camere">\n      <ion-item>\n        <ion-label>Room</ion-label>\n        <ion-select [(ngModel)]="room">\n          <ion-option *ngFor="let item of camere" [value]="item"\n                      (ionSelect)="toggle_div(\'show_button_send_data\',\'enable\')">{{item}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_button_send_data" style="display: none;" text-center="">\n    <button ion-button (click)="send_data()">Send data to server</button>\n  </div>\n\n\n  <ng-template #loading>\n    Loading...\n  </ng-template>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/pages/addsb/addsb.html"*/
+            selector: 'page-addsb',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/addsb/addsb.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>\n      CENSIMENTO SMARTBOX\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding style="background: none transparent;">\n\n  <!-- Div contenente il possibile errore in fase di parsing -->\n  <div id="display_error" style="display: none;" text-center="">\n    <img src="../../assets/imgs/error.png" width="100" height="100">\n    <br>\n    {{error}}\n  </div>\n\n\n  <!--\n    Pagina principale che consta di:\n      -Pulsante per avviare la scansione QRCode\n      -Menu tendina per gli hotel\n      -Menu tendina per i piani del relativo hotel\n      -Menu tendina per le stanze del relativo piano\n      -Pulsante per inviare i dati al server = dato prelevato dal QRCode + dati su hotel, piano, stanza\n  -->\n  <div id="show_button_qrscan" style="display: none;" text-center="">\n    <button ion-button (click)="qr_scanner()">Scan for QRCode</button>\n  </div>\n\n  <div id="show_hotel" style="display: none;">\n    <ion-item>\n      <ion-label>Hotel</ion-label>\n      <ion-select [(ngModel)]="hotel">\n        <ion-option *ngFor="let item of hotels" [value]="item"\n                    (ionSelect)="fillLevels(item); toggle_div(\'show_level\',\'enable\')">{{item}}</ion-option>\n      </ion-select>\n    </ion-item>\n  </div>\n\n\n  <div id="show_level" style="display: none;">\n    <div *ngIf="levels_ | async; else loading; let livelli">\n      <ion-item>\n        <ion-label>Level</ion-label>\n        <ion-select [(ngModel)]="level">\n          <ion-option *ngFor="let item of livelli" [value]="item.name_level"\n                      (ionSelect)="fillRooms(item.name_level); toggle_div(\'show_room\',\'enable\')">{{item.name_level}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_room" style="display: none;">\n    <div *ngIf="rooms_ | async; else loading; let camere">\n      <ion-item>\n        <ion-label>Room</ion-label>\n        <ion-select [(ngModel)]="room">\n          <ion-option *ngFor="let item of camere" [value]="item"\n                      (ionSelect)="toggle_div(\'show_button_send_data\',\'enable\')">{{item}}</ion-option>\n        </ion-select>\n      </ion-item>\n    </div>\n  </div>\n\n\n  <div id="show_button_send_data" style="display: none;" text-center="">\n    <button ion-button (click)="send_data()">Send data to server</button>\n  </div>\n\n\n  <ng-template #loading>\n    Loading...\n  </ng-template>\n\n</ion-content>\n\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/addsb/addsb.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__["a" /* QRScanner */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__["a" /* HTTP */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_qr_scanner__["a" /* QRScanner */], __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__["a" /* HTTP */]])
     ], AddSbPage);
     return AddSbPage;
 }());
@@ -408,13 +445,13 @@ var AddSbPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 355:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(225);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(360);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -422,24 +459,27 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 225:
+/***/ 360:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(278);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_id_operator_id_operator__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_http__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_native_storage__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(402);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_id_operator_id_operator__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_http__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_native_storage__ = __webpack_require__(352);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_fire__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__environments_environment__ = __webpack_require__(692);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_fire_auth__ = __webpack_require__(255);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -460,6 +500,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+//Firebase
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -477,6 +521,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
                     links: []
                 }),
+                __WEBPACK_IMPORTED_MODULE_13__angular_fire__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_14__environments_environment__["a" /* environment */].firebase),
+                __WEBPACK_IMPORTED_MODULE_15__angular_fire_auth__["b" /* AngularFireAuthModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["b" /* IonicApp */]],
             entryComponents: [
@@ -503,18 +549,18 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 278:
+/***/ 402:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_id_operator_id_operator__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_addsb_addsb__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_id_operator_id_operator__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_addsb_addsb__ = __webpack_require__(353);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -563,6 +609,7 @@ var MyApp = /** @class */ (function () {
         // Reset the content nav to have just this page
         // we wouldn't want the back button to show in this scenario
         if (page.component == __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */]) {
+            //se non ci fosse if-else e solo questo comando, non si potrebbe usare il pulsante "back"
             this.nav.setRoot(__WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */]);
         }
         else {
@@ -574,7 +621,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>\n\n<!--<ion-nav [root]="rootPage"></ion-nav>-->\n'/*ion-inline-end:"/home/sivlab/github/SmartBox/smartbox_test/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/app/app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content padding>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>\n\n<!--<ion-nav [root]="rootPage"></ion-nav>-->\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -583,7 +630,26 @@ var MyApp = /** @class */ (function () {
 
 //# sourceMappingURL=app.component.js.map
 
+/***/ }),
+
+/***/ 692:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+var environment = {
+    firebase: {
+        apiKey: "AIzaSyCighuTMeTHf-2EK6grKTlBA95pBcyTH30",
+        authDomain: "progettoingsw-56002.firebaseapp.com",
+        databaseURL: "https://progettoingsw-56002.firebaseio.com",
+        projectId: "progettoingsw-56002",
+        storageBucket: "progettoingsw-56002.appspot.com",
+        messagingSenderId: "593512003507"
+    }
+};
+//# sourceMappingURL=environment.js.map
+
 /***/ })
 
-},[204]);
+},[355]);
 //# sourceMappingURL=main.js.map
