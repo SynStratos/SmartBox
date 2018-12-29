@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { id_operator_page } from '../pages/id_operator/id_operator';
 import { AddSbPage } from '../pages/addsb/addsb'
+import { LoginPage } from '../pages/login/login'
 
 
 @Component({
@@ -27,6 +28,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Add SB', component: AddSbPage },
       { title: 'Set Operator', component: id_operator_page },
+      { title: 'Login', component: LoginPage}
     ];
 
   }

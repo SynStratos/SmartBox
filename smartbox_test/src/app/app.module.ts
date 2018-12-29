@@ -21,6 +21,7 @@ import { NativeStorage } from '@ionic-native/native-storage';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import {LoginPage} from "../pages/login/login";
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     HomePage,
     id_operator_page,
     AddSbPage,
+    LoginPage,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +45,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     HomePage,
     id_operator_page,
     AddSbPage,
+    LoginPage,
   ],
   providers: [
     StatusBar,

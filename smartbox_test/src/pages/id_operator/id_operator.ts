@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NativeStorage } from '@ionic-native/native-storage'; //memorizzazione dati storage permanente (es. id operatore)
 import { AlertController } from 'ionic-angular';
 
+
+
 @Component({
   selector: 'page-list',
   templateUrl: 'id_operator.html'
