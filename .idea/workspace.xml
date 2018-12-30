@@ -1,421 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" line="215" mnemonic="2" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="17c12d58-934f-4371-bf16-ea56e9bd6d18" name="Default Changelist" comment="commit2_">
-      <change afterPath="$PROJECT_DIR$/smartbox_test/src/environments/environment.ts" afterDir="false" />
+    <list default="true" id="17c12d58-934f-4371-bf16-ea56e9bd6d18" name="Default Changelist" comment="LoginOK -&gt; Da implementare blocco iniziale">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/.sourcemaps/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/BigInteger.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/BigInteger.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-android/node_modules/big-integer/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/es/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/es/ponyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/lib/ponyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/symbol-observable/readme.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/3.4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/javaCompile/taskJars.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/CordovaLib/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/cordova_plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-am.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ar.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-az-rAZ.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-az-rAZ.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-bg.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-bg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-bn-rBD.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-bn-rBD.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ca.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ca.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-cs.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-cs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-da.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-da.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-de.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-el.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-el.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rAU.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rGB.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-en-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-es-rUS.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-es.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-es.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-et-rEE.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-et-rEE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-eu-rES.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-eu-rES.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-eu.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-eu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fa.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fi.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fr-rCA.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-fr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-gl-rES.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-gl-rES.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-gu-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-gu-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-h320dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-h320dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-h720dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-h720dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hdpi-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hdpi-v4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-he.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-he.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hi.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hr.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hu.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hy-rAM.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-hy-rAM.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-id.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-id.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-in.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-in.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-is-rIS.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-is-rIS.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-it.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-it.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-iw.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-iw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ka-rGE.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ka-rGE.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-kk-rKZ.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-kk-rKZ.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-km-rKH.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-km-rKH.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-kn-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-kn-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ko.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ko.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ky-rKG.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ky-rKG.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-land.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-land.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-large-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-large-v4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ldltr-v21.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ldltr-v21.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ldrtl-v23.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ldrtl-v23.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-lo-rLA.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-lo-rLA.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-lt.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-lt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-lv.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-lv.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-mk-rMK.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-mk-rMK.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ml-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ml-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-mn-rMN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-mn-rMN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-mr-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-mr-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ms-rMY.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ms-rMY.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-my-rMM.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-my-rMM.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-nb.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-nb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ne-rNP.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ne-rNP.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-nl.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-nl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pa-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pa-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pl.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-port.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-port.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rBR.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rBR.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt-rPT.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-pt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ro.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ro.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-si-rLK.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-si-rLK.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sk.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sl.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sq-rAL.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sq-rAL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sr.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sv.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sv.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sw.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sw.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sw600dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-sw600dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ta-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ta-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-te-rIN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-te-rIN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-th.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-th.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-tl.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-tl.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-tr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-uk.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-uk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ur-rPK.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-ur-rPK.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-uz-rUZ.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-uz-rUZ.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v11.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v11.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v12.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v12.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v14.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v14.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v17.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v17.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v18.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v18.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v21.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v21.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v22.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v22.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v23.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-v23.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-vi.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-vi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w360dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w360dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w480dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w480dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w500dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w500dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w600dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w600dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w720dp-v13.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-w720dp-v13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-xlarge-land-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-xlarge-land-v4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-xlarge-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-xlarge-v4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rCN.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rHK.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zh-rTW.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zu.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values-zu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/single/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/blame/res/debug/single/debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/gTLqvuZQcONdwO1Erz77nCYpiz8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/gTLqvuZQcONdwO1Erz77nCYpiz8=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/zip-cache/8hYUxow5JtuqvyGbdy8ZqMMS4xQ=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/zip-cache/DRZH5qNo2haq8VSuhBfApLmb9nM=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-hdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-ldpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-ldpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-mdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-mdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xhdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xhdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxhdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxxhdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-land-xxxhdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-hdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-hdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-ldpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-ldpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-mdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-mdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xhdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxhdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxhdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxxhdpi_screen.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/drawable-port-xxxhdpi_screen.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-ldpi_icon.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-ldpi_icon.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_icon.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_icon.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-af_values-af.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-am_values-am.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ar_values-ar.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-az-rAZ_values-az-rAZ.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-az-rAZ_values-az-rAZ.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-bg_values-bg.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-bn-rBD_values-bn-rBD.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-bn-rBD_values-bn-rBD.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ca_values-ca.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-cs_values-cs.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-da_values-da.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-de_values-de.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-el_values-el.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-en-rAU_values-en-rAU.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-en-rGB_values-en-rGB.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-en-rIN_values-en-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-es-rUS_values-es-rUS.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-es_values-es.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-et-rEE_values-et-rEE.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-et-rEE_values-et-rEE.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-eu-rES_values-eu-rES.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-eu-rES_values-eu-rES.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-eu_values-eu.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fa_values-fa.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fi_values-fi.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fr-rCA_values-fr-rCA.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-fr_values-fr.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-gl-rES_values-gl-rES.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-gl-rES_values-gl-rES.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-gu-rIN_values-gu-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-gu-rIN_values-gu-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-h320dp-v13_values-h320dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-h320dp-v13_values-h320dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hdpi-v4_values-hdpi-v4.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-he_values-he.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-he_values-he.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hi_values-hi.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hr_values-hr.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hu_values-hu.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hy-rAM_values-hy-rAM.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-hy-rAM_values-hy-rAM.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-id_values-id.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-id_values-id.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-in_values-in.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-is-rIS_values-is-rIS.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-is-rIS_values-is-rIS.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-it_values-it.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-iw_values-iw.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ja_values-ja.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ka-rGE_values-ka-rGE.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ka-rGE_values-ka-rGE.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-kk-rKZ_values-kk-rKZ.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-kk-rKZ_values-kk-rKZ.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-km-rKH_values-km-rKH.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-km-rKH_values-km-rKH.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-kn-rIN_values-kn-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-kn-rIN_values-kn-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ko_values-ko.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ky-rKG_values-ky-rKG.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ky-rKG_values-ky-rKG.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-land_values-land.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-large-v4_values-large-v4.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ldltr-v21_values-ldltr-v21.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ldrtl-v23_values-ldrtl-v23.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ldrtl-v23_values-ldrtl-v23.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-lo-rLA_values-lo-rLA.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-lo-rLA_values-lo-rLA.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-lt_values-lt.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-lv_values-lv.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mk-rMK_values-mk-rMK.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mk-rMK_values-mk-rMK.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ml-rIN_values-ml-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ml-rIN_values-ml-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mn-rMN_values-mn-rMN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mn-rMN_values-mn-rMN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mr-rIN_values-mr-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-mr-rIN_values-mr-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ms-rMY_values-ms-rMY.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ms-rMY_values-ms-rMY.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-my-rMM_values-my-rMM.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-my-rMM_values-my-rMM.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-nb_values-nb.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ne-rNP_values-ne-rNP.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ne-rNP_values-ne-rNP.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-nl_values-nl.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pa-rIN_values-pa-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pa-rIN_values-pa-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pl_values-pl.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-port_values-port.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pt-rBR_values-pt-rBR.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pt-rPT_values-pt-rPT.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-pt_values-pt.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ro_values-ro.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ru_values-ru.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-si-rLK_values-si-rLK.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-si-rLK_values-si-rLK.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sk_values-sk.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sl_values-sl.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sq-rAL_values-sq-rAL.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sq-rAL_values-sq-rAL.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sr_values-sr.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sv_values-sv.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-sw_values-sw.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ta-rIN_values-ta-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ta-rIN_values-ta-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-te-rIN_values-te-rIN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-te-rIN_values-te-rIN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-th_values-th.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-tl_values-tl.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-tr_values-tr.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-uk_values-uk.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ur-rPK_values-ur-rPK.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-ur-rPK_values-ur-rPK.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-uz-rUZ_values-uz-rUZ.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-uz-rUZ_values-uz-rUZ.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v11_values-v11.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v12_values-v12.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v12_values-v12.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v14_values-v14.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v17_values-v17.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v17_values-v17.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v18_values-v18.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v21_values-v21.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v22_values-v22.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v22_values-v22.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v23_values-v23.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-v23_values-v23.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-vi_values-vi.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w360dp-v13_values-w360dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w360dp-v13_values-w360dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w480dp-v13_values-w480dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w480dp-v13_values-w480dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w500dp-v13_values-w500dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w500dp-v13_values-w500dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w600dp-v13_values-w600dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w600dp-v13_values-w600dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w720dp-v13_values-w720dp-v13.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-w720dp-v13_values-w720dp-v13.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-xlarge-land-v4_values-xlarge-land-v4.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-xlarge-land-v4_values-xlarge-land-v4.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-xlarge-v4_values-xlarge-v4.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rCN_values-zh-rCN.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rHK_values-zh-rHK.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zh-rTW_values-zh-rTW.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values-zu_values-zu.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/xml_camera_provider_paths.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/xml_camera_provider_paths.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/res/merged/debug/xml_config.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/desugar/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/desugar/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/10.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/10.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/11.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/11.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/12.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/12.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/13.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/13.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/14.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/14.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/2.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/2.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/4.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/5.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/5.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/6.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/7.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/8.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/8.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/9.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/9.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/cordova_plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-hdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-ldpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-ldpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-mdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-xhdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-xhdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-xxhdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-xxxhdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-land-xxxhdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-hdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-hdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-ldpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-ldpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-mdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-mdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-xhdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-xxhdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-xxxhdpi/screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/drawable-port-xxxhdpi/screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-hdpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-hdpi/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-ldpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-ldpi/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-mdpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-mdpi/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-xhdpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-xhdpi/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-xxhdpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-xxhdpi/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/res/mipmap-xxxhdpi/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-28-34-600.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-28-34-600.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-29-43-947.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-29-43-947.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-44-36-540.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-44-36-540.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-48-20-946.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-15-48-20-946.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-16-50-21-345.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-16-50-21-345.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-02-37-782.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-02-37-782.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-03-48-944.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-03-48-944.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-05-22-421.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-05-22-421.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-07-19-689.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-07-19-689.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-09-49-560.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-09-49-560.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-10-45-680.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-17-10-45-680.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-23-26-997.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-23-26-997.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-24-37-696.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-24-37-696.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-28-00-103.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-28-00-103.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-30-17-577.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-30-17-577.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-49-16-654.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-49-16-654.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-50-05-466.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-50-05-466.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-58-34-441.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-18-58-34-441.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-07-28-362.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-07-28-362.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-09-35-809.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-09-35-809.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-10-21-768.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-10-21-768.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-22-23-266.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-22-23-266.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-46-19-270.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-46-19-270.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-47-39-915.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-47-39-915.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-48-56-878.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-48-56-878.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-52-07-482.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-52-07-482.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-54-22-863.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-54-22-863.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-57-05-666.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-19-57-05-666.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-20-03-14-268.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-20-03-14-268.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-20-05-56-987.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-20-05-56-987.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-21-19-50-593.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/build/android-profile/profile-2018-12-13-21-19-50-593.rawproto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/platform_www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/platform_www/cordova_plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/plugins/fetch.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/plugins/fetch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-hdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-hdpi-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-ldpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-ldpi-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-mdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-mdpi-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-xhdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-xhdpi-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-xxhdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-xxhdpi-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-xxxhdpi-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/icon/drawable-xxxhdpi-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-hdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-hdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-ldpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-ldpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-mdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-mdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-xhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-xhdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-xxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-xxhdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-xxxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-hdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-hdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-ldpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-ldpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-mdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-mdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-xhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-xhdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-xxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-xxhdpi-screen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-xxxhdpi-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/app/app.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/login/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/login/login.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/vendor.js" afterDir="false" />
@@ -442,64 +69,106 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#qr_scanner#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#send_data#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#check_qr_code#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#toggle_div#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#fillLevels#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#fillRooms#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#alert#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#showCamera#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#hideCamera#0;n#AddSbPage#0" />
-                <element signature="n#!!block;n#ionViewWillLeave#0;n#AddSbPage#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="400">
+                  <caret line="228" selection-start-line="228" selection-end-line="228" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                    <element signature="e#440#488#0" expanded="true" />
+                    <element signature="n#!!block;n#constructor#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#firebase_get_url#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#loadData#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#check_qr_code#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#alert#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#toggle_div#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#fillLevels#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#fillRooms#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#showCamera#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#hideCamera#0;n#AddSbPage#0" />
+                    <element signature="n#!!block;n#ionViewWillLeave#0;n#AddSbPage#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="738">
+                  <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+                  <folding>
+                    <element signature="n#style#0;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#3;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#4;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#5;n#ion-content#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/app.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="234">
+                  <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>center</find>
       <find>observ</find>
+      <find>gradle</find>
+      <find>startin</find>
+      <find>root</find>
+      <find>content</find>
+      <find>rootPage</find>
+      <find>scanned som</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="qrcodeOK" />
+        <entry key="$PROJECT_DIR$" value="AngularFirebaseAuth" />
       </map>
     </option>
   </component>
@@ -508,18 +177,22 @@
       <list>
         <option value="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.scss" />
         <option value="$PROJECT_DIR$/smartbox_test/platforms/android/cordova/node_modules/cordova-common/src/PluginManager.js" />
-        <option value="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.html" />
-        <option value="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.html" />
-        <option value="$PROJECT_DIR$/smartbox_test/src/pages/home/home.html" />
-        <option value="$PROJECT_DIR$/smartbox_test/src/app/app.html" />
-        <option value="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.ts" />
-        <option value="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/smartbox_test/platforms/android/build.gradle" />
         <option value="$PROJECT_DIR$/smartbox_test/platforms/android/app/build.gradle" />
         <option value="$PROJECT_DIR$/smartbox_test/src/environments/environment.ts" />
-        <option value="$PROJECT_DIR$/smartbox_test/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/app/app.html" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/login/login.html" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/logout/logout.ts" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/logout/logout.html" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.ts" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.html" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/login/login.ts" />
         <option value="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" />
+        <option value="$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.html" />
       </list>
     </option>
   </component>
@@ -530,10 +203,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
+    <option name="x" value="1988" />
     <option name="y" value="25" />
-    <option name="width" value="1922" />
-    <option name="height" value="1056" />
+    <option name="width" value="1914" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -543,8 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -569,6 +240,13 @@
               <item name="smartbox_test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Smartbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smartbox" type="462c0819:PsiDirectoryNode" />
+              <item name="smartbox_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Smartbox" type="b2602c69:ProjectViewProjectNode" />
@@ -601,10 +279,28 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="id_operator" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Smartbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smartbox" type="462c0819:PsiDirectoryNode" />
+              <item name="smartbox_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Smartbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smartbox" type="462c0819:PsiDirectoryNode" />
+              <item name="smartbox_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="logout" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -612,7 +308,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546044158827" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546205795572" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="excluded.www.directory" value="true" />
     <property name="js.phonegap.settings.workdir" value="$PROJECT_DIR$/smartbox_test" />
@@ -625,6 +321,11 @@
     <property name="project.structure.side.proportion" value="0.28255814" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/smartbox_test/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/smartbox_test/src/pages/login" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -647,7 +348,7 @@
       <option name="myPlatform" value="android" />
       <option name="myExtraArgs" value="" />
       <option name="hasTarget" value="true" />
-      <option name="target" value="G5NPCV006042EAP" />
+      <option name="target" value="192.168.1.2:5555" />
       <method v="2">
         <option name="PhonegapTask" enabled="true" />
       </method>
@@ -686,7 +387,11 @@
       <workItem from="1546031897937" duration="3000" />
       <workItem from="1546032881197" duration="245000" />
       <workItem from="1546035433755" duration="1340000" />
-      <workItem from="1546037213815" duration="4672000" />
+      <workItem from="1546037213815" duration="5172000" />
+      <workItem from="1546084793733" duration="10036000" />
+      <workItem from="1546099766087" duration="2895000" />
+      <workItem from="1546102845547" duration="3738000" />
+      <workItem from="1546178197000" duration="20251000" />
     </task>
     <task id="LOCAL-00001" summary="commit1_">
       <created>1544655831716</created>
@@ -706,13 +411,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38785000" />
+    <option name="totallyTimeSpent" value="76205000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1922" height="1056" extended-state="7" />
+    <frame x="1919" y="25" width="1922" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13020277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13607258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -721,7 +426,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3989305" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31657755" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -800,16 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -817,60 +512,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1278">
-          <caret line="71" column="71" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/app.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="53" column="95" selection-start-line="53" selection-start-column="95" selection-end-line="53" selection-end-column="95" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova-android-firebase-gradle-release/starter-cordova-android-firebase-gradle-release.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova-support-google-services/starter-build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova-android-play-services-gradle-release/starter-cordova-android-play-services-gradle-release.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova-android-firebase-gradle-release/starter-cordova-android-firebase-gradle-release.gradle" />
+    <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova-support-google-services/starter-build.gradle" />
+    <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova-android-play-services-gradle-release/starter-cordova-android-play-services-gradle-release.gradle" />
     <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
@@ -891,31 +538,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.ts">
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/logout/logout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="83" column="54" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#id_operator_page#0" />
-            <element signature="n#!!block;n#show_id_operator#0;n#id_operator_page#0" />
-            <element signature="n#!!block;n#toggle_div#0;n#id_operator_page#0" />
-            <element signature="n#!!block;n#alert#0;n#id_operator_page#0" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="3" column="84" selection-start-line="3" selection-start-column="84" selection-end-line="3" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/environments/environment.ts">
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/logout/logout.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="n#!!block;n#logout#0;n#LogoutPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        <state relative-caret-position="144">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
           <folding>
             <element signature="e#0#70#0" expanded="true" />
             <element signature="e#809#859#0" expanded="true" />
@@ -923,27 +581,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.html">
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="234">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="43" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#id_operator_page#0" />
+            <element signature="n#!!block;n#toggle_div#0;n#id_operator_page#0" />
+            <element signature="n#!!block;n#set_id_operator#0;n#id_operator_page#0" />
+            <element signature="n#!!block;n#alert#0;n#id_operator_page#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/login/login.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#LoginPage#0" />
+            <element signature="n#!!block;n#login#0;n#LoginPage#0" />
+            <element signature="n#!!block;n#validation_email#0;n#LoginPage#0" />
+            <element signature="n#!!block;n#alert#0;n#LoginPage#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="57" column="60" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+        <state relative-caret-position="400">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#440#488#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#AddSbPage#0" />
-            <element signature="n#!!block;n#qr_scanner#0;n#AddSbPage#0" />
-            <element signature="n#!!block;n#send_data#0;n#AddSbPage#0" />
+            <element signature="n#!!block;n#firebase_get_url#0;n#AddSbPage#0" />
+            <element signature="n#!!block;n#loadData#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#check_qr_code#0;n#AddSbPage#0" />
+            <element signature="n#!!block;n#alert#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#toggle_div#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#fillLevels#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#fillRooms#0;n#AddSbPage#0" />
-            <element signature="n#!!block;n#alert#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#showCamera#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#hideCamera#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#ionViewWillLeave#0;n#AddSbPage#0" />
@@ -951,13 +648,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts">
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        <state relative-caret-position="90">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="15" lean-forward="true" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="n#style#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#ion-content#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/id_operator/id_operator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/app/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>

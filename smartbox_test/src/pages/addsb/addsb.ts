@@ -1,9 +1,13 @@
 import {Component} from '@angular/core';
 import {HTTP} from '@ionic-native/http';
 import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/observable/of';
+//import 'rxjs/add/observable/of'; -> Uso metodo Observable.og()
+import { of } from 'rxjs'; //ed uso direttamente -> of() -> Questo perchè si è passati a rxjs@6xx (per far funzionare download file di firebase, vedi changelog)
 import {QRScanner, QRScannerStatus} from '@ionic-native/qr-scanner'; //scansione qrcode
 import { AlertController } from 'ionic-angular';
+import { AngularFireStorage } from '@angular/fire/storage';
+import { AngularFireDatabase } from '@angular/fire/database';
+import { NativeStorage } from '@ionic-native/native-storage'; //prelevo dati storage permanente (id operatore)
 
 
 
@@ -28,17 +32,27 @@ export class AddSbPage {
   public rooms: any[] = [];
 
   public levels_: Observable<any[]>;
-
   public rooms_: Observable<any[]>;
 
+  //Variabili per il download dei file "hotels.json" / "hotels.xml"
+  public url_firebase_hotels_json: Observable<string | null>; //Observable per contenere Download URL del file su firebase
+  public url_hotels_json;
+  public url_firebase_hotels_xml: Observable<string | null>; //Observable per contenere Download URL del file su firebase
+  public url_hotels_xml;
 
-  constructor(private alertCtrl: AlertController, public qrScanner: QRScanner, public http: HTTP) {
+  //Variabili per gestire il database su firebase
+  public items: Observable<any[]>;
+
+
+
+  constructor(public alertCtrl: AlertController, public qrScanner: QRScanner, public http: HTTP, public storage: AngularFireStorage, public db: AngularFireDatabase, public nativeStorage: NativeStorage) {
     /*
     Flusso del programma:
+      -Prelevo i link per il download dei file (hotels.json, hotels.xml) fa firebase
       -Prelievo file JSON
       -se (disponibile && validato):
         -vero:
-          -> Viene mostrato il bottone per scansionare QRcode + tasti indietro (TODO)
+          -> Viene mostrato il bottone per scansionare QRcode + tasti indietro
             -> QRcode non trovato -> Telecamera sempre in run
             -> QRcode trovato:
               -> Viene mostrato:
@@ -47,18 +61,37 @@ export class AddSbPage {
         -falso:
           -> A video viene mostrato un file di errore "bla bla ... contattare amministratore"
      */
-    this.loadData();
+    this.firebase_get_url();
+  }
+
+  //Funzione prelievo URL dei file da scaricare
+  firebase_get_url(){
+
+    const ref_hotels_json = this.storage.ref('hotels.json');
+    this.url_firebase_hotels_json = ref_hotels_json.getDownloadURL();
+    this.url_firebase_hotels_json.subscribe(url=>{
+
+      //una volta che l'observer ha ricevuto l'url
+      //lo salvo
+      //chiamo le funzione per prendere il file (loadData())
+      this.url_hotels_json = url;
+      this.loadData();
+
+
+    }) //in url_hotels_json ho URL del file "hotels.json"
+
+    const ref_hotels_xml_ = this.storage.ref('hotels.xml');
+    this.url_firebase_hotels_xml = ref_hotels_xml_.getDownloadURL();
+    this.url_firebase_hotels_xml.subscribe(url=>{this.url_hotels_xml = url;}) //in url_hotels_xml ho URL del file "hotels.xml"
+
   }
 
 
-  //Funzione prelievo dati dal server (caricamento file JSON)
-  //+ validazione
-  loadData() {
-    //URL del file JSON
-    let url = 'http://progettoftp.altervista.org/pepe.json';
+  //Funzione prelievo dati attraverso i link + validazione
+  loadData(){
 
     //richiesta http
-    this.http.get(url, {}, {})
+    this.http.get(this.url_hotels_json, {}, {})
       .then(data => {
 
         //validazione del file -> validazione JSON
@@ -78,7 +111,7 @@ export class AddSbPage {
           this.toggle_div("show_button_qrscan", "enable");
 
         } catch (e) {
-          this.error = "Errore nel recupero dei dati dal server.Possibili cause:\n\t-Formato del file scaricato dal server non corretto\t\t\n\nErrore specifico: " + e.message;
+          this.error = "Errore nella validazione del file JSON relativo alle piantine. Contattare amministratore di sistema.\t\t\n\nErrore specifico: " + e.message;
           console.log(this.error);
           //display image error
           this.toggle_div("display_error", "enable");
@@ -138,7 +171,7 @@ export class AddSbPage {
             }
             else{
               //validazione dati scansioni: NO
-              this.alert("Errore dati scansionati","Il QRCode associato alla Smartbox deve essere un numero compreso tra 1 e 999.");
+              this.alert("Errore dati scansionati","Il QRCode associato alla Smartbox deve essere un numero compreso tra 1 e 999.", "Riprova");
               this.toggle_div("show_button_qrscan", "enable"); //rendo nuovamente visibile il pulsante per avviare lo scan
             }
 
@@ -157,9 +190,99 @@ export class AddSbPage {
       .catch((e: any) => console.log('Error is', e));
   }
 
+
   send_data() {
-    console.log("Invio dati al server");
+
+    //controllo che tutti i campi siano stati selezionati
+    //l'utente al momento di selezionare la "room" può uscire dal popup senza premere "ok" -> vedi changelog
+    if(
+      typeof this.hotel !== "undefined" &&
+      typeof this.level !== "undefined" &&
+      typeof this.room !== "undefined"
+    ){
+
+      //invio dati al server
+
+      //prelevo l'id dell'operatore (cioè l'email con cui si è autenticato) -> Mi serve per inviare il record al server
+      //var id_operatore = await this.get_id_operator();
+
+      //TODO: si potrebbe fare una funzione "get_id_operator() solo che ritorna una Promise quindi...blabla...
+
+      this.nativeStorage.getItem('id_operator')
+        .then(
+          id => {
+            //Dato prelevato con successo
+            console.log("Prelevato l'id_operatore precedentemente memorizzato: " + id); //debug
+            console.log("Invio dati al server: "+this.hotel+","+this.level+","+this.room+","+this.text+","+id);
+
+            //creo oggetto da inviare al database -> RICORDA: firebase storage è fatto di JSON tree
+            var total = {};
+            var key = Date.now();
+            var value = {
+              hotel: this.hotel,
+              level: this.level,
+              room: this.room,
+              id_smartbox: this.text,
+              id_operator: id
+            };
+            total[Date.now()] = value; //-> In totale ho un oggetto del tipo "timestamp" : {"hotel":"hotel1", "level":"level3", "room":"room105"}
+
+            //mi interfaccio con Firebase
+            const itemRef = this.db.object('smartbox_censite');
+            itemRef.update(total);
+
+            this.alert("Successo","Smartbox censita con successo!","OK");
+
+            //reset di tutti i campi
+            this.hotel = null;
+            this.level = null;
+            this.room = null;
+            this.toggle_div("show_hotel", "disable");
+            this.toggle_div("show_level", "disable");
+            this.toggle_div("show_room", "disable");
+            this.toggle_div("show_button_send_data", "disable");
+
+          },
+          error => {
+            //Dato non prelevato con successo
+            console.error("Errore nel prelevare il dato: "+ error.toString()); //debug
+            this.alert("Errore", "Impossibile accedere allo storage del dispositivo. Contattare l'amministratore di sistema.", "Ok");
+          }
+        )
+    }
+    else{
+      this.alert("Errore", "Tutti i campi devono essere non vuoti", "Riprova");
+    }
+
+/*    this.items = db.list('smartbox_censite').valueChanges();
+    this.items.subscribe(value => console.log(value));
+    const itemRef = db.object('smartbox_censite');
+
+    //nel metodo "update()" non si possono passare più variabili, quindi creo una sola variabile ("final_string") che contiene il nuovo elemento da inserire nel database
+    //esempio: "timestamp" : {"hotel":"hotel1", "level":"level3", "room":"room105"}
+
+    var value = {
+      hotel: null,
+      level: null,
+      room: null,
+      id_smartbox: null
+    };
+    value.hotel = "hotel1";
+    value.level = "level3";
+    value.room = "room105";
+    value.id_smartbox = "65";
+    var valueString= JSON.stringify(value); //value come stringa
+    var timestamp = Date.now(); //timestamp come stringa
+    var final_string = "{\"" + timestamp + "\"" + ":" + valueString + "}"; //creo la stringa finale: timestamp : value (key : value)
+
+    //prima di passare al metodo update() creo un oggetto JSON a partire dalla stringa
+    itemRef.update(JSON.parse(final_string));*/
   }
+
+
+
+
+  /*------------------FUNZIONI HELPER------------------*/
 
   //Il qrcode sulla smartbox deve essere un numero(!) compreso tra 1 e 999(!)
   check_qr_code(scanned_text){
@@ -175,6 +298,14 @@ export class AddSbPage {
     }
   }
 
+  alert(titolo, sottotitolo, button){
+    let alert = this.alertCtrl.create({
+      title: titolo,
+      subTitle: sottotitolo,
+      buttons: [button]
+    });
+    alert.present();
+  }
 
 
 
@@ -215,7 +346,7 @@ export class AddSbPage {
         break //non ci sono due hotel con lo stesso nome
       }
     }
-    this.levels_ = Observable.of(this.levels);
+    this.levels_ = of(this.levels);
   }
 
   //output: in this.rooms_ ho solo le "stanze" relative al piano specificato "name_floor"
@@ -231,16 +362,7 @@ export class AddSbPage {
         break
       }
     }
-    this.rooms_ = Observable.of(this.rooms) //rooms_ diventa "osservatore" di this.rooms -> Quindi ogni volta che cambia "rooms" cambia "room_s"
-  }
-
-  alert(titolo, sottotitolo){
-    let alert = this.alertCtrl.create({
-      title: titolo,
-      subTitle: sottotitolo,
-      buttons: ['Dismiss']
-    });
-    alert.present();
+    this.rooms_ = of(this.rooms) //rooms_ diventa "osservatore" di this.rooms -> Quindi ogni volta che cambia "rooms" cambia "room_s"
   }
 
 

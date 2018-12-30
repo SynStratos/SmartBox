@@ -19,9 +19,12 @@ import { NativeStorage } from '@ionic-native/native-storage';
 
 //Firebase
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import {LoginPage} from "../pages/login/login";
+import {LogoutPage} from "../pages/logout/logout";
+import { AngularFireDatabase } from '@angular/fire/database';
 
 
 @NgModule({
@@ -31,13 +34,15 @@ import {LoginPage} from "../pages/login/login";
     id_operator_page,
     AddSbPage,
     LoginPage,
+    LogoutPage
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireStorageModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,6 +51,7 @@ import {LoginPage} from "../pages/login/login";
     id_operator_page,
     AddSbPage,
     LoginPage,
+    LogoutPage
   ],
   providers: [
     StatusBar,
@@ -54,6 +60,7 @@ import {LoginPage} from "../pages/login/login";
     SplashScreen,
     QRScanner,
     NativeStorage,
+    AngularFireDatabase,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

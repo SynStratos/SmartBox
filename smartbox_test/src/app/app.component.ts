@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { id_operator_page } from '../pages/id_operator/id_operator';
 import { AddSbPage } from '../pages/addsb/addsb'
 import { LoginPage } from '../pages/login/login'
+import { LogoutPage } from '../pages/logout/logout'
 
 
 @Component({
@@ -16,7 +17,8 @@ import { LoginPage } from '../pages/login/login'
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  //La pagina root deve essere quella del login, infatti l'utente, finchè non si autentica, non deve poter accedere a null'altro
+  rootPage: any = LoginPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -28,7 +30,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'Add SB', component: AddSbPage },
       { title: 'Set Operator', component: id_operator_page },
-      { title: 'Login', component: LoginPage}
+      { title: 'Logout', component: LogoutPage }
     ];
 
   }
@@ -42,21 +44,17 @@ export class MyApp {
     });
   }
 
-/*  openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
-    //this.nav.setRoot(page.component);
-  }*/
 
+  //Richiamata da pagina html -> Quando nel menu si clicca su una possibile pagina
   openPage(page) {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     if(page.component == HomePage){
-
       //se non ci fosse if-else e solo questo comando, non si potrebbe usare il pulsante "back"
       this.nav.setRoot(HomePage);
     } else {
       this.nav.push(page.component);
     }
   }
+
 }

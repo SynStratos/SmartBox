@@ -84,7 +84,7 @@ export class id_operator_page {
           () => console.log('Stored item!'),
           error => {
             console.error('Error storing item', error);
-            this.alert("Error storing item", error);
+            this.alert("Error storing item", error, "Dismiss");
           }
         );
 
@@ -96,21 +96,21 @@ export class id_operator_page {
           },
           error => {
             console.error("Errore nel prelevare il dato: "+ error.toString());
-            this.alert("Errore nel prelevare il dato", error.toString());
+            this.alert("Errore nel prelevare il dato", error.toString(), "Dismiss");
           }
         )
     }
     else{
-      this.alert("Error in ID", "The ID must be a NUMBER. (min:1, max: 999)");
+      this.alert("Error in ID", "The ID must be a NUMBER. (min:1, max: 999)", "Riprova");
       console.log('Error in ID. The ID must be a number. (min:1, max: 999). Valore immesso:' + this.check_id_idoperator);
     }
   }
 
-  alert(titolo, sottotitolo){
+  alert(titolo, sottotitolo, button){
     let alert = this.alertCtrl.create({
       title: titolo,
       subTitle: sottotitolo,
-      buttons: ['Dismiss']
+      buttons: [button]
     });
     alert.present();
   }

@@ -7,20 +7,20 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 
-  <ion-item>
-    <ion-label color="primary">Email:</ion-label>
-    <ion-input [(ngModel)]="email_operator" type="email" placeholder="Email/Username"></ion-input>
-  </ion-item>
+    <ion-item text-center="">
+      <ion-label color="primary">Email:</ion-label>
+      <ion-input [(ngModel)]="email_operator" type="email" placeholder="Email/Username"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label color="primary">Password:</ion-label>
-    <ion-input [(ngModel)]="password_operator" type="password" placeholder="Password"></ion-input>
-  </ion-item>
+    <ion-item text-center="">
+      <ion-label color="primary">Password:</ion-label>
+      <ion-input [(ngModel)]="password_operator" type="password" placeholder="Password"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <button ion-button (click)="login()">LOGIN</button>
-  </ion-item>
+    <ion-item text-center="">
+      <button ion-button (click)="login()">LOGIN</button>
+    </ion-item>
 
 </ion-content>
