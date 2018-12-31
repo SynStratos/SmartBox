@@ -8,7 +8,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { HttpClient } from '@angular/common/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { id_operator_page } from '../pages/id_operator/id_operator';
+import { list_smartbox_page } from '../pages/list_smartbox/list_smartbox';
 import { AddSbPage } from '../pages/addsb/addsb';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -31,7 +31,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
   declarations: [
     MyApp,
     HomePage,
-    id_operator_page,
+    list_smartbox_page,
     AddSbPage,
     LoginPage,
     LogoutPage
@@ -48,7 +48,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
   entryComponents: [
     MyApp,
     HomePage,
-    id_operator_page,
+    list_smartbox_page,
     AddSbPage,
     LoginPage,
     LogoutPage

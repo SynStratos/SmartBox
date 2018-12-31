@@ -8,10 +8,10 @@ import { of } from 'rxjs';
 
 @Component({
   selector: 'page-list',
-  templateUrl: 'id_operator.html'
+  templateUrl: 'list_smartbox.html'
 })
 
-export class id_operator_page {
+export class list_smartbox_page {
 
   public smartboxes_: Observable<any>;
   public smartboxes : Observable<any>;
