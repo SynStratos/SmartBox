@@ -1,4 +1,7 @@
-#Mon Dec 31 01:26:33 CET 2018
+#Mon Dec 31 03:00:31 CET 2018
 base.0=/home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.1=classes2.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0

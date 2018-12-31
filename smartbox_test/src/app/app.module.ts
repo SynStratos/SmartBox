@@ -10,6 +10,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { list_smartbox_page } from '../pages/list_smartbox/list_smartbox';
 import { AddSbPage } from '../pages/addsb/addsb';
+import {LoginPage} from "../pages/login/login";
+import {LogoutPage} from "../pages/logout/logout";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,9 +24,12 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import {LoginPage} from "../pages/login/login";
-import {LogoutPage} from "../pages/logout/logout";
+
 import { AngularFireDatabase } from '@angular/fire/database';
+import { AngularFireMessagingModule } from '@angular/fire/messaging';
+
+//notifiche push
+import { Push, PushObject, PushOptions } from '@ionic-native/push';
 
 
 @NgModule({
@@ -43,6 +48,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireStorageModule,
+    AngularFireMessagingModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -61,6 +67,7 @@ import { AngularFireDatabase } from '@angular/fire/database';
     QRScanner,
     NativeStorage,
     AngularFireDatabase,
+    Push,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
