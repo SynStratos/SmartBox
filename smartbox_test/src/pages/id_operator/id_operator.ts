@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { NativeStorage } from '@ionic-native/native-storage'; //memorizzazione dati storage permanente (es. id operatore)
 import { AlertController } from 'ionic-angular';
+import {Observable} from "rxjs";
+import { AngularFireDatabase } from '@angular/fire/database';
+import { of } from 'rxjs';
 
 
 
@@ -11,99 +13,27 @@ import { AlertController } from 'ionic-angular';
 
 export class id_operator_page {
 
-  public id_operator; //dato da modificare
-  //public id_operator_: Observable<any>; //Observable del dato precedente -> Uso questo in HTML così cambia dinamicamente
-  public check_id_idoperator;
+  public smartboxes_: Observable<any>;
+  public smartboxes : Observable<any>;
+  public smart_list = [];
 
-  constructor(private nativeStorage: NativeStorage, private alertCtrl: AlertController) {
-    this.show_id_operator();
+  constructor(private alertCtrl: AlertController, public db: AngularFireDatabase) {
+    this.get_smartboxes();
   }
 
+  get_smartboxes(){
+    this.smartboxes_ = this.db.object('smartbox_censite').valueChanges();
+    this.smartboxes_.subscribe(data => {
 
-  show_id_operator(){
+      //in questo punto ho tutti i dati prelevati da firebase storage
+      //bisogna iterare l'itero JSON tree su ogni chiave
+      Object.keys(data).forEach(key => {
+        var string = '|'+key+'|'+data[key].id_smartbox+'|'+data[key].id_operator+'|'+data[key].hotel+'|'+data[key].level+'|'+data[key].room+'|';
+        this.smart_list.push(string);
+      });
 
-    this.nativeStorage.getItem('id_operator')
-      .then(
-        data => {
-
-          //Dato prelevato con successo
-          console.log("Prelevato l'id_operatore precedentemente memorizzato: " + data); //debug
-          this.id_operator = data; //in "data" ho l'id_operatore
-          this.toggle_div("show_id_operatore", "enable"); //mostro a video
-
-        },
-        error => {
-          //Dato non prelevato con successo
-          console.error("Errore nel prelevare il dato: "+ error.toString()); //debug
-          // infatti la prima volta (in assoluto) che avvio l'app non preleverò il dato con successo (visto che non esiste)
-          // quindi devo dare la possibilità di inserirlo
-          this.toggle_div("show_id_operatore", "enable"); //mostro a video
-
-        }
-      )
-  }
-
-
-
-
-  /*------------------FUNZIONI UTILI HTML------------------*/
-
-  toggle_div(name, option) {
-    var html_error = document.getElementById(name);
-    if (option == "toggle") {
-      if (html_error.style.display === "none") {
-        html_error.style.display = "block";
-      } else {
-        html_error.style.display = "none";
-      }
-    } else if (option == "enable") {
-      html_error.style.display = "block";
-    } else if (option == "disable") {
-      html_error.style.display = "none";
-    }
-  }
-
-  set_id_operator() {
-
-    /*Controllo che l'id sia:
-      -Sia un numero -> !isNan
-      -Numero intero -> Number.Integer()
-      -Maggiore di zero -> >0
-      -Compreso tra 1 e 999 -> <999
-    */
-    if(!isNaN(this.check_id_idoperator)
-      && Number.isInteger(Number(this.check_id_idoperator)) //uso Number() altrimenti il controllo fallisce, essendo "this.check_id_idoperator" una stringa
-      && parseInt(this.check_id_idoperator) >= 1
-      && parseInt(this.check_id_idoperator) <= 999
-    ){
-
-      //Controlli superati
-      //Setto l'id in memoria
-      this.nativeStorage.setItem('id_operator', this.check_id_idoperator)
-        .then(
-          () => console.log('Stored item!'),
-          error => {
-            console.error('Error storing item', error);
-            this.alert("Error storing item", error, "Dismiss");
-          }
-        );
-
-      //Aggiorno this.is_operator così nella pagina HTML si aggiorna il valore
-      this.nativeStorage.getItem('id_operator')
-        .then(
-          data => {
-            this.id_operator = data;
-          },
-          error => {
-            console.error("Errore nel prelevare il dato: "+ error.toString());
-            this.alert("Errore nel prelevare il dato", error.toString(), "Dismiss");
-          }
-        )
-    }
-    else{
-      this.alert("Error in ID", "The ID must be a NUMBER. (min:1, max: 999)", "Riprova");
-      console.log('Error in ID. The ID must be a number. (min:1, max: 999). Valore immesso:' + this.check_id_idoperator);
-    }
+      this.smartboxes = of(this.smart_list);
+    })
   }
 
   alert(titolo, sottotitolo, button){

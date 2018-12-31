@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 155:
+/***/ 154:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32,7 +32,7 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 157:
+/***/ 158:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40,8 +40,8 @@ var HomePage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__ = __webpack_require__(300);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(157);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -129,7 +129,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 197:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -142,11 +142,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 196;
+webpackEmptyAsyncContext.id = 197;
 
 /***/ }),
 
-/***/ 240:
+/***/ 241:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -159,18 +159,19 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 240;
+webpackEmptyAsyncContext.id = 241;
 
 /***/ }),
 
-/***/ 283:
+/***/ 284:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return id_operator_page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_native_storage__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(14);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -181,80 +182,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
- //memorizzazione dati storage permanente (es. id operatore)
+
+
 
 var id_operator_page = /** @class */ (function () {
-    function id_operator_page(nativeStorage, alertCtrl) {
-        this.nativeStorage = nativeStorage;
+    function id_operator_page(alertCtrl, db) {
         this.alertCtrl = alertCtrl;
-        this.show_id_operator();
+        this.db = db;
+        this.smart_list = [];
+        this.get_smartboxes();
     }
-    id_operator_page.prototype.show_id_operator = function () {
+    id_operator_page.prototype.get_smartboxes = function () {
         var _this = this;
-        this.nativeStorage.getItem('id_operator')
-            .then(function (data) {
-            //Dato prelevato con successo
-            console.log("Prelevato l'id_operatore precedentemente memorizzato: " + data); //debug
-            _this.id_operator = data; //in "data" ho l'id_operatore
-            _this.toggle_div("show_id_operatore", "enable"); //mostro a video
-        }, function (error) {
-            //Dato non prelevato con successo
-            console.error("Errore nel prelevare il dato: " + error.toString()); //debug
-            // infatti la prima volta (in assoluto) che avvio l'app non preleverò il dato con successo (visto che non esiste)
-            // quindi devo dare la possibilità di inserirlo
-            _this.toggle_div("show_id_operatore", "enable"); //mostro a video
+        this.smartboxes_ = this.db.object('smartbox_censite').valueChanges();
+        this.smartboxes_.subscribe(function (data) {
+            //in questo punto ho tutti i dati prelevati da firebase storage
+            //bisogna iterare l'itero JSON tree su ogni chiave
+            Object.keys(data).forEach(function (key) {
+                var string = '|' + key + '|' + data[key].id_smartbox + '|' + data[key].id_operator + '|' + data[key].hotel + '|' + data[key].level + '|' + data[key].room + '|';
+                _this.smart_list.push(string);
+            });
+            _this.smartboxes = Object(__WEBPACK_IMPORTED_MODULE_3_rxjs__["of"])(_this.smart_list);
         });
-    };
-    /*------------------FUNZIONI UTILI HTML------------------*/
-    id_operator_page.prototype.toggle_div = function (name, option) {
-        var html_error = document.getElementById(name);
-        if (option == "toggle") {
-            if (html_error.style.display === "none") {
-                html_error.style.display = "block";
-            }
-            else {
-                html_error.style.display = "none";
-            }
-        }
-        else if (option == "enable") {
-            html_error.style.display = "block";
-        }
-        else if (option == "disable") {
-            html_error.style.display = "none";
-        }
-    };
-    id_operator_page.prototype.set_id_operator = function () {
-        var _this = this;
-        /*Controllo che l'id sia:
-          -Sia un numero -> !isNan
-          -Numero intero -> Number.Integer()
-          -Maggiore di zero -> >0
-          -Compreso tra 1 e 999 -> <999
-        */
-        if (!isNaN(this.check_id_idoperator)
-            && Number.isInteger(Number(this.check_id_idoperator)) //uso Number() altrimenti il controllo fallisce, essendo "this.check_id_idoperator" una stringa
-            && parseInt(this.check_id_idoperator) >= 1
-            && parseInt(this.check_id_idoperator) <= 999) {
-            //Controlli superati
-            //Setto l'id in memoria
-            this.nativeStorage.setItem('id_operator', this.check_id_idoperator)
-                .then(function () { return console.log('Stored item!'); }, function (error) {
-                console.error('Error storing item', error);
-                _this.alert("Error storing item", error, "Dismiss");
-            });
-            //Aggiorno this.is_operator così nella pagina HTML si aggiorna il valore
-            this.nativeStorage.getItem('id_operator')
-                .then(function (data) {
-                _this.id_operator = data;
-            }, function (error) {
-                console.error("Errore nel prelevare il dato: " + error.toString());
-                _this.alert("Errore nel prelevare il dato", error.toString(), "Dismiss");
-            });
-        }
-        else {
-            this.alert("Error in ID", "The ID must be a NUMBER. (min:1, max: 999)", "Riprova");
-            console.log('Error in ID. The ID must be a number. (min:1, max: 999). Valore immesso:' + this.check_id_idoperator);
-        }
     };
     id_operator_page.prototype.alert = function (titolo, sottotitolo, button) {
         var alert = this.alertCtrl.create({
@@ -266,9 +215,9 @@ var id_operator_page = /** @class */ (function () {
     };
     id_operator_page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/id_operator/id_operator.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>SET OPERATOR</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n\n  <div id="show_id_operatore" style="display: none;">\n\n    <ion-item>\n      <ion-label color="primary">Set ID Operator</ion-label>\n      <!--Con l\'attributo type="number" si forza l\'utente ad inserire solo numeri-->\n      <ion-input [(ngModel)]="check_id_idoperator" type="number" placeholder="New ID Operator"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <button ion-button (click)="set_id_operator()">Set new ID</button><br><br><br>\n    </ion-item>\n\n    <ion-item>\n      <ion-label>ID Operatore corrente: {{id_operator}}</ion-label>\n    </ion-item>\n  </div>\n\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/id_operator/id_operator.html"*/
+            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/id_operator/id_operator.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>LIST SMARTBOX</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n\n    <div *ngIf="smartboxes | async as test; else loading">\n      <ion-item *ngFor="let s of test">\n        {{s}}\n      </ion-item>\n    </div>\n\n  </ion-list>\n\n</ion-content>\n\n<ng-template #loading>\n  Loading...\n</ng-template>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/id_operator/id_operator.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__ionic_native_native_storage__["a" /* NativeStorage */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
     ], id_operator_page);
     return id_operator_page;
 }());
@@ -277,19 +226,19 @@ var id_operator_page = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 284:
+/***/ 293:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddSbPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(15);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_qr_scanner__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_qr_scanner__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_storage__ = __webpack_require__(286);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_fire_database__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_native_storage__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_storage__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_fire_database__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_native_storage__ = __webpack_require__(157);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -628,7 +577,7 @@ var AddSbPage = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(158);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -687,26 +636,26 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(491);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_id_operator_id_operator__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_http__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_native_storage__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_fire__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_fire_storage__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_id_operator_id_operator__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_status_bar__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_splash_screen__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_http__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_native_storage__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__angular_fire__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__angular_fire_storage__ = __webpack_require__(295);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__environments_environment__ = __webpack_require__(517);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_fire_auth__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_login_login__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_login_login__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_logout_logout__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_fire_database__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_fire_database__ = __webpack_require__(155);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -793,12 +742,12 @@ var AppModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(281);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_id_operator_id_operator__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_addsb_addsb__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_id_operator_id_operator__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_addsb_addsb__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_logout_logout__ = __webpack_require__(302);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
