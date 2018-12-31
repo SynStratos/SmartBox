@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "cordova-plugin-whitelist@^1.3.3",
-      "/home/sivlab/github/SmartBox/smartbox_test"
+      "cordova-plugin-whitelist@1.3.3",
+      "/home/sivlab/github/Smartbox/smartbox_test"
     ]
   ],
-  "_from": "cordova-plugin-whitelist@>=1.3.3 <2.0.0",
+  "_from": "cordova-plugin-whitelist@1.3.3",
   "_id": "cordova-plugin-whitelist@1.3.3",
   "_inCache": true,
   "_installable": true,
@@ -23,20 +23,20 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "cordova-plugin-whitelist",
-    "raw": "cordova-plugin-whitelist@^1.3.3",
-    "rawSpec": "^1.3.3",
+    "raw": "cordova-plugin-whitelist@1.3.3",
+    "rawSpec": "1.3.3",
     "scope": null,
-    "spec": ">=1.3.3 <2.0.0",
-    "type": "range"
+    "spec": "1.3.3",
+    "type": "version"
   },
   "_requiredBy": [
-    "/"
+    "#USER"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.3.3.tgz",
   "_shasum": "b5e85ecdbbfe5aeded40a1bf4ee2372e67d96fb4",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-whitelist@^1.3.3",
-  "_where": "/home/sivlab/github/SmartBox/smartbox_test",
+  "_spec": "cordova-plugin-whitelist@1.3.3",
+  "_where": "/home/sivlab/github/Smartbox/smartbox_test",
   "author": {
     "name": "Apache Software Foundation"
   },

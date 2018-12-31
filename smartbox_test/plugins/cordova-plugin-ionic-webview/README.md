@@ -58,6 +58,26 @@ The default port the server will listen on. _You should change this to a random 
 
 Preferences only available for iOS platform
 
+#### UseScheme
+
+`<preference name="UseScheme" value="true" />`
+
+Default value is `false`.
+
+On iOS 11 and newer it will use a `WKURLSchemeHandler` that loads the app from `ionic://` scheme instead of using the local web server and `https://` scheme.
+
+On iOS 10 and older will continue using the local web server even if the preference is set to `true`.
+
+#### HostName
+
+`<preference name="HostName" value="myHostName" />`
+
+Default value is `app`.
+
+If `UseScheme` is set to yes, it will use the `HostName` value as the host of the starting url.
+
+Example `ionic://app`
+
 #### WKSuspendInBackground
 
 ```xml
@@ -83,6 +103,13 @@ The hostname the server will bind to. There aren't a lot of other valid options,
 Whether to restrict access to this server to the app itself. Previous versions of this plugin did not restrict access to the app itself. In 2.2.0 and above,
 the plugin now restricts access to only the app itself.
 
+#### KeyboardAppearanceDark
+
+```xml
+<preference name="KeyboardAppearanceDark" value="false" />
+```
+
+Whether to use a dark styled keyboard on iOS
 
 ## Plugin Requirements
 

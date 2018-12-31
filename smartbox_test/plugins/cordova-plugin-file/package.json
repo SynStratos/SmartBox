@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "cordova-plugin-file@>=2.0.0",
-      "/home/sivlab/github/SmartBox/smartbox_test"
+      "cordova-plugin-file@6.0.1",
+      "/home/sivlab/github/Smartbox/smartbox_test"
     ]
   ],
-  "_from": "cordova-plugin-file@>=2.0.0",
+  "_from": "cordova-plugin-file@6.0.1",
   "_id": "cordova-plugin-file@6.0.1",
   "_inCache": true,
   "_installable": true,
@@ -23,20 +23,20 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "cordova-plugin-file",
-    "raw": "cordova-plugin-file@>=2.0.0",
-    "rawSpec": ">=2.0.0",
+    "raw": "cordova-plugin-file@6.0.1",
+    "rawSpec": "6.0.1",
     "scope": null,
-    "spec": ">=2.0.0",
-    "type": "range"
+    "spec": "6.0.1",
+    "type": "version"
   },
   "_requiredBy": [
-    "/"
+    "#USER"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-6.0.1.tgz",
   "_shasum": "49606b8c15a5688d4728f92e4a7325a061de07f5",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-file@>=2.0.0",
-  "_where": "/home/sivlab/github/SmartBox/smartbox_test",
+  "_spec": "cordova-plugin-file@6.0.1",
+  "_where": "/home/sivlab/github/Smartbox/smartbox_test",
   "author": {
     "name": "Apache Software Foundation"
   },

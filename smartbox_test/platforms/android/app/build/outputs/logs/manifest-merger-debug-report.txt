@@ -1,24 +1,24 @@
 -- Merging decision tree log ---
-provider#org.apache.cordova.camera.FileProvider
-INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:9-14:20
-	android:grantUriPermissions
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:92-126
-	android:authorities
-		INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:19-66
-	android:exported
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:67-91
-	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:127-180
 activity#com.adobe.phonegap.push.PushHandlerActivity
-INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:15:9-173
+INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:9-173
 	android:exported
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:15:19-42
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:19-42
 	android:permission
 		INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:15:102-170
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:102-170
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:15:43-101
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:12:43-101
+provider#org.apache.cordova.camera.FileProvider
+INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:25:9-27:20
+	android:grantUriPermissions
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:25:92-126
+	android:authorities
+		INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:25:19-66
+	android:exported
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:25:67-91
+	android:name
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:25:127-180
 manifest
 ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:2:1-37:12
 INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:2:1-37:12
@@ -27,6 +27,7 @@ INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/s
 MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:17:1-55:12
 MERGED from [com.android.support:appcompat-v7:23.1.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-v13:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-v13-27.1.1.aar/a156297f81e2f1fef424f34de4097b26/AndroidManifest.xml:17:1-22:12
+MERGED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:2:1-52:12
 MERGED from [com.google.firebase:firebase-messaging:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/d98c74a5a2aa3e1639e8a92649bd95d0/AndroidManifest.xml:16:1-30:12
 MERGED from [com.google.firebase:firebase-core:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-core-11.6.2.aar/cade04f5985480e1b4da0144f529aed6/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-analytics:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.6.2.aar/7cd2bb5a12a2da3095c32f7778aa4f64/AndroidManifest.xml:16:1-35:12
@@ -41,7 +42,6 @@ MERGED from [com.android.support:support-fragment:27.1.1] /home/sivlab/.gradle/c
 MERGED from [com.android.support:support-core-ui:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/c579f2b80383aa977037271e5893d4e9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/5403bc6fba3293a81a4872fccef5de78/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1b3690b15062a67f4a062d5096191909/AndroidManifest.xml:17:1-22:12
-MERGED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:multidex:1.0.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/b0e559498764594f1d7d4f5b95d89887/AndroidManifest.xml:17:1-22:12
 MERGED from [:CordovaLib] /home/sivlab/github/Smartbox/smartbox_test/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
 MERGED from [com.google.firebase:firebase-messaging-license:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-11.6.2.aar/8f3fc33ad2408df666889370da8625f4/AndroidManifest.xml:2:1-6:12
@@ -169,33 +169,33 @@ ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/
 	android:name
 		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
 receiver#com.adobe.phonegap.push.BackgroundActionButtonHandler
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:16:9-90
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:13:9-90
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:16:19-87
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:13:19-87
 receiver#com.adobe.phonegap.push.PushDismissedHandler
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:17:9-81
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:14:9-81
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:17:19-78
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:14:19-78
 service#com.adobe.phonegap.push.FCMService
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:18:9-22:19
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:15:9-19:19
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:18:18-67
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:15:18-67
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:19:13-21:29
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:16:13-18:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:20:17-78
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:17:17-78
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:20:25-75
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:17:25-75
 service#com.adobe.phonegap.push.PushInstanceIDListenerService
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:23:9-27:19
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:20:9-24:19
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:23:18-86
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:20:18-86
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:24:13-26:29
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:21:13-23:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:25:17-80
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:22:17-80
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:25:25-77
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:22:25-77
 uses-sdk
 ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:29:5-74
 INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:29:5-74
@@ -205,6 +205,8 @@ MERGED from [com.android.support:appcompat-v7:23.1.0] /home/sivlab/.gradle/cache
 MERGED from [com.android.support:appcompat-v7:23.1.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v13:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-v13-27.1.1.aar/a156297f81e2f1fef424f34de4097b26/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v13:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-v13-27.1.1.aar/a156297f81e2f1fef424f34de4097b26/AndroidManifest.xml:20:5-44
+MERGED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-messaging:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/d98c74a5a2aa3e1639e8a92649bd95d0/AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-messaging:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/d98c74a5a2aa3e1639e8a92649bd95d0/AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-core:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-core-11.6.2.aar/cade04f5985480e1b4da0144f529aed6/AndroidManifest.xml:4:5-43
@@ -233,8 +235,6 @@ MERGED from [com.android.support:support-core-utils:27.1.1] /home/sivlab/.gradle
 MERGED from [com.android.support:support-core-utils:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/5403bc6fba3293a81a4872fccef5de78/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1b3690b15062a67f4a062d5096191909/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] /home/sivlab/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/1b3690b15062a67f4a062d5096191909/AndroidManifest.xml:20:5-44
-MERGED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:7:5-9:41
-MERGED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:multidex:1.0.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/b0e559498764594f1d7d4f5b95d89887/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:multidex:1.0.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/b0e559498764594f1d7d4f5b95d89887/AndroidManifest.xml:20:5-43
 MERGED from [:CordovaLib] /home/sivlab/github/Smartbox/smartbox_test/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
@@ -268,36 +268,8 @@ INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/s
 		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:29:15-41
 		INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:30:5-81
-	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:30:22-78
-uses-permission#android.permission.CAMERA
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:31:5-90
-MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:21:5-65
-MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:21:5-65
-	android:required
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:31:63-87
-	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:31:22-62
-uses-feature#android.hardware.camera
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:32:5-85
-MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:24:5-26:36
-MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:24:5-26:36
-	android:required
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:32:58-82
-	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:32:19-57
-uses-feature#android.hardware.camera.front
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:33:5-91
-MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:27:5-29:36
-MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:27:5-29:36
-	android:required
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:33:64-88
-	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:33:19-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:34:5-79
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:30:5-79
 MERGED from [com.google.firebase:firebase-analytics:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.6.2.aar/7cd2bb5a12a2da3095c32f7778aa4f64/AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.6.2.aar/7cd2bb5a12a2da3095c32f7778aa4f64/AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.6.2.aar/e9f6217bcc59edacc55fe3b8cb4f45d2/AndroidManifest.xml:21:5-78
@@ -305,9 +277,9 @@ MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] /home/sivlab/.g
 MERGED from [com.google.firebase:firebase-iid:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/ddeb59bb0b14371f9f6502488d419c30/AndroidManifest.xml:19:5-78
 MERGED from [com.google.firebase:firebase-iid:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/ddeb59bb0b14371f9f6502488d419c30/AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:34:22-76
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:30:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:35:5-68
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:31:5-68
 MERGED from [com.google.firebase:firebase-analytics:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.6.2.aar/7cd2bb5a12a2da3095c32f7778aa4f64/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-11.6.2.aar/7cd2bb5a12a2da3095c32f7778aa4f64/AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-11.6.2.aar/e9f6217bcc59edacc55fe3b8cb4f45d2/AndroidManifest.xml:22:5-67
@@ -315,17 +287,45 @@ MERGED from [com.google.firebase:firebase-analytics-impl:11.6.2] /home/sivlab/.g
 MERGED from [com.google.firebase:firebase-iid:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/ddeb59bb0b14371f9f6502488d419c30/AndroidManifest.xml:21:5-67
 MERGED from [com.google.firebase:firebase-iid:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-iid-11.6.2.aar/ddeb59bb0b14371f9f6502488d419c30/AndroidManifest.xml:21:5-67
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:35:22-65
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:31:22-65
 uses-permission#android.permission.VIBRATE
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:36:5-66
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:32:5-66
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:36:22-63
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:32:22-63
+uses-permission#android.permission.CAMERA
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:33:5-90
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:21:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:21:5-65
+	android:required
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:33:63-87
+	android:name
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:33:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:34:5-85
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:24:5-26:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:34:58-82
+	android:name
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:34:19-57
+uses-feature#android.hardware.camera.front
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:35:5-91
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:27:5-29:36
+MERGED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:27:5-29:36
+	android:required
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:35:64-88
+	android:name
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:35:19-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:36:5-81
+	android:name
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:36:22-78
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:13:13-123
+ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:26:13-123
 	android:resource
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:13:75-120
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:26:75-120
 	android:name
-		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:13:24-74
+		ADDED from /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/src/main/AndroidManifest.xml:26:24-74
 uses-feature#android.hardware.camera.autofocus
 ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:32:5-34:36
 	android:required
@@ -364,6 +364,70 @@ ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/c
 		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:51:13-54
 	android:name
 		ADDED from [com.journeyapps:zxing-android-embedded:3.3.0] /home/sivlab/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.3.0.aar/c9e6c4c7ec66a22fa7a5c398b07cb9b8/AndroidManifest.xml:47:13-74
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:50:22-86
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/d98c74a5a2aa3e1639e8a92649bd95d0/AndroidManifest.xml:23:9-27:19
 	android:exported
@@ -486,67 +550,3 @@ ADDED from [com.google.android.gms:play-services-basement:11.6.2] /home/sivlab/.
 		ADDED from [com.google.android.gms:play-services-basement:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/19847a06977e33db820cfdfa6e37cfe2/AndroidManifest.xml:20:66-119
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:11.6.2] /home/sivlab/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/19847a06977e33db820cfdfa6e37cfe2/AndroidManifest.xml:20:20-65
-uses-permission#com.sec.android.provider.badge.permission.READ
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:19:5-86
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:19:22-83
-uses-permission#com.sec.android.provider.badge.permission.WRITE
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:20:5-87
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:20:22-84
-uses-permission#com.htc.launcher.permission.READ_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:23:5-81
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:23:22-78
-uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:24:5-83
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:24:22-80
-uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:27:5-88
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:27:22-85
-uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:28:5-92
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:28:22-89
-uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:31:5-84
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:31:22-81
-uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:34:5-83
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:34:22-80
-uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:37:5-91
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:37:22-88
-uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:38:5-92
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:38:22-89
-uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:39:5-93
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:39:22-90
-uses-permission#android.permission.READ_APP_BADGE
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:42:5-73
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:42:22-70
-uses-permission#com.oppo.launcher.permission.READ_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:45:5-82
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:45:22-79
-uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:46:5-83
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:46:22-80
-uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:49:5-88
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:49:22-85
-uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
-ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:50:5-89
-	android:name
-		ADDED from [me.leolin:ShortcutBadger:1.1.17] /home/sivlab/.gradle/caches/transforms-1/files-1.1/ShortcutBadger-1.1.17.aar/0dbe1275cd9b8b7588f61da689b4a743/AndroidManifest.xml:50:22-86

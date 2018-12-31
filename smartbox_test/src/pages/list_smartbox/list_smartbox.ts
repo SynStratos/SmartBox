@@ -28,7 +28,7 @@ export class list_smartbox_page {
       //in questo punto ho tutti i dati prelevati da firebase storage
       //bisogna iterare l'itero JSON tree su ogni chiave
       Object.keys(data).forEach(key => {
-        var string = '|'+key+'|'+data[key].id_smartbox+'|'+data[key].id_operator+'|'+data[key].hotel+'|'+data[key].level+'|'+data[key].room+'|';
+        var string = 'Time: '+key+'\nId Smartbox: '+data[key].id_smartbox+'\nId Operator: '+data[key].id_operator+'\nHotel: '+data[key].hotel+'\nFloor: '+data[key].level+'\nRoom: '+data[key].room;
         this.smart_list.push(string);
       });
 

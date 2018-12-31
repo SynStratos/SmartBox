@@ -12,8 +12,8 @@
   <ion-list>
 
     <div *ngIf="smartboxes | async as test; else loading">
-      <ion-item *ngFor="let s of test">
-        {{s}}
+      <ion-item text-wrap *ngFor="let s of test">
+        <pre>{{s}}</pre>
       </ion-item>
     </div>
 

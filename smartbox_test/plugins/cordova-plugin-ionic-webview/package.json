@@ -1,20 +1,20 @@
 {
   "_args": [
     [
-      "cordova-plugin-ionic-webview@^2.2.3",
-      "/home/sivlab/github/SmartBox/smartbox_test"
+      "cordova-plugin-ionic-webview@2.3.1",
+      "/home/sivlab/github/Smartbox/smartbox_test"
     ]
   ],
-  "_from": "cordova-plugin-ionic-webview@>=2.2.3 <3.0.0",
+  "_from": "cordova-plugin-ionic-webview@2.3.1",
   "_hasShrinkwrap": false,
-  "_id": "cordova-plugin-ionic-webview@2.2.3",
+  "_id": "cordova-plugin-ionic-webview@2.3.1",
   "_inCache": true,
   "_installable": true,
   "_location": "/cordova-plugin-ionic-webview",
-  "_nodeVersion": "10.13.0",
+  "_nodeVersion": "10.14.1",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/cordova-plugin-ionic-webview_2.2.3_1541784508979_0.14845092910102764"
+    "tmp": "tmp/cordova-plugin-ionic-webview_2.3.1_1544125803235_0.07115772308438562"
   },
   "_npmUser": {
     "email": "hi@ionicframework.com",
@@ -24,20 +24,20 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "cordova-plugin-ionic-webview",
-    "raw": "cordova-plugin-ionic-webview@^2.2.3",
-    "rawSpec": "^2.2.3",
+    "raw": "cordova-plugin-ionic-webview@2.3.1",
+    "rawSpec": "2.3.1",
     "scope": null,
-    "spec": ">=2.2.3 <3.0.0",
-    "type": "range"
+    "spec": "2.3.1",
+    "type": "version"
   },
   "_requiredBy": [
-    "/"
+    "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-ionic-webview/-/cordova-plugin-ionic-webview-2.2.3.tgz",
-  "_shasum": "92d785d8dbd1b5bc40cd82acf7ae4f18af5c5828",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ionic-webview/-/cordova-plugin-ionic-webview-2.3.1.tgz",
+  "_shasum": "13106cef1354b8aa8a4a6ef879f8759a2e707f49",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-ionic-webview@^2.2.3",
-  "_where": "/home/sivlab/github/SmartBox/smartbox_test",
+  "_spec": "cordova-plugin-ionic-webview@2.3.1",
+  "_where": "/home/sivlab/github/Smartbox/smartbox_test",
   "author": {
     "name": "Ionic Team"
   },
@@ -64,12 +64,12 @@
   },
   "directories": {},
   "dist": {
-    "fileCount": 50,
-    "integrity": "sha512-U6ufU5VVwDZuRvv9MwFixAu37r5VnXoi15T/Fg29BTGZJRZKnQ9lsJfVKtm/uLp4ITc85/3RBubOyUkRE/SOuQ==",
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb5cO9CRA9TVsSAnZWagAAUDMP/3qzyIYs5b5G8Dh4k9jC\nScDC/OPwDCBc/wTcT8HOBfAqj52Nkcvk//NbbF03qP3B/BdLQ1DqPx/jNU5u\nCeO0eKP7Z2Xe6f7FL8geQ4iSezayYMRGb0uZy7Gg0GDauQmAIkE2Fp6haMDr\ni2JfpjQpYg765aRdEotNWlAf3LjJdxRn7GonCH2KzZUrKaaoRgeX6sK5ySwl\ngaYA3IyhbX0Xn8/0NN2DF60dXMZms3E1fL1L4qsnc3Cyrs8R24QXMoe9+cBY\nMReZw/93syZKtpKubUNWsNjUuFSwyojJGvResvsZAqDd0HiAg7clxM05TT4t\nfYk5WKz3geu84Ry7Z7iNGhwGr7zDZbmgAarJRPJl//ZZrA4m7UWOLpKtxf7C\n8YwCPfrU9tgUrDINFYAk4dWzzyBCZA8EfHG/1Yno9oAL1naPkt1ebjJ8k68w\n+tiuawzBL7PdgRlvI7Nmr/x80Fs0kQ/5sU5zJur2aPm52gUaML3fkS9nwN6y\nAPau/Zff5IUYvgiFNpmEcarc6loRsXNE1fmE/4b2p4rDsg30X1PvepkS52zH\nrUSRBQa4DsIaeiRjVGU3zvQs+4lYsWG/eCDAmSY1eSlvP1N7WMgdoISVnEKR\nycRFz7/egzlvomy+Ds2hR2ZepNZPwM8YgDxmKpO878XCM7CVIZxh/r14A0oL\nQrEr\r\n=Jxhi\r\n-----END PGP SIGNATURE-----\r\n",
-    "shasum": "92d785d8dbd1b5bc40cd82acf7ae4f18af5c5828",
-    "tarball": "https://registry.npmjs.org/cordova-plugin-ionic-webview/-/cordova-plugin-ionic-webview-2.2.3.tgz",
-    "unpackedSize": 386754
+    "fileCount": 52,
+    "integrity": "sha512-tGKRp2iEYbOwZ2sT/uBU2C1YW1a43QI3YGi4WMH4LsgUdDjYGj4OZ8o7xQtRlxOKpdAjtSyLn1wz3Jip04elMg==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcCX1rCRA9TVsSAnZWagAAHNwP/jAfy4yP5Ou4vUEuomMF\nYjYEM/HaNQ6w0+HXjiUwbRm7jkf87i8R7QqxIGshvCsxtnd99V4U8rUaU9uw\niuYqtgsCWMtoojE617P10iP7X79dVLkchqM9GbsejmtSkT6NR2Icvi2gd7MQ\n0UlQoeR2X3UD5VW4EV+ndwo20Qu9lFImBucC68+yh7j9E8f6RI4YKTbm37kX\nMrWlPYnXq0Ey0Q6xLJxy5Q1dFum3DvzZWIzocFwXVyPafKLVe1fGTU4LTnGh\nl8pGSVRscnzofCH3Z8xqJdLAt92NYKhSYg9E4h3tTleV2y1GlAuOwHX6Kjy8\nJT5pREBdaWTc8MtP7D//nMzHQr7aoI+0UUk2KDLJLdeSRQn3i1kSpytWXv8D\n2hD78e1dmhhedi8UUVmuu/1hx25cwNfBQejW/Xs5LpJ/fmshZFkhAsMD1Dcm\nRKeV1fK4XglQQIE7zfLLR+kgJzZHcgwZaDWFPAo2HO8/MUiOX3ztgrQWVn7Z\nGo7C+DhxUHgaHGM4JGbUqIgvuvw4E7dl78YRg3yhd1UOfpyUEdI5MTB/l+Lz\n1ZLDw4V9R//ndTNT5ab6B9Iq+EKk5TJ89CTfvkv5dzgMMfZZJegbbdtmBoUl\n+3rmN0GebUafDMdfwhYGnEmcILcSPvI4b50PDj2iUo2RyVc2f3gpdVUI/V9G\nIhf1\r\n=Zu4G\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "13106cef1354b8aa8a4a6ef879f8759a2e707f49",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-ionic-webview/-/cordova-plugin-ionic-webview-2.3.1.tgz",
+    "unpackedSize": 394941
   },
   "engines": {
     "cordovaDependencies": {
@@ -79,7 +79,7 @@
       }
     }
   },
-  "gitHead": "c93299e9df836b8bf8644deccec1a71ae0147852",
+  "gitHead": "f0ca88fdd48ea9212120bc0b9cd598af1892fdee",
   "homepage": "https://github.com/ionic-team/cordova-plugin-ionic-webview#readme",
   "keywords": [
     "cordova",
@@ -138,5 +138,5 @@
     "sync_plugin_xml": "sync-cordova-xml package.json plugin.xml --output=plugin.xml",
     "version": "npm run sync_plugin_xml && git add plugin.xml"
   },
-  "version": "2.2.3"
+  "version": "2.3.1"
 }

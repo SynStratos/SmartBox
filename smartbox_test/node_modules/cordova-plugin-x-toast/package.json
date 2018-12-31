@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "cordova-plugin-x-toast@~2.7.0",
-      "/home/sivlab/github/SmartBox/smartbox_test"
+      "cordova-plugin-x-toast",
+      "/home/sivlab/github/Smartbox/smartbox_test"
     ]
   ],
-  "_from": "cordova-plugin-x-toast@>=2.7.0 <2.8.0",
+  "_from": "cordova-plugin-x-toast@latest",
   "_hasShrinkwrap": false,
   "_id": "cordova-plugin-x-toast@2.7.2",
   "_inCache": true,
@@ -24,20 +24,20 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "cordova-plugin-x-toast",
-    "raw": "cordova-plugin-x-toast@~2.7.0",
-    "rawSpec": "~2.7.0",
+    "raw": "cordova-plugin-x-toast",
+    "rawSpec": "",
     "scope": null,
-    "spec": ">=2.7.0 <2.8.0",
-    "type": "range"
+    "spec": "latest",
+    "type": "tag"
   },
   "_requiredBy": [
-    "/"
+    "#USER"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-x-toast/-/cordova-plugin-x-toast-2.7.2.tgz",
   "_shasum": "2f8ca705bc2664832298b348cb17204cda79c17f",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-x-toast@~2.7.0",
-  "_where": "/home/sivlab/github/SmartBox/smartbox_test",
+  "_spec": "cordova-plugin-x-toast",
+  "_where": "/home/sivlab/github/Smartbox/smartbox_test",
   "author": {
     "email": "eddyverbruggen@gmail.com",
     "name": "Eddy Verbruggen",

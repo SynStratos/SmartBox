@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "cordova-plugin-splashscreen@^5.0.2",
-      "/home/sivlab/github/SmartBox/smartbox_test"
+      "cordova-plugin-splashscreen@5.0.2",
+      "/home/sivlab/github/Smartbox/smartbox_test"
     ]
   ],
-  "_from": "cordova-plugin-splashscreen@>=5.0.2 <6.0.0",
+  "_from": "cordova-plugin-splashscreen@5.0.2",
   "_id": "cordova-plugin-splashscreen@5.0.2",
   "_inCache": true,
   "_installable": true,
@@ -23,20 +23,20 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "cordova-plugin-splashscreen",
-    "raw": "cordova-plugin-splashscreen@^5.0.2",
-    "rawSpec": "^5.0.2",
+    "raw": "cordova-plugin-splashscreen@5.0.2",
+    "rawSpec": "5.0.2",
     "scope": null,
-    "spec": ">=5.0.2 <6.0.0",
-    "type": "range"
+    "spec": "5.0.2",
+    "type": "version"
   },
   "_requiredBy": [
-    "/"
+    "#USER"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-5.0.2.tgz",
   "_shasum": "747e74f56e201cd585bc62d14bca19f6867ff1ed",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-splashscreen@^5.0.2",
-  "_where": "/home/sivlab/github/SmartBox/smartbox_test",
+  "_spec": "cordova-plugin-splashscreen@5.0.2",
+  "_where": "/home/sivlab/github/Smartbox/smartbox_test",
   "author": {
     "name": "Apache Software Foundation"
   },

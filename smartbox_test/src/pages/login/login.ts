@@ -19,6 +19,7 @@ export class LoginPage {
 
     //Disattivo il menu laterale! -> Se l'utente non si autentica non si deve poter fare nulla!
     this.menuCtrl.enable(false, 'side_menu');
+
   }
 
   login() {

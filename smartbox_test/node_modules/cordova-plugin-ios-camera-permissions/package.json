@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "cordova-plugin-ios-camera-permissions@~1.2.0",
-      "/home/sivlab/github/SmartBox/smartbox_test"
+      "cordova-plugin-ios-camera-permissions",
+      "/home/sivlab/github/Smartbox/smartbox_test"
     ]
   ],
-  "_from": "cordova-plugin-ios-camera-permissions@>=1.2.0 <1.3.0",
+  "_from": "cordova-plugin-ios-camera-permissions@latest",
   "_id": "cordova-plugin-ios-camera-permissions@1.2.0",
   "_inCache": true,
   "_installable": true,
@@ -23,20 +23,20 @@
   "_phantomChildren": {},
   "_requested": {
     "name": "cordova-plugin-ios-camera-permissions",
-    "raw": "cordova-plugin-ios-camera-permissions@~1.2.0",
-    "rawSpec": "~1.2.0",
+    "raw": "cordova-plugin-ios-camera-permissions",
+    "rawSpec": "",
     "scope": null,
-    "spec": ">=1.2.0 <1.3.0",
-    "type": "range"
+    "spec": "latest",
+    "type": "tag"
   },
   "_requiredBy": [
-    "/"
+    "#USER"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-ios-camera-permissions/-/cordova-plugin-ios-camera-permissions-1.2.0.tgz",
   "_shasum": "94612c7de5fdcf59b8630057b50739b4909e0ac9",
   "_shrinkwrap": null,
-  "_spec": "cordova-plugin-ios-camera-permissions@~1.2.0",
-  "_where": "/home/sivlab/github/SmartBox/smartbox_test",
+  "_spec": "cordova-plugin-ios-camera-permissions",
+  "_where": "/home/sivlab/github/Smartbox/smartbox_test",
   "author": {
     "email": "andreas@cordobo.de",
     "name": "Andreas Jacob",

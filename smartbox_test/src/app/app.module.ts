@@ -12,6 +12,7 @@ import { list_smartbox_page } from '../pages/list_smartbox/list_smartbox';
 import { AddSbPage } from '../pages/addsb/addsb';
 import {LoginPage} from "../pages/login/login";
 import {LogoutPage} from "../pages/logout/logout";
+import {ListNotificationsPage} from "../pages/list-notifications/list-notifications";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,6 +38,7 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push';
     MyApp,
     HomePage,
     list_smartbox_page,
+    ListNotificationsPage,
     AddSbPage,
     LoginPage,
     LogoutPage
@@ -55,6 +57,7 @@ import { Push, PushObject, PushOptions } from '@ionic-native/push';
     MyApp,
     HomePage,
     list_smartbox_page,
+    ListNotificationsPage,
     AddSbPage,
     LoginPage,
     LogoutPage

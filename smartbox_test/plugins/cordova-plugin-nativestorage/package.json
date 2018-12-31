@@ -2,7 +2,7 @@
   "_args": [
     [
       "cordova-plugin-nativestorage",
-      "/home/sivlab/github/SmartBox/smartbox_test"
+      "/home/sivlab/github/Smartbox/smartbox_test"
     ]
   ],
   "_from": "cordova-plugin-nativestorage@latest",
@@ -36,7 +36,7 @@
   "_shasum": "d6a1d50632aff2a70227102f68bc605e91aabca2",
   "_shrinkwrap": null,
   "_spec": "cordova-plugin-nativestorage",
-  "_where": "/home/sivlab/github/SmartBox/smartbox_test",
+  "_where": "/home/sivlab/github/Smartbox/smartbox_test",
   "author": {
     "email": "callebaut.gilles@gmail.com",
     "name": "Gilles Callebaut"
