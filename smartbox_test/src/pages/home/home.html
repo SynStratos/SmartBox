@@ -9,6 +9,21 @@
 
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <div text-center="">
+    <h3>Smartbox Census</h3>
+  </div>
+
+  <ion-item text-center="">
+    <button ion-button (click)="openPage(add_sb)">Add Smartbox</button>
+  </ion-item>
+  <ion-item text-center="">
+    <button ion-button (click)="openPage(list_sb)">List Smartbox</button>
+  </ion-item>
+  <ion-item  text-center="">
+    <button ion-button (click)="openPage(list_no)">List Notifications</button>
+  </ion-item>
+  <ion-item text-center="">
+    <button ion-button (click)="openPage(logout)">Logout</button>
+  </ion-item>
+
 </ion-content>

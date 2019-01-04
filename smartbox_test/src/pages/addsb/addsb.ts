@@ -80,9 +80,9 @@ export class AddSbPage {
 
     }) //in url_hotels_json ho URL del file "hotels.json"
 
-    const ref_hotels_xml_ = this.storage.ref('hotels.xml');
+    /*const ref_hotels_xml_ = this.storage.ref('hotels.xml');
     this.url_firebase_hotels_xml = ref_hotels_xml_.getDownloadURL();
-    this.url_firebase_hotels_xml.subscribe(url=>{this.url_hotels_xml = url;}) //in url_hotels_xml ho URL del file "hotels.xml"
+    this.url_firebase_hotels_xml.subscribe(url=>{this.url_hotels_xml = url;}) //in url_hotels_xml ho URL del file "hotels.xml"*/
 
   }
 
@@ -206,7 +206,7 @@ export class AddSbPage {
       //prelevo l'id dell'operatore (cioè l'email con cui si è autenticato) -> Mi serve per inviare il record al server
       //var id_operatore = await this.get_id_operator();
 
-      //TODO: si potrebbe fare una funzione "get_id_operator() solo che ritorna una Promise quindi...blabla...
+      //TODO: si potrebbe fare una funzione "get_id_operator()" solo che ritorna una Promise quindi...blabla...
 
       this.nativeStorage.getItem('id_operator')
         .then(

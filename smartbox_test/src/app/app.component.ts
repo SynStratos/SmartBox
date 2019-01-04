@@ -8,7 +8,7 @@ import { list_smartbox_page } from '../pages/list_smartbox/list_smartbox';
 import { AddSbPage } from '../pages/addsb/addsb'
 import { LoginPage } from '../pages/login/login'
 import { LogoutPage } from '../pages/logout/logout'
-import {ListNotificationsPage} from "../pages/list-notifications/list-notifications";
+import { ListNotificationsPage } from "../pages/list-notifications/list-notifications";
 import { AlertController } from 'ionic-angular';
 
 //notifiche push

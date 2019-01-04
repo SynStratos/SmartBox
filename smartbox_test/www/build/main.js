@@ -6,6 +6,11 @@ webpackJsonp([1],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__addsb_addsb__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_smartbox_list_smartbox__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__list_notifications_list_notifications__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__logout_logout__ = __webpack_require__(161);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -16,228 +21,57 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
+
+
 var HomePage = /** @class */ (function () {
-    function HomePage() {
+    function HomePage(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.add_sb = { title: 'Add Smartbox', component: __WEBPACK_IMPORTED_MODULE_2__addsb_addsb__["a" /* AddSbPage */] };
+        this.list_sb = { title: 'List Smartbox', component: __WEBPACK_IMPORTED_MODULE_3__list_smartbox_list_smartbox__["a" /* list_smartbox_page */] };
+        this.list_no = { title: 'List Notifications', component: __WEBPACK_IMPORTED_MODULE_4__list_notifications_list_notifications__["a" /* ListNotificationsPage */] };
+        this.logout = { title: 'Logout', component: __WEBPACK_IMPORTED_MODULE_5__logout_logout__["a" /* LogoutPage */] };
     }
-    HomePage = __decorate([
+    HomePage_1 = HomePage;
+    HomePage.prototype.openPage = function (page) {
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        if (page.component == HomePage_1) {
+            //se non ci fosse if-else e solo questo comando, non si potrebbe usare il pulsante "back"
+            this.navCtrl.setRoot(HomePage_1);
+        }
+        else {
+            this.navCtrl.push(page.component);
+        }
+    };
+    HomePage = HomePage_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>HOME</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>HOME</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content padding>\n  <div text-center="">\n    <h3>Smartbox Census</h3>\n  </div>\n\n  <ion-item text-center="">\n    <button ion-button (click)="openPage(add_sb)">Add Smartbox</button>\n  </ion-item>\n  <ion-item text-center="">\n    <button ion-button (click)="openPage(list_sb)">List Smartbox</button>\n  </ion-item>\n  <ion-item  text-center="">\n    <button ion-button (click)="openPage(list_no)">List Notifications</button>\n  </ion-item>\n  <ion-item text-center="">\n    <button ion-button (click)="openPage(logout)">Logout</button>\n  </ion-item>\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
     ], HomePage);
     return HomePage;
+    var HomePage_1;
 }());
 
 //# sourceMappingURL=home.js.map
 
 /***/ }),
 
-/***/ 158:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(72);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
- //memorizzazione dati storage permanente (es. email = id_operatore)
-var LoginPage = /** @class */ (function () {
-    function LoginPage(afAuth, alertCtrl, menuCtrl, navCtrl, nativeStorage) {
-        this.afAuth = afAuth;
-        this.alertCtrl = alertCtrl;
-        this.menuCtrl = menuCtrl;
-        this.navCtrl = navCtrl;
-        this.nativeStorage = nativeStorage;
-        //Disattivo il menu laterale! -> Se l'utente non si autentica non si deve poter fare nulla!
-        this.menuCtrl.enable(false, 'side_menu');
-    }
-    LoginPage.prototype.login = function () {
-        var _this = this;
-        if (this.validation_email(this.email_operator)) {
-            this.afAuth.auth.signInWithEmailAndPassword(this.email_operator, this.password_operator)
-                .then(function () {
-                console.log("Autenticazione OK");
-                _this.alert("Autenticazione", "Autenticazione avvenuta con successo!", "Ok");
-                //memorizzo nello storage (nativo) l'email dell'operatore (id_operator) -> mi serve perchè lo memorizzo nel database insieme alla smartbox censita
-                _this.nativeStorage.setItem('id_operator', _this.email_operator)
-                    .then(function () {
-                    //Dato memorizzato con successo
-                    console.log("Dato id_operator memorizzato con successo"); //debug
-                    //Riattivo il menu laterale! Login avvenuto con successo!
-                    _this.menuCtrl.enable(true, 'side_menu');
-                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]); //setto la rootPage
-                    _this.navCtrl.popToRoot(); //vado alla rootPage (appena settata)
-                }, function (error) {
-                    //Dato non memorizzato con successo
-                    console.error("Errore nel prelevare il dato: " + error.toString()); //debug
-                    _this.alert("Errore", "Impossibile accedere allo storage del dispositivo. Contattare l'amministratore di sistema.", "Ok");
-                });
-            }, function (error) {
-                _this.alert("Errore di autenticazione: ", error, "Riprova");
-                console.error("Errore di autenticazione: " + error);
-            });
-        }
-        else {
-            this.alert("Errore Email", "Il formato dell'email non è corretto. \n(RFC 5322)", "Riprova");
-        }
-    };
-    LoginPage.prototype.validation_email = function (email) {
-        //General Email Regex (RFC 5322 Official Standard)
-        var regexp_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if (regexp_email.exec(email)) {
-            //email formattata bene
-            return true;
-        }
-        else {
-            return false;
-        }
-    };
-    LoginPage.prototype.alert = function (titolo, sottotitolo, button) {
-        var alert = this.alertCtrl.create({
-            title: titolo,
-            subTitle: sottotitolo,
-            buttons: [button]
-        });
-        alert.present();
-    };
-    LoginPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/login/login.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n    <ion-item text-center="">\n      <ion-label color="primary">Email:</ion-label>\n      <ion-input [(ngModel)]="email_operator" type="email" placeholder="Email/Username"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <ion-label color="primary">Password:</ion-label>\n      <ion-input [(ngModel)]="password_operator" type="password" placeholder="Password"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <button ion-button (click)="login()">LOGIN</button>\n    </ion-item>\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/login/login.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* MenuController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__["a" /* NativeStorage */]])
-    ], LoginPage);
-    return LoginPage;
-}());
-
-//# sourceMappingURL=login.js.map
-
-/***/ }),
-
-/***/ 198:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 198;
-
-/***/ }),
-
-/***/ 242:
-/***/ (function(module, exports) {
-
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
-	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 242;
-
-/***/ }),
-
-/***/ 285:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return list_smartbox_page; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(12);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var list_smartbox_page = /** @class */ (function () {
-    function list_smartbox_page(alertCtrl, db) {
-        this.alertCtrl = alertCtrl;
-        this.db = db;
-        this.smart_list = [];
-        this.get_smartboxes();
-    }
-    list_smartbox_page.prototype.get_smartboxes = function () {
-        var _this = this;
-        this.smartboxes_ = this.db.object('smartbox_censite').valueChanges();
-        this.smartboxes_.subscribe(function (data) {
-            //in questo punto ho tutti i dati prelevati da firebase storage
-            //bisogna iterare l'itero JSON tree su ogni chiave
-            Object.keys(data).forEach(function (key) {
-                var string = 'Time: ' + key + '\nId Smartbox: ' + data[key].id_smartbox + '\nId Operator: ' + data[key].id_operator + '\nHotel: ' + data[key].hotel + '\nFloor: ' + data[key].level + '\nRoom: ' + data[key].room;
-                _this.smart_list.push(string);
-            });
-            _this.smartboxes = Object(__WEBPACK_IMPORTED_MODULE_3_rxjs__["of"])(_this.smart_list);
-        });
-    };
-    list_smartbox_page.prototype.alert = function (titolo, sottotitolo, button) {
-        var alert = this.alertCtrl.create({
-            title: titolo,
-            subTitle: sottotitolo,
-            buttons: [button]
-        });
-        alert.present();
-    };
-    list_smartbox_page = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list_smartbox/list_smartbox.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>LIST SMARTBOX</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n\n    <div *ngIf="smartboxes | async as test; else loading">\n      <ion-item text-wrap *ngFor="let s of test">\n        <pre>{{s}}</pre>\n      </ion-item>\n    </div>\n\n  </ion-list>\n\n</ion-content>\n\n<ng-template #loading>\n  Loading...\n</ng-template>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list_smartbox/list_smartbox.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
-    ], list_smartbox_page);
-    return list_smartbox_page;
-}());
-
-//# sourceMappingURL=list_smartbox.js.map
-
-/***/ }),
-
-/***/ 293:
+/***/ 156:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddSbPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ionic_native_http__ = __webpack_require__(289);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_qr_scanner__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_storage__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_fire_database__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_qr_scanner__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_fire_storage__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_fire_database__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_native_storage__ = __webpack_require__(72);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -570,14 +404,15 @@ var AddSbPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 302:
+/***/ 159:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoutPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return list_smartbox_page; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs__ = __webpack_require__(12);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -590,40 +425,55 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LogoutPage = /** @class */ (function () {
-    function LogoutPage(navCtrl) {
-        this.navCtrl = navCtrl;
-        this.logout();
+
+var list_smartbox_page = /** @class */ (function () {
+    function list_smartbox_page(alertCtrl, db) {
+        this.alertCtrl = alertCtrl;
+        this.db = db;
+        this.smart_list = [];
+        this.get_smartboxes();
     }
-    LogoutPage.prototype.logout = function () {
-        /*
-        il logout dell'utente non fa che:
-          -settare la rootpage = loginpage
-          -e da questa pagina (vedi relativo codice) non si può andare da nessuna parte se non ci si autentica
-         */
-        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]); //setto la rootPage
-        this.navCtrl.popToRoot(); //vado alla rootPage (appena settata)
+    list_smartbox_page.prototype.get_smartboxes = function () {
+        var _this = this;
+        this.smartboxes_ = this.db.object('smartbox_censite').valueChanges();
+        this.smartboxes_.subscribe(function (data) {
+            //in questo punto ho tutti i dati prelevati da firebase storage
+            //bisogna iterare l'itero JSON tree su ogni chiave
+            Object.keys(data).forEach(function (key) {
+                var string = 'Time: ' + key + '\nId Smartbox: ' + data[key].id_smartbox + '\nId Operator: ' + data[key].id_operator + '\nHotel: ' + data[key].hotel + '\nFloor: ' + data[key].level + '\nRoom: ' + data[key].room;
+                _this.smart_list.push(string);
+            });
+            _this.smartboxes = Object(__WEBPACK_IMPORTED_MODULE_3_rxjs__["of"])(_this.smart_list);
+        });
     };
-    LogoutPage = __decorate([
+    list_smartbox_page.prototype.alert = function (titolo, sottotitolo, button) {
+        var alert = this.alertCtrl.create({
+            title: titolo,
+            subTitle: sottotitolo,
+            buttons: [button]
+        });
+        alert.present();
+    };
+    list_smartbox_page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-logout',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/logout/logout.html"*/'<!--\nPagina vuota\nIl layout di questa pagina non viene nemmeno caricato in quanto, nel costruttore (vedi logout.ts)\nsi rimanda immediatamente il controllo alla pagina LoginPage (si effettua il logout)\n-->\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/logout/logout.html"*/,
+            selector: 'page-list',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list_smartbox/list_smartbox.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>LIST SMARTBOX</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n\n    <div *ngIf="smartboxes | async as test; else loading">\n      <ion-item text-wrap *ngFor="let s of test">\n        <pre>{{s}}</pre>\n      </ion-item>\n    </div>\n\n  </ion-list>\n\n</ion-content>\n\n<ng-template #loading>\n  Loading...\n</ng-template>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list_smartbox/list_smartbox.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
-    ], LogoutPage);
-    return LogoutPage;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2__angular_fire_database__["a" /* AngularFireDatabase */]])
+    ], list_smartbox_page);
+    return list_smartbox_page;
 }());
 
-//# sourceMappingURL=logout.js.map
+//# sourceMappingURL=list_smartbox.js.map
 
 /***/ }),
 
-/***/ 303:
+/***/ 160:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListNotificationsPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__ = __webpack_require__(72);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -696,7 +546,7 @@ var ListNotificationsPage = /** @class */ (function () {
     };
     ListNotificationsPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-list-notifications',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list-notifications/list-notifications.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>LIST NOTIFICATIONS</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n\n    <div *ngIf="notifications_ | async as notify; else loading">\n      <ion-item *ngFor="let n of notify">\n        <pre>{{n}}</pre>\n      </ion-item>\n    </div>\n\n  </ion-list>\n\n  <button ion-button (click)="erase_notifications()">ERASE NOTIFICATIONS</button>\n\n</ion-content>\n\n<ng-template #loading>\n  Loading...\n</ng-template>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list-notifications/list-notifications.html"*/,
+            selector: 'page-list-notifications',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list-notifications/list-notifications.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>LIST NOTIFICATIONS</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n  <ion-list>\n\n    <div *ngIf="notifications_ | async as notify; else loading">\n      <ion-item *ngFor="let n of notify">\n        <pre>{{n}}</pre>\n      </ion-item>\n    </div>\n\n  </ion-list>\n\n  <ion-item text-center="">\n    <button ion-button (click)="erase_notifications()">ERASE NOTIFICATIONS</button>\n  </ion-item>\n\n</ion-content>\n\n<ng-template #loading>\n  Loading...\n</ng-template>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/list-notifications/list-notifications.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_native_storage__["a" /* NativeStorage */]])
     ], ListNotificationsPage);
@@ -704,6 +554,184 @@ var ListNotificationsPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=list-notifications.js.map
+
+/***/ }),
+
+/***/ 161:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LogoutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login__ = __webpack_require__(162);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var LogoutPage = /** @class */ (function () {
+    function LogoutPage(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.logout();
+    }
+    LogoutPage.prototype.logout = function () {
+        /*
+        il logout dell'utente non fa che:
+          -settare la rootpage = loginpage
+          -e da questa pagina (vedi relativo codice) non si può andare da nessuna parte se non ci si autentica
+         */
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_2__login_login__["a" /* LoginPage */]); //setto la rootPage
+        this.navCtrl.popToRoot(); //vado alla rootPage (appena settata)
+    };
+    LogoutPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-logout',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/logout/logout.html"*/'<!--\nPagina vuota\nIl layout di questa pagina non viene nemmeno caricato in quanto, nel costruttore (vedi logout.ts)\nsi rimanda immediatamente il controllo alla pagina LoginPage (si effettua il logout)\n-->\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/logout/logout.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]])
+    ], LogoutPage);
+    return LogoutPage;
+}());
+
+//# sourceMappingURL=logout.js.map
+
+/***/ }),
+
+/***/ 162:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__ = __webpack_require__(72);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+ //memorizzazione dati storage permanente (es. email = id_operatore)
+var LoginPage = /** @class */ (function () {
+    function LoginPage(afAuth, alertCtrl, menuCtrl, navCtrl, nativeStorage) {
+        this.afAuth = afAuth;
+        this.alertCtrl = alertCtrl;
+        this.menuCtrl = menuCtrl;
+        this.navCtrl = navCtrl;
+        this.nativeStorage = nativeStorage;
+        //Disattivo il menu laterale! -> Se l'utente non si autentica non si deve poter fare nulla!
+        this.menuCtrl.enable(false, 'side_menu');
+    }
+    LoginPage.prototype.login = function () {
+        var _this = this;
+        if (this.validation_email(this.email_operator)) {
+            this.afAuth.auth.signInWithEmailAndPassword(this.email_operator, this.password_operator)
+                .then(function () {
+                console.log("Autenticazione OK");
+                _this.alert("Autenticazione", "Autenticazione avvenuta con successo!", "Ok");
+                //memorizzo nello storage (nativo) l'email dell'operatore (id_operator) -> mi serve perchè lo memorizzo nel database insieme alla smartbox censita
+                _this.nativeStorage.setItem('id_operator', _this.email_operator)
+                    .then(function () {
+                    //Dato memorizzato con successo
+                    console.log("Dato id_operator memorizzato con successo"); //debug
+                    //Riattivo il menu laterale! Login avvenuto con successo!
+                    _this.menuCtrl.enable(true, 'side_menu');
+                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_3__home_home__["a" /* HomePage */]); //setto la rootPage
+                    _this.navCtrl.popToRoot(); //vado alla rootPage (appena settata)
+                }, function (error) {
+                    //Dato non memorizzato con successo
+                    console.error("Errore nel prelevare il dato: " + error.toString()); //debug
+                    _this.alert("Errore", "Impossibile accedere allo storage del dispositivo. Contattare l'amministratore di sistema.", "Ok");
+                });
+            }, function (error) {
+                _this.alert("Errore di autenticazione: ", error, "Riprova");
+                console.error("Errore di autenticazione: " + error);
+            });
+        }
+        else {
+            this.alert("Errore Email", "Il formato dell'email non è corretto. \n(RFC 5322)", "Riprova");
+        }
+    };
+    LoginPage.prototype.validation_email = function (email) {
+        //General Email Regex (RFC 5322 Official Standard)
+        var regexp_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (regexp_email.exec(email)) {
+            //email formattata bene
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
+    LoginPage.prototype.alert = function (titolo, sottotitolo, button) {
+        var alert = this.alertCtrl.create({
+            title: titolo,
+            subTitle: sottotitolo,
+            buttons: [button]
+        });
+        alert.present();
+    };
+    LoginPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-login',template:/*ion-inline-start:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/login/login.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>Login</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n\n    <ion-item text-center="">\n      <ion-label color="primary">Email:</ion-label>\n      <ion-input [(ngModel)]="email_operator" type="email" placeholder="Email/Username"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <ion-label color="primary">Password:</ion-label>\n      <ion-input [(ngModel)]="password_operator" type="password" placeholder="Password"></ion-input>\n    </ion-item>\n\n    <ion-item text-center="">\n      <button ion-button (click)="login()">LOGIN</button>\n    </ion-item>\n\n</ion-content>\n'/*ion-inline-end:"/home/sivlab/github/Smartbox/smartbox_test/src/pages/login/login.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_fire_auth__["a" /* AngularFireAuth */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* MenuController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_native_storage__["a" /* NativeStorage */]])
+    ], LoginPage);
+    return LoginPage;
+}());
+
+//# sourceMappingURL=login.js.map
+
+/***/ }),
+
+/***/ 202:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 202;
+
+/***/ }),
+
+/***/ 246:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 246;
 
 /***/ }),
 
@@ -726,27 +754,27 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ionic_native_qr_scanner__ = __webpack_require__(203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common_http__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(494);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_smartbox_list_smartbox__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_logout_logout__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_list_notifications_list_notifications__ = __webpack_require__(303);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_http__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_list_smartbox_list_smartbox__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_addsb_addsb__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_login_login__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_logout_logout__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_list_notifications_list_notifications__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_status_bar__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_splash_screen__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__ionic_native_http__ = __webpack_require__(289);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__ionic_native_native_storage__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__angular_fire__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_fire_storage__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_fire_storage__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__environments_environment__ = __webpack_require__(520);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_fire_auth__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_fire_database__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_fire_auth__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_fire_database__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__angular_fire_messaging__ = __webpack_require__(521);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_push__ = __webpack_require__(304);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -842,15 +870,15 @@ var AppModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(288);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_smartbox_list_smartbox__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_addsb_addsb__ = __webpack_require__(293);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_logout_logout__ = __webpack_require__(302);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_list_notifications_list_notifications__ = __webpack_require__(303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_smartbox_list_smartbox__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_addsb_addsb__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_login_login__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_logout_logout__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_list_notifications_list_notifications__ = __webpack_require__(160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_push__ = __webpack_require__(304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_native_storage__ = __webpack_require__(72);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -938,7 +966,7 @@ var MyApp = /** @class */ (function () {
                 console.log("Notifica memorizzata con successo");
             });
             //alert all'utente con il contenuto della notifica
-            _this.alert("Notifica: " + notification.title, notification.message + "<br/>.La notifica può essere riletta nella sezione list notifications", "Ok");
+            _this.alert("Notifica: " + notification.title, notification.message + "<br/>La notifica può essere riletta nella sezione list notifications", "Ok");
         });
         pushObject.on('registration').subscribe(function (registration) { return console.log('Device registered', registration); });
         pushObject.on('error').subscribe(function (error) { return console.error('Error with Push plugin', error); });
