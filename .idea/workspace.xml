@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" line="215" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" line="299" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17c12d58-934f-4371-bf16-ea56e9bd6d18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/.sourcemaps/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-plugin-camera/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/node_modules/cordova-plugin-camera/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/smartbox_test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
@@ -22,10 +24,7 @@
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/home/home.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/vendor.js" afterDir="false" />
@@ -52,23 +51,25 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="106" column="59" lean-forward="true" selection-start-line="106" selection-start-column="59" selection-end-line="106" selection-end-column="59" />
+            <state relative-caret-position="691">
+              <caret line="274" column="3" lean-forward="true" selection-start-line="274" selection-start-column="3" selection-end-line="274" selection-end-column="3" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
                 <element signature="e#440#488#0" expanded="true" />
                 <element signature="n#!!block;n#constructor#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#firebase_get_url#0;n#AddSbPage#0" />
+                <element signature="n#!!block;n#loadData#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#qr_scanner#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#send_data#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#check_qr_code#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#alert#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#toggle_div#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#fillLevels#0;n#AddSbPage#0" />
+                <element signature="n#!!block;n#fillRooms#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#showCamera#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#hideCamera#0;n#AddSbPage#0" />
                 <element signature="n#!!block;n#ionViewWillLeave#0;n#AddSbPage#0" />
@@ -99,7 +100,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ListSmartbox" />
+        <entry key="$PROJECT_DIR$" value="RC_1.0" />
       </map>
     </option>
   </component>
@@ -140,10 +141,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
     <option name="y" value="25" />
-    <option name="width" value="1922" />
-    <option name="height" value="1056" />
+    <option name="width" value="960" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -153,6 +153,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,8 +246,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,7 +340,8 @@
       <workItem from="1546178197000" duration="41298000" />
       <workItem from="1546256024438" duration="7959000" />
       <workItem from="1546337951115" duration="23000" />
-      <workItem from="1546552207375" duration="2977000" />
+      <workItem from="1546552207375" duration="17699000" />
+      <workItem from="1546826235691" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="commit1_">
       <created>1544655831716</created>
@@ -391,16 +392,24 @@
       <option name="project" value="LOCAL" />
       <updated>1546263521612</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ReleaseCandidate1.0&#10;-Aggiunta HomePage&#10;-Migliorie Grafiche">
+      <created>1546564882640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546564882640</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108211000" />
+    <option name="totallyTimeSpent" value="123064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13927428" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14087513" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -421,7 +430,6 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
       <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4994664" weight="0.3721925" />
-      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -431,6 +439,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.32977587" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13607258" />
@@ -517,19 +526,8 @@
     <MESSAGE value="Notifiche: OK" />
     <MESSAGE value="ListaNotifiche: OK" />
     <MESSAGE value="ListaNotifiche: OK&#10;Migliorie Grafiche" />
-    <option name="LAST_COMMIT_MESSAGE" value="ListaNotifiche: OK&#10;Migliorie Grafiche" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts</url>
-          <line>1</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="ReleaseCandidate1.0&#10;-Aggiunta HomePage&#10;-Migliorie Grafiche" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReleaseCandidate1.0&#10;-Aggiunta HomePage&#10;-Migliorie Grafiche" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova/node_modules/cordova-common/src/PluginManager.js">
@@ -726,6 +724,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/list-notifications/list-notifications.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -742,35 +754,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/list-notifications/list-notifications.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="106" column="59" lean-forward="true" selection-start-line="106" selection-start-column="59" selection-end-line="106" selection-end-column="59" />
+        <state relative-caret-position="691">
+          <caret line="274" column="3" lean-forward="true" selection-start-line="274" selection-start-column="3" selection-end-line="274" selection-end-column="3" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
             <element signature="e#440#488#0" expanded="true" />
             <element signature="n#!!block;n#constructor#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#firebase_get_url#0;n#AddSbPage#0" />
+            <element signature="n#!!block;n#loadData#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#qr_scanner#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#send_data#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#check_qr_code#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#alert#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#toggle_div#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#fillLevels#0;n#AddSbPage#0" />
+            <element signature="n#!!block;n#fillRooms#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#showCamera#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#hideCamera#0;n#AddSbPage#0" />
             <element signature="n#!!block;n#ionViewWillLeave#0;n#AddSbPage#0" />

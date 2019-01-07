@@ -8,6 +8,7 @@ import { AlertController } from 'ionic-angular';
 import { AngularFireStorage } from '@angular/fire/storage';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { NativeStorage } from '@ionic-native/native-storage'; //prelevo dati storage permanente (id operatore)
+import * as xml2js from 'xml2js'; //per la parte di xml
 
 
 
@@ -43,8 +44,6 @@ export class AddSbPage {
   //Variabili per gestire il database su firebase
   public items: Observable<any[]>;
 
-
-
   constructor(public alertCtrl: AlertController, public qrScanner: QRScanner, public http: HTTP, public storage: AngularFireStorage, public db: AngularFireDatabase, public nativeStorage: NativeStorage) {
     /*
     Flusso del programma:
@@ -75,43 +74,128 @@ export class AddSbPage {
       //lo salvo
       //chiamo le funzione per prendere il file (loadData())
       this.url_hotels_json = url;
-      this.loadData();
-
+      this.loadData("json", url); //per abilitare file XML commentare questa riga e decommentare quella XML
 
     }) //in url_hotels_json ho URL del file "hotels.json"
 
-    /*const ref_hotels_xml_ = this.storage.ref('hotels.xml');
+    const ref_hotels_xml_ = this.storage.ref('hotels.xml');
     this.url_firebase_hotels_xml = ref_hotels_xml_.getDownloadURL();
-    this.url_firebase_hotels_xml.subscribe(url=>{this.url_hotels_xml = url;}) //in url_hotels_xml ho URL del file "hotels.xml"*/
+    this.url_firebase_hotels_xml.subscribe(url=>{
+
+      //una volta che l'observer ha ricevuto l'url
+      //lo salvo
+      //chiamo le funzione per prendere il file (loadData())
+      this.url_hotels_xml = url;
+      //this.loadData("xml", url); //per abilitare file JSON commentare questa riga e decommentare quella JSON
+
+    }) //in url_hotels_xml ho URL del file "hotels.xml"*/
 
   }
 
 
-  //Funzione prelievo dati attraverso i link + validazione
-  loadData(){
 
-    //richiesta http
-    this.http.get(this.url_hotels_json, {}, {})
+  //Funzione prelievo dati attraverso i link + validazione
+  loadData(formato, url){
+
+
+    this.http.get(url, {}, {})
       .then(data => {
 
-        //validazione del file -> validazione JSON
-        try {
-          this.temp = JSON.parse(data.data); //test error -> passare "b" data.data
+        //Creo funzione di validazione
+        let Validation = function(){
+        };
+        /*Creo il suo prototipo aggiungendo due metodi:
+          -setStrategy = setta la strategia (Vedi pattern "Strategy")
+          -validate() = algoritmo che lancia la validazione
+         Essendo un prototipo, ogni instanza di Validation "erediterà" tali funzioni
+         Formalmente: avrà un puntatore a tale protitpo
+        */
+        Validation.prototype = {
+          setStrategy: function(strategy) {
+            this.strategy = strategy;
+          },
 
-
-          //Validation del file JSON ha avuto successo!
-          console.log("Loading dei dati avvenuto con successo.");
-
-          //validazione OK -> Carico i dati in hotel
-          for (let i = 0; i < this.temp.hotels.length; i++) {
-            this.hotels[i] = this.temp.hotels[i].name_hotel
+          validation: function() {
+            return this.strategy();
           }
+        };
+
+        /*
+        Pattern Strategy:
+          -Creo oggetto di tipo Validation
+          -Creo strategie (vedi definizione esterne alla classe)
+          -Assegno la strategia (una delle strategie definite al punto sopra)
+          -Chiamo la strategia
+        */
+
+        let validation = new Validation();
+
+        if(formato == "json"){
+          console.log("Validazione JSON");
+          //SETTO LA STRATEGIA (VALIDATION + PARSING) FILE JSON
+          validation.setStrategy(function(){
+            let temp = JSON.parse(data.data); //test error -> passare "b" data.data
+            //Validation del file JSON ha avuto successo!
+            console.log("Loading dei dati avvenuto con successo.");
+            let hotels = [];
+            //validazione OK -> Carico i dati in hotel
+            for (let i = 0; i < temp.hotels.length; i++) {
+              hotels[i] = temp.hotels[i].name_hotel
+            }
+            return [temp, hotels];
+          });
+        }
+        else if (formato == "xml"){
+          console.log("Validazione XML");
+          //SETTO LA STRATEGIA (VALIDATION + PARSING) FILE XML
+          validation.setStrategy(function(){
+
+            var risultato1 = null;
+            var risultato2 = null;
+
+            xml2js.parseString(data.data, function (err, result) {
+              var hotels = []; //conterrà i nomi degli hotel
+              //var temp = []; -> Inutile, restituisco direttamente result
+
+              //TODO: C'È DA PARSARE ANCHE "result" -> Vedi sopra perchè
+              //Rispetto al file JSON c'è un "hotel" in più -> Questo per come xml2js crea il JSON a partire dall'XML
+              //C'è un livello in più
+              //Devo inserire "hotel" in "hotels" (vedi con console.log() come è formattato)
+              //Formalmente: result.hotels.hotel = result.hotels <- ma in questa forma non si può fare
+              result.temp = result.hotels.hotel;
+              delete result.hotels.hotel;
+              result.hotels = result.temp;
+
+              for (let i = 0; i < result.hotels.length; i++){
+                hotels[i] = result.hotels[i].name_hotel[0];
+              }
+
+
+              risultato1 = result;
+              risultato2 = hotels;
+              //non è un return, questa è una funzione di callback!
+            });
+
+            return [risultato1, risultato2]; //il return precedente non bastava perchè quel return era della funzione di callback!
+
+          });
+        }
+
+
+        try {
+          //QUI EFFETTUO LA VALIDAZIONE+PARSING DEL FILE (JSON/XML) CHE SIA
+          //QUINDI CHIAMO LA GENERICA STRATEGIA DEL PATTERN STRATEGY (CHE HO SETTATO SOPRA)
+          let results = validation.validation();
+
+          this.temp = results[0]; //ho l'array con tutti gli hotel -> Mi servirà per "filllevel" e "fillroom"
+          this.hotels = results[1]; // ho solo i nomi di tutti gli hotel
+
 
           //mostro il pulsante per scansionare
           this.toggle_div("show_button_qrscan", "enable");
 
         } catch (e) {
-          this.error = "Errore nella validazione del file JSON relativo alle piantine. Contattare amministratore di sistema.\t\t\n\nErrore specifico: " + e.message;
+          this.error = "Errore nella validazione del file "+formato+" relativo alle piantine. Contattare amministratore di sistema.\t\t\n\nErrore specifico: " + e.message;
           console.log(this.error);
           //display image error
           this.toggle_div("display_error", "enable");
@@ -395,4 +479,5 @@ export class AddSbPage {
     console.log("Uscendo dalla pagina \"addsb\" -> Ripristino trasparenza sfondo");
     this.hideCamera();
   }
+
 }
