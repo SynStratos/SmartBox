@@ -22,11 +22,14 @@ export class list_smartbox_page {
   }
 
   get_smartboxes(){
+
+    //Interfacciamento a Firebase Realtime Database
     this.smartboxes_ = this.db.object('smartbox_censite').valueChanges();
     this.smartboxes_.subscribe(data => {
 
       //in questo punto ho tutti i dati prelevati da firebase storage
       //bisogna iterare l'itero JSON tree su ogni chiave
+      //inserisco ogni smartbox censita nella variabile smart_list
       Object.keys(data).forEach(key => {
         var string = 'Time: '+key+'\nId Smartbox: '+data[key].id_smartbox+'\nId Operator: '+data[key].id_operator+'\nHotel: '+data[key].hotel+'\nFloor: '+data[key].level+'\nRoom: '+data[key].room;
         this.smart_list.push(string);

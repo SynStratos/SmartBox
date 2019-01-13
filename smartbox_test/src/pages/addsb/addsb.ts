@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {HTTP} from '@ionic-native/http';
 import {Observable} from 'rxjs/Observable';
-//import 'rxjs/add/observable/of'; -> Uso metodo Observable.og()
+//import 'rxjs/add/observable/of'; -> Uso metodo Observable.of()
 import { of } from 'rxjs'; //ed uso direttamente -> of() -> Questo perchè si è passati a rxjs@6xx (per far funzionare download file di firebase, vedi changelog)
 import {QRScanner, QRScannerStatus} from '@ionic-native/qr-scanner'; //scansione qrcode
 import { AlertController } from 'ionic-angular';
@@ -108,7 +108,7 @@ export class AddSbPage {
           -setStrategy = setta la strategia (Vedi pattern "Strategy")
           -validate() = algoritmo che lancia la validazione
          Essendo un prototipo, ogni instanza di Validation "erediterà" tali funzioni
-         Formalmente: avrà un puntatore a tale protitpo
+         Formalmente: avrà un puntatore a tale prototipo
         */
         Validation.prototype = {
           setStrategy: function(strategy) {
@@ -122,7 +122,7 @@ export class AddSbPage {
 
         /*
         Pattern Strategy:
-          -Creo oggetto di tipo Validation
+          -Creo oggetto di tipo Validation (cioè il Context, "contesto di utilizzo")
           -Creo strategie (vedi definizione esterne alla classe)
           -Assegno la strategia (una delle strategie definite al punto sopra)
           -Chiamo la strategia
@@ -157,7 +157,7 @@ export class AddSbPage {
               var hotels = []; //conterrà i nomi degli hotel
               //var temp = []; -> Inutile, restituisco direttamente result
 
-              //TODO: C'È DA PARSARE ANCHE "result" -> Vedi sopra perchè
+              //TODO: C'È DA PARSARE ANCHE "result" -> Vedi sotto
               //Rispetto al file JSON c'è un "hotel" in più -> Questo per come xml2js crea il JSON a partire dall'XML
               //C'è un livello in più
               //Devo inserire "hotel" in "hotels" (vedi con console.log() come è formattato)
@@ -176,7 +176,7 @@ export class AddSbPage {
               //non è un return, questa è una funzione di callback!
             });
 
-            return [risultato1, risultato2]; //il return precedente non bastava perchè quel return era della funzione di callback!
+            return [risultato1, risultato2]; //il "return" precedente non bastava perchè quel return era della funzione di callback!
 
           });
         }
@@ -288,9 +288,8 @@ export class AddSbPage {
       //invio dati al server
 
       //prelevo l'id dell'operatore (cioè l'email con cui si è autenticato) -> Mi serve per inviare il record al server
-      //var id_operatore = await this.get_id_operator();
 
-      //TODO: si potrebbe fare una funzione "get_id_operator()" solo che ritorna una Promise quindi...blabla...
+      //TODO: si potrebbe fare una funzione "get_id_operator()" solo che ritorna una Promise
 
       this.nativeStorage.getItem('id_operator')
         .then(
@@ -338,29 +337,6 @@ export class AddSbPage {
       this.alert("Errore", "Tutti i campi devono essere non vuoti", "Riprova");
     }
 
-/*    this.items = db.list('smartbox_censite').valueChanges();
-    this.items.subscribe(value => console.log(value));
-    const itemRef = db.object('smartbox_censite');
-
-    //nel metodo "update()" non si possono passare più variabili, quindi creo una sola variabile ("final_string") che contiene il nuovo elemento da inserire nel database
-    //esempio: "timestamp" : {"hotel":"hotel1", "level":"level3", "room":"room105"}
-
-    var value = {
-      hotel: null,
-      level: null,
-      room: null,
-      id_smartbox: null
-    };
-    value.hotel = "hotel1";
-    value.level = "level3";
-    value.room = "room105";
-    value.id_smartbox = "65";
-    var valueString= JSON.stringify(value); //value come stringa
-    var timestamp = Date.now(); //timestamp come stringa
-    var final_string = "{\"" + timestamp + "\"" + ":" + valueString + "}"; //creo la stringa finale: timestamp : value (key : value)
-
-    //prima di passare al metodo update() creo un oggetto JSON a partire dalla stringa
-    itemRef.update(JSON.parse(final_string));*/
   }
 
 

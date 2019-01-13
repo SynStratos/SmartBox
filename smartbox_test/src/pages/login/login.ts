@@ -24,8 +24,10 @@ export class LoginPage {
 
   login() {
 
+    //Validazione email -> RFC
     if(this.validation_email(this.email_operator)){
 
+      //Interfacciamento al sistema di autenticazione di Firebase (email, password)
       this.afAuth.auth.signInWithEmailAndPassword(this.email_operator,this.password_operator)
         .then(
           () => {

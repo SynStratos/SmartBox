@@ -67,6 +67,7 @@ export class MyApp {
     }
   }
 
+  //Funzione che gestisce il setup per le notifiche -> Cioè il sistema si prepara per ricevere le push notifications
   pushSetup(){
 
     const options: PushOptions = {
