@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>HOME</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div text-center="">
+    <h3>Smartbox Census</h3>
+  </div>
+
+  <ion-item text-center="">
+    <button ion-button (click)="openPage(add_sb)">Add Smartbox</button>
+  </ion-item>
+  <ion-item text-center="">
+    <button ion-button (click)="openPage(list_sb)">List Smartbox</button>
+  </ion-item>
+  <ion-item  text-center="">
+    <button ion-button (click)="openPage(list_no)">List Notifications</button>
+  </ion-item>
+  <ion-item text-center="">
+    <button ion-button (click)="openPage(logout)">Logout</button>
+  </ion-item>
+
+</ion-content>

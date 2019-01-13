@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml",
+            "map": [
+                {
+                    "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.1.0.aar/66e312d73fda89307cc13784affd2fa4/res/values-tl/values-tl.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "287,406,514,637,745,862,950,1056,1177,1256,1334,1418,1527,1638,1739,1849,1966,2074,2197,2299",
+                        "endColumns": "118,107,122,107,116,87,105,120,78,77,83,108,110,100,109,116,107,122,101,100",
+                        "endOffsets": "401,509,632,740,857,945,1051,1172,1251,1329,1413,1522,1633,1734,1844,1961,2069,2192,2294,2395"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,224,332,455,563,680,768,874,995,1074,1152,1236,1345,1456,1557,1667,1784,1892,2015,2427",
+                        "endColumns": "118,107,122,107,116,87,105,120,78,77,83,108,110,100,109,116,107,122,101,100",
+                        "endOffsets": "219,327,450,558,675,763,869,990,1069,1147,1231,1340,1451,1552,1662,1779,1887,2010,2112,2523"
+                    }
+                },
+                {
+                    "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.6.2.aar/19847a06977e33db820cfdfa6e37cfe2/res/values-tl/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "285",
+                        "endColumns": "204",
+                        "endOffsets": "489"
+                    },
+                    "to": {
+                        "startLines": "21",
+                        "startColumns": "4",
+                        "startOffsets": "2117",
+                        "endColumns": "204",
+                        "endOffsets": "2317"
+                    }
+                },
+                {
+                    "source": "/home/sivlab/.gradle/caches/transforms-1/files-1.1/firebase-messaging-11.6.2.aar/d98c74a5a2aa3e1639e8a92649bd95d0/res/values-tl/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "243",
+                        "endColumns": "100",
+                        "endOffsets": "343"
+                    },
+                    "to": {
+                        "startLines": "22",
+                        "startColumns": "4",
+                        "startOffsets": "2322",
+                        "endColumns": "104",
+                        "endOffsets": "2422"
+                    }
+                }
+            ]
+        }
+    ]
+}
