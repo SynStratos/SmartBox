@@ -4,29 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" line="298" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17c12d58-934f-4371-bf16-ea56e9bd6d18" name="Default Changelist" comment="">
+    <list default="true" id="17c12d58-934f-4371-bf16-ea56e9bd6d18" name="Default Changelist" comment="Final Release">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/.sourcemaps/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/.sourcemaps/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/assets/debug/www/build/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/platforms/android/app/src/main/assets/www/build/vendor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/addsb/addsb.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/list_smartbox/list_smartbox.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/list_smartbox/list_smartbox.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/src/pages/login/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/src/pages/login/login.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smartbox_test/www/build/vendor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/smartbox_test/www/build/vendor.js.map" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +203,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547403770763" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547403987237" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="excluded.www.directory" value="true" />
     <property name="js.phonegap.settings.workdir" value="$PROJECT_DIR$/smartbox_test" />
@@ -314,7 +293,7 @@
       <workItem from="1546552207375" duration="17699000" />
       <workItem from="1546826235691" duration="271000" />
       <workItem from="1546826540714" duration="51000" />
-      <workItem from="1547396863700" duration="4353000" />
+      <workItem from="1547396863700" duration="4610000" />
     </task>
     <task id="LOCAL-00001" summary="commit1_">
       <created>1544655831716</created>
@@ -379,11 +358,25 @@
       <option name="project" value="LOCAL" />
       <updated>1546826427785</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Final Release">
+      <created>1547403766192</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1547403766192</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Final Release">
+      <created>1547403775275</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1547403775275</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127608000" />
+    <option name="totallyTimeSpent" value="127865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
@@ -397,7 +390,7 @@
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31657755" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" weight="0.31657755" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,10 +398,10 @@
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053364" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4994664" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4994664" weight="0.3721925" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.4994664" visible="true" weight="0.3721925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -497,6 +490,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="commit1_" />
     <MESSAGE value="commit2_" />
     <MESSAGE value="Login, Logout, Invio server: OK&#10;Aggiunti controlli" />
@@ -507,7 +501,8 @@
     <MESSAGE value="ListaNotifiche: OK&#10;Migliorie Grafiche" />
     <MESSAGE value="ReleaseCandidate1.0&#10;-Aggiunta HomePage&#10;-Migliorie Grafiche" />
     <MESSAGE value="ReleaseCandidate1.2&#10;-Aggiunto pattern Strategy&#10;-Aggiunta gestione file XML" />
-    <option name="LAST_COMMIT_MESSAGE" value="ReleaseCandidate1.2&#10;-Aggiunto pattern Strategy&#10;-Aggiunta gestione file XML" />
+    <MESSAGE value="Final Release" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Release" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/smartbox_test/platforms/android/cordova/node_modules/cordova-common/src/PluginManager.js">
