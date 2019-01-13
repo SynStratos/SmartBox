@@ -1,0 +1,2 @@
+# Referenced at /home/sivlab/github/Smartbox/smartbox_test/platforms/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:79
+-keep class android.support.multidex.MultiDexApplication { <init>(...); }
